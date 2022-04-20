@@ -6,25 +6,14 @@ export default function Parthner() {
   return (
     <Splide
       options={{
-        rewind: true,
         type: "loop",
-        gap: "2rem",
-        perPage: 7,
-        breakpoints: {
-          1280: {
-            perPage: 6,
-          },
-          768: {
-            perPage: 5,
-          },
-          500: {
-            perPage: 3,
-          },
-        },
-        autoScroll: {
-          speed: 2,
-        },
+        autoplay: true,
+        pauseOnHover: false,
+        resetProgress: false,
+        arrows: "slider",
+        perPage: "5",
       }}
+      hassliderwrapper
       className="relative z-20 h-32 px-24"
     >
       return (

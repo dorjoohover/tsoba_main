@@ -13,6 +13,7 @@ import Projects from "../src/components/Project";
 import Loans from "../src/components/Loan";
 import Request from "../src/components/Request";
 import Footer from "../src/components/Footer";
+import Copyright from "../src/components/Copyright";
 export async function getStaticProps({ locale }) {
   return {
     props: {
@@ -80,6 +81,7 @@ function Home(props) {
         setFormData={setFormData}
       />
       <Footer />
+      <Copyright />
       <div className="mt-screen">{t("home:dorj")}</div>
     </div>
   );
