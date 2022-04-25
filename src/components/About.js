@@ -2,7 +2,7 @@ import Image from "next/image";
 import Title from "./Title";
 const About = () => {
   return (
-    <div className="flex mx-auto  mx-auto about py-32 justify-center">
+    <div className="flex mx-auto  mx-auto about py-32 mb-32 justify-center">
       <div className="relative about_left p-3">
         <div className="relative about_img_1 z-10">
           <Image
