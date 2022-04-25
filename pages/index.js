@@ -25,8 +25,6 @@ export async function getStaticProps({ locale }) {
 function Home(props) {
   const { t } = useTranslation();
   const router = useRouter();
-  console.log(process.env.MYSQL);
-  console.log(process.env.GOOGLE_CLIENT_EMAIL);
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -70,7 +68,7 @@ function Home(props) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <Navbar />
+      <Navbar color={"white"} />
       <Header />
       <About />
       <Projects />

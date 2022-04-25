@@ -3,11 +3,12 @@ import Title from "./Title";
 const About = () => {
   return (
     <div className="flex mx-auto  mx-auto about py-32 justify-center">
-      <div className="relative about_left">
-        <div className="relative z-10">
+      <div className="relative about_left p-3">
+        <div className="relative about_img_1 z-10">
           <Image
             src={"/img/about/img_1.jpg"}
             alt="about"
+            layout="responsive"
             width={453}
             height={600}
           />
@@ -16,12 +17,13 @@ const About = () => {
           <Image
             src={"/img/about/img_2.jpg"}
             alt="about"
+            layout="responsive"
             width={456}
             height={622}
           />
         </div>
       </div>
-      <div className="text-left ml-12">
+      <div className="text-left ml-12 p-3">
         <div className="about_right">
           <Title
             title={"Modern Spaces And Premium Apartment"}

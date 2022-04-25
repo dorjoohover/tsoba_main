@@ -1,4 +1,5 @@
 import "../src/styles/index.scss";
+import "../src/styles/response.scss";
 // import { appWithTranslation } from "../i18n";
 import getConfig from "next/config";
 import { appWithTranslation } from "next-i18next";

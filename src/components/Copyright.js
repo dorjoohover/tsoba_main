@@ -2,7 +2,7 @@ import Link from "next/link";
 const Copyright = () => {
   return (
     <div className="copyright w-full">
-      <div className="py-8 flex justify-between w-3/4 mx-auto text-sm">
+      <div className="py-8 px-4 flex justify-between copyright_container mx-auto text-sm">
         <p>
           {" "}
           &#169; Copyright <span className="uppercase text-white">
