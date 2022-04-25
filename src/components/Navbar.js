@@ -97,7 +97,7 @@ const Navbar = ({ color }) => {
             lg: "none",
             md: "flex",
             sm: "flex",
-            xs: "flex,",
+            xs: "flex",
           },
           justifyContent: "space-between",
           position: "fixed",
