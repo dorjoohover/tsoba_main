@@ -8,13 +8,51 @@ import { List, ArrowDropDown } from "@mui/icons-material";
 const Navbar = ({ color }) => {
   const router = useRouter();
   const [list, setList] = useState(false);
-  // console.log(window)
+  const [scrollY, setScrollY] = useState("flex");
+  const [bgColor, setBgColor] = useState("transparent");
+  const [textColor, setColor] = useState("white");
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 0 && window.scrollY < 600) {
+        setScrollY("none");
+        setBgColor("transparent");
+        setColor("white");
+      } else if (window.scrollY >= 600) {
+        setScrollY("flex");
+        setBgColor("white");
+        setColor("black");
+      } else {
+        setScrollY("flex");
+      }
+    };
+    handleScroll();
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
   return (
-    <div className="bg-white w-full h-24 fixed top-0 z-50">
+    <Box
+      sx={{
+        display: `${scrollY}`,
+        background: `${bgColor}`,
+        height: {
+          lg: "96px",
+          md: "82px",
+          sm: "82px",
+          xs: "82px",
+        },
+        width: "100%",
+        position: "fixed",
+        top: "0",
+        zIndex: "50",
+      }}
+    >
       <Box
         sx={{
           display: {
-            lg: "flex",
+            lg: `${scrollY}`,
             md: "none",
             sm: "none",
             xs: "none,",
@@ -28,6 +66,7 @@ const Navbar = ({ color }) => {
           left: "50%",
           transform: "translateX(-50%)",
           maxWidth: "1320px",
+          color: `${textColor}`,
         }}
       >
         <div className="flex items-center h-24  w-auto relative">
@@ -65,7 +104,18 @@ const Navbar = ({ color }) => {
                 ]}
               />
             </button>
-            <div className="link">
+            <Box
+              sx={{
+                display: "flex",
+                flexDirection: "column",
+                position: "absolute",
+                top: "96px",
+                transition: "0.5s",
+                zIndex: "60",
+                background: `${bgColor}`,
+              }}
+              className="link"
+            >
               <Link href={"/loans/external"}>
                 <a>гадаад харицагч</a>
               </Link>
@@ -75,7 +125,7 @@ const Navbar = ({ color }) => {
               <Link href={"/request"}>
                 <a>зээлийн хүсэлт</a>
               </Link>
-            </div>
+            </Box>
           </li>
 
           <li
@@ -140,8 +190,8 @@ const Navbar = ({ color }) => {
           transform: "translateX(-50%)",
           maxWidth: "1320px",
           alignItems: "center",
-          backgroundColor: "white",
           px: "10px",
+          color: `${textColor}`,
         }}
       >
         {list && (
@@ -158,38 +208,79 @@ const Navbar = ({ color }) => {
         )}
         {list && (
           <>
-            <ul className="flex  fixed top-0 left-0 z-50 h-screen bg-white  flex-col w-1/4">
+            <ul className="flex fixed top-0 left-0 z-50 h-screen bg-white text-black  flex-col w-1/4">
+              <li className="mx-6 flex items-center">
+                <div className="flex items-center py-3 mx-auto mobile_nav_logo w-28">
+                  <Image
+                    src={"/img/logo.png"}
+                    alt="logo"
+                    width={2300}
+                    height={1196}
+                    layout="responsive"
+                  />
+                </div>
+              </li>
               <li
-                className={` uppercase font-semibold tracking-wider p-3 border-b `}
+                className={`text-${color} uppercase font-semibold tracking-wider mx-6 py-4`}
               >
                 <Link href={"/"}>
-                  <a>Home</a>
+                  <a>нүүр</a>
                 </Link>
               </li>
               <li
-                className={`uppercase font-semibold tracking-wider p-3 border-b`}
+                className={`text-${color} uppercase font-semibold tracking-wider mx-6 py-4`}
               >
-                <Link href={"/"}>
-                  <a>Home</a>
+                <Link href={"/project"}>
+                  <a>төсөл</a>
                 </Link>
               </li>
               <li
-                className={`uppercase font-semibold tracking-wider p-3 border-b`}
+                className={`text-${color} uppercase font-semibold tracking-wider  nav_btn_mobile`}
               >
-                <Link href={"/"}>
-                  <a>Home</a>
+                <button
+                  className={`text-${color} uppercase font-semibold tracking-wider mx-6 py-4 flex items-center px-0`}
+                >
+                  зээл
+                  <ArrowDropDown
+                    sx={[
+                      {
+                        fontSize: "1.5rem",
+                        marginLeft: "0.5rem",
+                        transition: "0.5s",
+                      },
+                    ]}
+                  />
+                </button>
+                <div className="link">
+                  <Link href={"/loans/external"}>
+                    <a>гадаад харицагч</a>
+                  </Link>
+                  <Link href={"/loans/internal"}>
+                    <a>дотоод харицагч</a>
+                  </Link>
+                  <Link href={"/request"}>
+                    <a>зээлийн хүсэлт</a>
+                  </Link>
+                </div>
+              </li>
+              <li
+                className={`text-${color} uppercase font-semibold tracking-wider mx-6 py-4`}
+              >
+                <Link href={"/contact"}>
+                  <a>холбогдох</a>
                 </Link>
               </li>
             </ul>
             <p></p>
           </>
         )}
-        <div className="flex items-center py-3  w-auto relative">
+        <div className="flex items-center py-3 mobile_nav_logo w-28">
           <Image
-            src={"/img/lil_logo.png"}
+            src={"/img/logo.png"}
             alt="logo"
-            width={58.3}
-            height={60}
+            width={2300}
+            height={1196}
+            layout="responsive"
           />
         </div>
 
@@ -218,7 +309,7 @@ const Navbar = ({ color }) => {
           </div>
         )}
       </Box>
-    </div>
+    </Box>
   );
 };
 export default Navbar;

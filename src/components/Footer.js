@@ -18,7 +18,15 @@ const Footer = () => {
       <div className="relative mx-auto z-20">
         <div className="py-24 px-3 grid  mx-auto justify-around items-start footer_container">
           <div className="flex-1  footer_left">
-            <Image src={"/img/logo.png"} alt="logo" height={75} width={250} />
+            <div className="w-48">
+              <Image
+                src={"/img/logo.png"}
+                alt="logo"
+                height={1196}
+                width={2300}
+                layout={"responsive"}
+              />
+            </div>
             <ul className="mt-12 text-sm">
               <li className="text-white mb-2">
                 <PhoneAndroid sx={{ paddingRight: "0.5rem", fill: "white" }} />{" "}

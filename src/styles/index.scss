@@ -270,13 +270,6 @@ max-width: 1300px;
 }
 
 .link {
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    top: 96px;
-    transition: 0.5s;
-    z-index: 60;
-    background-color: white;
 
     a {
         padding: 1rem 1.5rem;
@@ -308,4 +301,54 @@ max-width: 1300px;
 
         }
     }
+}
+.nav_btn_mobile {
+
+    .link {
+        opacity: 0;
+        transform: translateY(-20px);
+        top: 0;
+        position: absolute;
+        transition: 0s;
+        z-index: -1;
+    }
+    &:hover {
+        svg {
+            transform: rotate(180deg);
+        }
+        button {
+            align-items: center;
+        }
+        .link {
+            transform: translateY(0);
+            opacity: 1;
+            transition: 0.5s;
+            display: flex;
+            position: relative;
+            z-index: 10;
+
+        }
+    }
+}
+
+.mobile_nav_logo {
+    span {
+        width: 100% !important;
+    }
+}
+
+.splide_1 {
+    body {
+        overflow: hidden;
+    }
+    position: absolute !important;
+    z-index: 100;
+    background-color: black;
+    padding:5%;
+    overflow: hidden !important;
+    cursor: pointer;
+    .splide__track {
+        height: 100% !important;
+    }
+
 }
