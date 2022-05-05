@@ -10,15 +10,15 @@ export default function ProductHeader() {
     const intervalId = setInterval(() => {
       switch (index) {
         case 1:
-          setImg("img_1.jpg");
+          setImg("02.jpg");
           setIndex(2);
           break;
         case 2:
-          setImg("img_2.jpg");
+          setImg("03.jpg");
           setIndex(3);
           break;
         case 3:
-          setImg("img_3.jpg");
+          setImg("04.jpg");
           setIndex(1);
           break;
         default:
@@ -46,7 +46,7 @@ export default function ProductHeader() {
         >
           <Box
             sx={{
-              backgroundImage: `url('/img/project/${img}')`,
+              backgroundImage: `url('/img/${img}')`,
               height: "90vh",
               backgroundSize: "cover",
               backgroundPosition: "center center",
@@ -78,12 +78,12 @@ export default function ProductHeader() {
           <div className="m-auto w-4/5 product_header py-24 relative z-20">
             <div className={`title text-center`}>
               <h5 className="uppercase text_primary_color mb-6 font-semibold text-xl">
-                Sky Cities
+                захиалга авж эхэллээ.
               </h5>
               <h1
                 className={`uppercase text-6xl leading-tight font-bold text-gray-300`}
               >
-                Modern House
+                хадат вилла 4 төсөл
               </h1>
             </div>
           </div>

@@ -16,52 +16,55 @@ const Footer = () => {
       <span className="absolute inset-0  bg_heading_color"></span>
       <div className="absolute inset-0 opacity-50 bg-black z-10"></div>
       <div className="relative mx-auto z-20">
-        <div className="py-24 px-3 grid grid-cols-8  mx-auto justify-center items-start footer_container">
+        <div className="py-24 px-3 grid  mx-auto justify-around items-start footer_container">
           <div className="flex-1  footer_left">
-            <Image
-              src={"/img/logo_footer.png"}
-              alt="logo"
-              height={75}
-              width={250}
-            />
-            <ul className="mt-20 text-sm">
+            <Image src={"/img/logo.png"} alt="logo" height={75} width={250} />
+            <ul className="mt-12 text-sm">
               <li className="text-white mb-2">
                 <PhoneAndroid sx={{ paddingRight: "0.5rem", fill: "white" }} />{" "}
-                (+01)999.88.77 or (+01)999.888.66
+                +(976-11) 77005434 , 80115262
               </li>
               <li className="text-white mb-2">
                 <MailOutline sx={{ paddingRight: "0.5rem", fill: "white" }} />{" "}
-                contact.tayta@gmail.com
+                altantsetseg.b@homey.mn
               </li>
               <li className="text-white mb-2">
-                <Room sx={{ paddingRight: "0.5rem", fill: "white" }} /> 2159
-                Ralp, Brooklyn, NY, United States
+                <Room sx={{ paddingRight: "0.5rem", fill: "white" }} /> СХД 8-р
+                хороо Болгарын гудамж 27-802
               </li>
               <li className="text-white mb-2">
                 <AccessTime sx={{ paddingRight: "0.5rem", fill: "white" }} />{" "}
-                8am - 6px EST, Monday - Sunday
+                9:00 - 18:00 Даваа - Баасан
               </li>
             </ul>
           </div>
 
-          <div className="footer_item_1 footer_item">
-            <h5 className="text-2xl font-bold text-white">About</h5>
+          <div className="footer_item_1 footer_item mt-12">
+            <h5 className="text-2xl font-bold text-white">Цэс</h5>
             <ul className="mt-20 text-white">
-              <li className="mb-2">Services</li>
-              <li className="mb-2">Team Member</li>
-              <li className="mb-2">Propreties</li>
-              <li className="mb-2">About Us</li>
+              <li className="mb-2">
+                <Link href={"/"}>
+                  <a>Нүүр</a>
+                </Link>
+              </li>
+              <li className="mb-2">
+                <Link href={"/project"}>
+                  <a>Төсөл</a>
+                </Link>
+              </li>
+              <li className="mb-2">
+                <Link href={"/request"}>
+                  <a>Зээлийн хүсэлт</a>
+                </Link>
+              </li>
+              <li className="mb-2">
+                <Link href={"/contact"}>
+                  <a>Холбогдох</a>
+                </Link>
+              </li>
             </ul>
           </div>
-          <div className="footer_item_2 footer_item">
-            <h5 className="text-2xl font-bold text-white">About</h5>
-            <ul className="mt-20 text-white">
-              <li className="mb-2">Services</li>
-              <li className="mb-2">Team Member</li>
-              <li className="mb-2">Propreties</li>
-              <li className="mb-2">About Us</li>
-            </ul>
-          </div>
+          {/* 
           <div className="relative footer_item_3 footer_item z-20">
             <h5 className="text-2xl font-bold text-white">About</h5>
             <div className="mt-20">
@@ -129,14 +132,14 @@ const Footer = () => {
                       />{" "}
                     </a>
                   </Link>
-                </li> */}
+                </li> 
               </ul>
               <p className="text-white">
                 We bring the years, global experience, and stamina to guide our
                 clients through new.
               </p>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>

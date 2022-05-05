@@ -9,14 +9,27 @@ const Request = ({ formData, setFormData, handleForm }) => {
         onSubmit={handleForm}
         className="flex flex-col mx-auto relative z-30  "
       >
-        <h1 className="font-bold text-6xl text-center mb-8">Request a Visit</h1>
+        <h1 className="font-bold text-6xl text-center mb-8">
+          Зээлийн хүсэлт илгээх
+        </h1>
         <input
           type="text"
-          placeholder="E.G., JOHN DOE"
+          placeholder="Овог, нэр"
           value={formData.name}
           name="name"
           onChange={(e) =>
             setFormData((formData) => ({ ...formData, name: e.target.value }))
+          }
+          className="my-5"
+        />
+        <input
+          type="tel"
+          placeholder="Утасны дугаар"
+          value={formData.phone}
+          name="name"
+          pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"
+          onChange={(e) =>
+            setFormData((formData) => ({ ...formData, phone: e.target.value }))
           }
           className="my-5"
         />
@@ -29,7 +42,7 @@ const Request = ({ formData, setFormData, handleForm }) => {
             setFormData((formData) => ({ ...formData, email: e.target.value }))
           }
           className="my-5"
-          placeholder="CONTACT@YOURSITE.COM"
+          placeholder="Цахим хаяг"
         />
         <div className="flex">
           <input
@@ -67,9 +80,6 @@ const Request = ({ formData, setFormData, handleForm }) => {
           className="uppercase text-center text-white bg_primary_color py-4 mt-5 font-bold"
         />
       </form>
-      <div className="my-32 mx-24">
-        <Parthner />
-      </div>
     </div>
   );
 };

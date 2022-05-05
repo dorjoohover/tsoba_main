@@ -1,6 +1,7 @@
 import { useTranslation } from "next-i18next";
 import { ArrowRightAlt } from "@mui/icons-material";
 import Sidebar from "./Sidebar";
+import Link from "next/link";
 const Header = () => {
   const { t } = useTranslation();
   //   console.log({t("home: dorj")});
@@ -13,15 +14,17 @@ const Header = () => {
         <div className="w-4/5 mx-auto header">
           <div className="relative z-30  ">
             <h5 className=" uppercase text-white text-xl mb-8">
-              convernient location
+              Таны Хаус 24 цагт
             </h5>
-            <h1 className="text-white capitalize tracking-wider text-6xl font-bold leading-tight">
-              beautiful spaces <br /> in the best places
+            <h1 className="text-white capitalize tracking-wider text-6xl font-bold leading-tight  header_text">
+              Homay <br /> Mortage
             </h1>
-            <button className="px-12 py-6 text-white font-semibold uppercase bg_heading_color mt-20 tracking-widest flex items-center">
-              schedule a visit
-              <ArrowRightAlt sx={{ marginLeft: "1rem" }} />
-            </button>
+            <Link href={"/request"}>
+              <a className="px-12 py-6 text-white font-semibold uppercase bg_heading_color inline tracking-widest items-center">
+                Зээлийн хүсэлт авах
+                <ArrowRightAlt sx={{ marginLeft: "1rem" }} />
+              </a>
+            </Link>
           </div>
         </div>
       </div>

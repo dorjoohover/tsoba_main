@@ -4,12 +4,13 @@ import { useRouter } from "next/router";
 import { Call } from "@mui/icons-material";
 import { useEffect, useState } from "react";
 import { Box } from "@mui/material";
-import { List } from "@mui/icons-material";
+import { List, ArrowDropDown } from "@mui/icons-material";
 const Navbar = ({ color }) => {
   const router = useRouter();
   const [list, setList] = useState(false);
+  // console.log(window)
   return (
-    <>
+    <div className="bg-white w-full h-24 fixed top-0 z-50">
       <Box
         sx={{
           display: {
@@ -37,24 +38,54 @@ const Navbar = ({ color }) => {
             className={`text-${color} uppercase font-semibold tracking-wider mx-6`}
           >
             <Link href={"/"}>
-              <a>Home</a>
+              <a>нүүр</a>
             </Link>
           </li>
           <li
             className={`text-${color} uppercase font-semibold tracking-wider mx-6`}
           >
-            <Link href={"/"}>
-              <a>Home</a>
+            <Link href={"/project"}>
+              <a>төсөл</a>
             </Link>
           </li>
           <li
+            className={`text-${color} uppercase font-semibold tracking-wider  nav_btn`}
+          >
+            <button
+              className={`text-${color} uppercase font-semibold tracking-wider px-6 flex items-center`}
+            >
+              зээл
+              <ArrowDropDown
+                sx={[
+                  {
+                    fontSize: "1.5rem",
+                    marginLeft: "0.5rem",
+                    transition: "0.5s",
+                  },
+                ]}
+              />
+            </button>
+            <div className="link">
+              <Link href={"/loans/external"}>
+                <a>гадаад харицагч</a>
+              </Link>
+              <Link href={"/loans/internal"}>
+                <a>дотоод харицагч</a>
+              </Link>
+              <Link href={"/request"}>
+                <a>зээлийн хүсэлт</a>
+              </Link>
+            </div>
+          </li>
+
+          <li
             className={`text-${color} uppercase font-semibold tracking-wider mx-6`}
           >
-            <Link href={"/"}>
-              <a>Home</a>
+            <Link href={"/contact"}>
+              <a>холбогдох</a>
             </Link>
           </li>
-          {router.locale == "mn" && (
+          {/* {router.locale == "mn" && (
             <div
               onClick={() => {
                 router.replace(router.pathname, router.pathname, {
@@ -77,16 +108,16 @@ const Navbar = ({ color }) => {
             >
               <p>мн</p>
             </div>
-          )}
+          )} */}
         </ul>
         <div className="flex items-center">
           <Call sx={{ fill: "#b9a25f", height: "3rem", width: "3rem" }} />
           <div className="ml-4">
             <h2 className="uppercase tracking-widest font-semibold text_primary_color">
-              requist viewing
+              шууд залга
             </h2>
             <h6 className={`text-${color} uppercase tracking-widest font-bold`}>
-              +1 999 988 66
+              (976-11) 7700 5434
             </h6>
           </div>
         </div>
@@ -169,7 +200,7 @@ const Navbar = ({ color }) => {
                 locale: "en",
               });
             }}
-            className={`text-${color} uppercase font-semibold tracking-wider mx-6 cursor-pointer`}
+            className={`text-${color} uppercase font-semibold opacity-0 tracking-wider mx-6 cursor-pointer`}
           >
             <p>en</p>
           </div>
@@ -181,13 +212,13 @@ const Navbar = ({ color }) => {
                 locale: "mn",
               });
             }}
-            className={`text-${color} uppercase font-semibold tracking-wider mx-6 cursor-pointer`}
+            className={`text-${color} uppercase font-semibold opacity-0 tracking-wider mx-6 cursor-pointer`}
           >
             <p>мн</p>
           </div>
         )}
       </Box>
-    </>
+    </div>
   );
 };
 export default Navbar;

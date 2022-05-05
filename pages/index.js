@@ -28,8 +28,12 @@ function Home(props) {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
-    date: "",
-    time: "",
+    phone: "",
+    register: '',
+    address: '',
+    loan: '',
+    salary: '',
+    info: '',
   });
   const handleForm = async (e) => {
     e.preventDefault();
@@ -47,11 +51,6 @@ function Home(props) {
       },
       body: JSON.stringify(form),
     });
-
-    console.log(res);
-    // const content = await res.json();
-    // alert(content.data.tableRange);
-
     setFormData((formData) => ({
       ...formData,
       name: "",
@@ -68,7 +67,7 @@ function Home(props) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <Navbar color={"white"} />
+      <Navbar />
       <Header />
       <About />
       <Projects />
@@ -80,7 +79,7 @@ function Home(props) {
       />
       <Footer />
       <Copyright />
-      <div className="mt-screen">{t("home:dorj")}</div>
+      {/* <div className="mt-screen">{t("home:dorj")}</div> */}
     </div>
   );
 }

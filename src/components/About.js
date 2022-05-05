@@ -6,7 +6,7 @@ const About = () => {
       <div className="relative about_left p-3">
         <div className="relative about_img_1 z-10">
           <Image
-            src={"/img/about/img_1.jpg"}
+            src={"/img/01.jpg"}
             alt="about"
             layout="responsive"
             width={453}
@@ -15,7 +15,7 @@ const About = () => {
         </div>
         <div className="relative about_img_2 z-20">
           <Image
-            src={"/img/about/img_2.jpg"}
+            src={"/img/01.jpg"}
             alt="about"
             layout="responsive"
             width={456}
@@ -26,20 +26,27 @@ const About = () => {
       <div className="text-left ml-12 p-3">
         <div className="about_right">
           <Title
-            title={"Modern Spaces And Premium Apartment"}
+            title={"Товч танилцуулга"}
             subtitle={"overview"}
             items={"left"}
           />
           <p className="mt-10 mb-4">
-            Staying calm, composed and maintaining strong self esteem in today’s
-            tough environment can be difficult but is not impossible if you
-            follow a few simple guidelines.
+            Амины орон сууцны зах зээл хурдацтай тэлж буй энэ үед иргэдэд бага
+            хүүтэй хурдан шуурхай үйлчилгээтэй санхүүгийн байгууллагын эрэлт
+            хэрэгцээ нэмэгдсээр байна.
+          </p>
+          <p className="mb-4">
+            Иймд бид иргэдэд түргэн шуурхай, нээлттэй үйлчилж, хэрэгцээт амины
+            орон сууцыг нь хамгийн бага хүүтэй олгох санхүүгийн үйлчилгээ
+            үзүүлэх зорилготойгоор нээгдлээ.
           </p>
           <p>
-            Everything and everyone else around you can affect your self esteem.
-            Other people can deliberately or inadvertently damage your self
-            image. Unchecked people and circumstances can ultimately destroy
-            your
+            Бид төслүүдтэй хамтран ажиллахдаа урт хугацаандаа үнэ цэн өсөх,
+            хотоос гадна байгаль дунд, дэд бүтцээ бүрэн шийдсэн, туршлагатай
+            компаниудтай хамтран ажиллахыг зорих бөгөөд нэн тэргүүнд зах зээлд
+            хамгийн эрэлт өндөр байгаа Хадат вилла 4 төслийг сонгон хамтран
+            ажиллахаар боллоо. Зөвхөн дотооддоо төдийгүй гадаад дахь
+            Монголчууддаа зориулсан зээлийн бүтээгдэхүүнийг мөн санал болгох юм.
           </p>
         </div>
       </div>

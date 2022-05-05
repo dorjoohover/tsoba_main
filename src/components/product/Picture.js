@@ -8,7 +8,7 @@ export default function Picture() {
     <Splide
       options={{
         type: "loop",
-        // autoplay: true,
+        autoplay: true,
         pauseOnHover: false,
         resetProgress: false,
         arrows: false,
@@ -28,7 +28,42 @@ export default function Picture() {
       <>
         <SplideSlide className="flex items-center relative z-20 ">
           <div className="flex justify-center">
-            <img src={"/img/parthner/img_1.jpg"} alt="asdf" />
+            <img src={"/img/parthner/0008.jpg"} alt="asdf" />
+          </div>
+        </SplideSlide>
+        <SplideSlide className="flex items-center relative z-20 ">
+          <div className="flex justify-center">
+            <img src={"/img/parthner/0009.jpg"} alt="asdf" />
+          </div>
+        </SplideSlide>
+        <SplideSlide className="flex items-center relative z-20 ">
+          <div className="flex justify-center">
+            <img src={"/img/parthner/0010.jpg"} alt="asdf" />
+          </div>
+        </SplideSlide>
+        <SplideSlide className="flex items-center relative z-20 ">
+          <div className="flex justify-center">
+            <img src={"/img/parthner/0011.jpg"} alt="asdf" />
+          </div>
+        </SplideSlide>
+        <SplideSlide className="flex items-center relative z-20 ">
+          <div className="flex justify-center">
+            <img src={"/img/parthner/0012.jpg"} alt="asdf" />
+          </div>
+        </SplideSlide>
+        <SplideSlide className="flex items-center relative z-20 ">
+          <div className="flex justify-center">
+            <img src={"/img/parthner/0013.jpg"} alt="asdf" />
+          </div>
+        </SplideSlide>
+        <SplideSlide className="flex items-center relative z-20 ">
+          <div className="flex justify-center">
+            <img src={"/img/parthner/0014.jpg"} alt="asdf" />
+          </div>
+        </SplideSlide>
+        <SplideSlide className="flex items-center relative z-20 ">
+          <div className="flex justify-center w-full h-full">
+            <img src={"/img/parthner/kitchen.png"} alt="asdf" />
           </div>
         </SplideSlide>
       </>

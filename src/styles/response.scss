@@ -1,6 +1,8 @@
 @media only screen and (max-width: 1500px) {
     .sidebar {
         padding: 0 20px;
+        padding-right: 120px;
+        font-size: 0.9rem;
         left: -23%;
     }
 }
@@ -62,7 +64,7 @@
         .banner {
             position: relative;
             width: 100%;
-            grid-template-columns: repeat(2, 1fr);
+            grid-template-columns: repeat(3, 1fr);
             display: grid;
             grid-gap: 2rem;
             span {
@@ -98,7 +100,14 @@
     .loans {
         padding: 108px 5%;
     }
-    
+    .loan {
+        flex-direction: column;
+        .title {
+            max-width: 100%;
+            padding: 0;
+            margin-bottom: 40px;
+        }
+    }
   }
 
   @media only screen and (max-width: 768px) {
@@ -116,7 +125,10 @@
     }
     .footer {
         &_container {
-            grid-template-columns: repeat(1, 1fr);
+            grid-template-columns: repeat(2, 1fr);
+            justify-content: space-around;
+            grid-gap: 5rem;
+
         }
         .footer_left {
             padding: 10px;

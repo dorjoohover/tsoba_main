@@ -5,8 +5,8 @@ const Loans = () => {
     <div className="loans relative">
       <div className="relative z-30">
         <Title
-          title={"from our blog"}
-          subtitle={"news"}
+          title={"зээлийн төрөл"}
+          subtitle={"зээл"}
           items={"center"}
           color={"white"}
         />
@@ -16,7 +16,7 @@ const Loans = () => {
         <div className="mr-24 loan_grid">
           <div className=" relative">
             <Image
-              src={"/img/loan/img_1.jpg"}
+              src={"/img/0013.jpg"}
               alt="loan"
               layout="responsive"
               width={500}
@@ -24,17 +24,17 @@ const Loans = () => {
             />
           </div>
           <div className="px-6 py-8 bg-white">
-            <h5 className="text_primary_color uppercase mb-2">design</h5>
+            <h5 className="text_primary_color uppercase mb-2">зээл</h5>
             <h2 className="capitalize font-bold text-3xl tracking-wider mb-6 font-medium">
-              the co-Working interior classic design
+              гадаад харицагч
             </h2>
-            <p>Febraury 6, 2021</p>
+            <p>6-р сар 1, 2022</p>
           </div>
         </div>
         <div className="loan_grid">
           <div className=" relative">
             <Image
-              src={"/img/loan/img_2.jpg"}
+              src={"/img/0013.jpg"}
               alt="loan"
               layout="responsive"
               width={500}
@@ -42,11 +42,11 @@ const Loans = () => {
             />
           </div>
           <div className="px-6 py-8 bg-white">
-            <h5 className="text_primary_color uppercase mb-2">design</h5>
+            <h5 className="text_primary_color uppercase mb-2">зээл</h5>
             <h2 className="capitalize font-bold text-3xl tracking-wider mb-6 font-medium">
-              the co-Working interior classic design
+              дотоод харилцагч
             </h2>
-            <p>Febraury 6, 2021</p>
+            <p>6-р сар 1, 2022</p>
           </div>
         </div>
       </div>
