@@ -20,7 +20,7 @@ const Header = () => {
               Homay <br /> Mortage
             </h1>
             <Link href={"/request"}>
-              <a className="px-12 py-6 text-white font-semibold uppercase bg_heading_color inline tracking-widest items-center">
+              <a className="px-12 py-6 text-white font-semibold uppercase whitespace-nowrap bg_heading_color inline tracking-widest items-center request_btn">
                 Зээлийн хүсэлт авах
                 <ArrowRightAlt sx={{ marginLeft: "1rem" }} />
               </a>

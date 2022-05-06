@@ -35,8 +35,8 @@ const Contact = () => {
   };
   return (
     <>
-      <Navbar color={"black"} />
-      <div className="mt-24">
+      <Navbar />
+      <div>
         <Box
           sx={{
             height: "35vh",

@@ -36,7 +36,7 @@ export default function Picture({ start, setStart }) {
             }}
           >
             <Link href={"#splide_1"}>
-              <a className="w-full h-full">
+              <a className="w-full ">
                 <div className="flex justify-center w-full h-full">
                   <img src={"/img/parthner/0008.jpg"} alt="asdf" />
                 </div>
@@ -50,7 +50,7 @@ export default function Picture({ start, setStart }) {
             }}
           >
             <Link href={"#splide_1"}>
-              <a className="w-full h-full">
+              <a className="w-full ">
                 <div className="flex justify-center w-full h-full">
                   <img src={"/img/parthner/0009.jpg"} alt="asdf" />
                 </div>
@@ -64,7 +64,7 @@ export default function Picture({ start, setStart }) {
             }}
           >
             <Link href={"#splide_1"}>
-              <a className="w-full h-full">
+              <a className="w-full ">
                 <div className="flex justify-center w-full h-full">
                   <img src={"/img/parthner/0010.jpg"} alt="asdf" />
                 </div>
@@ -78,7 +78,7 @@ export default function Picture({ start, setStart }) {
             }}
           >
             <Link href={"#splide_1"}>
-              <a className="w-full h-full">
+              <a className="w-full ">
                 <div className="flex justify-center w-full h-full">
                   <img src={"/img/parthner/0011.jpg"} alt="asdf" />
                 </div>
@@ -92,7 +92,7 @@ export default function Picture({ start, setStart }) {
             }}
           >
             <Link href={"#splide_1"}>
-              <a className="w-full h-full">
+              <a className="w-full ">
                 <div className="flex justify-center w-full h-full">
                   <img src={"/img/parthner/0012.jpg"} alt="asdf" />
                 </div>
@@ -106,7 +106,7 @@ export default function Picture({ start, setStart }) {
             }}
           >
             <Link href={"#splide_1"}>
-              <a className="w-full h-full">
+              <a className="w-full ">
                 <div className="flex justify-center w-full h-full">
                   <img src={"/img/parthner/0013.jpg"} alt="asdf" />
                 </div>
@@ -120,7 +120,7 @@ export default function Picture({ start, setStart }) {
             }}
           >
             <Link href={"#splide_1"}>
-              <a className="w-full h-full">
+              <a className="w-full ">
                 <div className="flex justify-center w-full h-full">
                   <img src={"/img/parthner/0014.jpg"} alt="asdf" />
                 </div>
@@ -134,14 +134,15 @@ export default function Picture({ start, setStart }) {
             }}
           >
             <Link href={"#splide_1"}>
-              <a className="w-full h-full">
+              <a className="w-full ">
                 <div className="flex justify-center w-full">
                   <img src={"/img/parthner/kitchen.png"} alt="asdf" />
                 </div>
               </a>
             </Link>
           </SplideSlide>
-        </>
+        </>{" "}
+        )
       </Splide>
       {start > -1 && (
         <>
@@ -167,7 +168,7 @@ export default function Picture({ start, setStart }) {
                 }}
               >
                 <Link href={"#splide"}>
-                  <a className="w-full h-full">
+                  <a className="w-full ">
                     <div className="flex justify-center w-full h-full">
                       <img src={"/img/parthner/0008.jpg"} alt="asdf" />
                     </div>
@@ -181,7 +182,7 @@ export default function Picture({ start, setStart }) {
                 }}
               >
                 <Link href={"#splide"}>
-                  <a className="w-full h-full">
+                  <a className="w-full ">
                     <div className="flex justify-center w-full h-full">
                       <img src={"/img/parthner/0009.jpg"} alt="asdf" />
                     </div>
@@ -195,7 +196,7 @@ export default function Picture({ start, setStart }) {
                 }}
               >
                 <Link href={"#splide"}>
-                  <a className="w-full h-full">
+                  <a className="w-full ">
                     <div className="flex justify-center w-full h-full">
                       <img src={"/img/parthner/0010.jpg"} alt="asdf" />
                     </div>
@@ -209,7 +210,7 @@ export default function Picture({ start, setStart }) {
                 }}
               >
                 <Link href={"#splide"}>
-                  <a className="w-full h-full">
+                  <a className="w-full ">
                     <div className="flex justify-center w-full h-full">
                       <img src={"/img/parthner/0011.jpg"} alt="asdf" />
                     </div>
@@ -223,7 +224,7 @@ export default function Picture({ start, setStart }) {
                 }}
               >
                 <Link href={"#splide"}>
-                  <a className="w-full h-full">
+                  <a className="w-full ">
                     <div className="flex justify-center w-full h-full">
                       <img src={"/img/parthner/0012.jpg"} alt="asdf" />
                     </div>
@@ -237,7 +238,7 @@ export default function Picture({ start, setStart }) {
                 }}
               >
                 <Link href={"#splide"}>
-                  <a className="w-full h-full">
+                  <a className="w-full ">
                     <div className="flex justify-center w-full h-full">
                       <img src={"/img/parthner/0013.jpg"} alt="asdf" />
                     </div>
@@ -251,7 +252,7 @@ export default function Picture({ start, setStart }) {
                 }}
               >
                 <Link href={"#splide"}>
-                  <a className="w-full h-full">
+                  <a className="w-full ">
                     <div className="flex justify-center w-full h-full">
                       <img src={"/img/parthner/0014.jpg"} alt="asdf" />
                     </div>
@@ -265,9 +266,13 @@ export default function Picture({ start, setStart }) {
                 }}
               >
                 <Link href={"#splide"}>
-                  <a className="w-full h-full">
+                  <a className="w-full ">
                     <div className="flex justify-center w-full h-full">
-                      <img src={"/img/parthner/kitchen.png"} alt="asdf" />
+                      <img
+                        src={"/img/parthner/kitchen.png"}
+                        alt="asdf"
+                        className="w-full"
+                      />
                     </div>
                   </a>
                 </Link>

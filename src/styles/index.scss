@@ -311,6 +311,7 @@ max-width: 1300px;
         position: absolute;
         transition: 0s;
         z-index: -1;
+        flex-direction: column;
     }
     &:hover {
         svg {

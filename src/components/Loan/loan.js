@@ -135,6 +135,12 @@ const LoanDetails = ({ items }) => {
                 <>
                   <table>
                     <tr>
+                      <th></th>
+                      <th></th>
+                      <th></th>
+                      <th></th>
+                    </tr>
+                    <tr>
                       <td className="px-2"></td>
                       <td className="px-2">Байрны нийт үнэ</td>
                       <td className="px-2">220,000,000</td>
@@ -181,6 +187,12 @@ const LoanDetails = ({ items }) => {
               {items == "external" && (
                 <>
                   <table>
+                    <tr>
+                      <th></th>
+                      <th></th>
+                      <th></th>
+                      <th></th>
+                    </tr>
                     <tr>
                       <td className="px-2"></td>
                       <td className="px-2">Байрны нийт үнэ</td>
@@ -258,6 +270,12 @@ const LoanDetails = ({ items }) => {
               {items == "internal" && (
                 <table>
                   <tr>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                  </tr>
+                  <tr>
                     <td className="px-2"></td>
                     <td className="px-2">Байрны нийт үнэ</td>
                     <td className="px-2">220,000,000</td>
@@ -308,6 +326,12 @@ const LoanDetails = ({ items }) => {
               )}
               {items == "external" && (
                 <table>
+                  <tr>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                  </tr>
                   <tr>
                     <td className="px-2"></td>
                     <td className="px-2">Байрны нийт үнэ</td>

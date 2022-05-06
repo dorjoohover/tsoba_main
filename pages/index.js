@@ -24,24 +24,27 @@ export async function getStaticProps({ locale }) {
 
 function Home(props) {
   const { t } = useTranslation();
-  const router = useRouter();
   const [formData, setFormData] = useState({
     name: "",
     email: "",
     phone: "",
-    register: '',
-    address: '',
-    loan: '',
-    salary: '',
-    info: '',
+    loan: "",
+    address: "",
+    register: "",
+    salary: "",
+    description: "",
   });
   const handleForm = async (e) => {
     e.preventDefault();
     const form = {
       name: formData.name,
       email: formData.email,
-      date: formData.date,
-      time: formData.time,
+      loan: formData.loan,
+      address: formData.address,
+      phone: formData.phone,
+      register: formData.register,
+      salary: formData.salary,
+      description: formData.description,
     };
     const res = fetch("/api/submit", {
       method: "POST",
@@ -55,8 +58,12 @@ function Home(props) {
       ...formData,
       name: "",
       email: "",
-      time: "",
-      date: "",
+      phone: "",
+      loan: "",
+      address: "",
+      register: "",
+      salary: "",
+      description: "",
     }));
   };
   return (

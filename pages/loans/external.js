@@ -8,20 +8,28 @@ import Footer from "../../src/components/Footer";
 import Copyright from "../../src/components/Copyright";
 import { useState } from "react";
 const Loan = () => {
-  const router = useRouter();
+
   const [formData, setFormData] = useState({
     name: "",
     email: "",
-    date: "",
-    time: "",
+    phone: "",
+    loan: "",
+    address: "",
+    register: "",
+    salary: "",
+    description: "",
   });
   const handleForm = async (e) => {
     e.preventDefault();
     const form = {
       name: formData.name,
       email: formData.email,
-      date: formData.date,
-      time: formData.time,
+      loan: formData.loan,
+      address: formData.address,
+      phone: formData.phone,
+      register: formData.register,
+      salary: formData.salary,
+      description: formData.description,
     };
     const res = fetch("/api/submit", {
       method: "POST",
@@ -35,8 +43,12 @@ const Loan = () => {
       ...formData,
       name: "",
       email: "",
-      time: "",
-      date: "",
+      phone: "",
+      loan: "",
+      address: "",
+      register: "",
+      salary: "",
+      description: "",
     }));
   };
   return (
@@ -53,7 +65,7 @@ const Loan = () => {
           alignItems: "center",
           backgroundPosition: "center",
           backgroundSize: "cover",
-          marginTop: "64px",
+
           zIndex: 40,
         }}
       >

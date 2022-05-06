@@ -55,7 +55,7 @@ const Navbar = ({ color }) => {
             lg: `${scrollY}`,
             md: "none",
             sm: "none",
-            xs: "none,",
+            xs: "none",
           },
           justifyContent: "space-between",
           position: "fixed",
@@ -193,6 +193,7 @@ const Navbar = ({ color }) => {
           px: "10px",
           color: `${textColor}`,
         }}
+        className='mobile_navbar'
       >
         {list && (
           <span

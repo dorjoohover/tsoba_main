@@ -13,7 +13,7 @@ const About = () => {
             height={600}
           />
         </div>
-        <div className="relative about_img_2 z-20">
+        {/* <div className="relative about_img_2 z-20">
           <Image
             src={"/img/01.jpg"}
             alt="about"
@@ -21,7 +21,7 @@ const About = () => {
             width={456}
             height={622}
           />
-        </div>
+        </div> */}
       </div>
       <div className="text-left ml-12 p-3">
         <div className="about_right">

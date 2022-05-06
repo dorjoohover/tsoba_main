@@ -20,18 +20,23 @@ const Request = ({ formData, setFormData, handleForm }) => {
           onChange={(e) =>
             setFormData((formData) => ({ ...formData, name: e.target.value }))
           }
-          className="my-5"
+          className="my-2"
+          required
         />
+        <label htmlFor="address" className="mt-2 mx-3 text-sm font-bold">
+          Утасны дугаар
+        </label>
         <input
           type="tel"
-          placeholder="Утасны дугаар"
+          placeholder="88998899 эсвэл 976-999-99-999"
           value={formData.phone}
           name="name"
-          pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"
+          pattern="[0-9]{8}|[0-9]{3}-[0-9]{2}-[0-9]{3}"
           onChange={(e) =>
             setFormData((formData) => ({ ...formData, phone: e.target.value }))
           }
-          className="my-5"
+          className="my-2"
+          required
         />
         <input
           type="email"
@@ -41,43 +46,93 @@ const Request = ({ formData, setFormData, handleForm }) => {
           onChange={(e) =>
             setFormData((formData) => ({ ...formData, email: e.target.value }))
           }
-          className="my-5"
+          className="my-2"
           placeholder="Цахим хаяг"
+          required
         />
-        <div className="flex">
-          <input
-            type="date"
-            name="date"
-            id="date"
-            value={formData.date}
-            onChange={(e) =>
-              setFormData((formData) => ({ ...formData, date: e.target.value }))
-            }
-            placeholder="MM / DD / YYYY"
-            className="mr-10 my-5 flex-1"
-          />
-          <select
-            name="time"
-            id="time"
-            value={formData.time}
-            onChange={(e) =>
-              setFormData((formData) => ({ ...formData, time: e.target.value }))
-            }
-            className=" my-5 flex-1"
-          >
-            <option>TIME AVAILABLE</option>
-            <option value="10:00">10:00</option>
-            <option value="11:00">11:00</option>
-            <option value="14:00">14:00</option>
-            <option value="15:00">15:00</option>
-            <option value="16:00">16:00</option>
-            <option value="20:00">20:00</option>
-          </select>
-        </div>
+        <input
+          type="number"
+          name="loan"
+          id="loan"
+          value={formData.loan}
+          onChange={(e) =>
+            setFormData((formData) => ({ ...formData, loan: e.target.value }))
+          }
+          placeholder="Хүсэж буй зээлийн хэмжээ"
+          className="my-2 flex-1"
+          required
+        />
+        <input
+          type="text"
+          name="register"
+          id="register"
+          value={formData.register}
+          onChange={(e) =>
+            setFormData((formData) => ({
+              ...formData,
+              register: e.target.value,
+            }))
+          }
+          placeholder="Регистрийн дугаар"
+          className=" my-2 flex-1"
+          required
+        />
+        <label htmlFor="address" className="mt-2 mx-3 text-sm font-bold">
+          Одоо оршин суугаа байршил
+        </label>
+        <input
+          type="text"
+          name="address"
+          id="address"
+          value={formData.address}
+          onChange={(e) =>
+            setFormData((formData) => ({
+              ...formData,
+              address: e.target.value,
+            }))
+          }
+          placeholder="Одоо оршин суугаа улс, хот"
+          className=" my-2 flex-1"
+          required
+        />
+        <label htmlFor="salary" className="mt-2 mx-3 text-sm font-bold">
+          Таны цалингийн хэмжээ /бизнессийн орлоготой бол ашгийн хэмжээ /
+        </label>
+        <input
+          type="number"
+          name="salary"
+          id="salary"
+          value={formData.salary}
+          onChange={(e) =>
+            setFormData((formData) => ({ ...formData, salary: e.target.value }))
+          }
+          placeholder="Таны цалингийн хэмжээ"
+          className="my-2 flex-1"
+          required
+        />
+        <label htmlFor="description" className="mt-2 mx-3 text-sm font-bold">
+          Цалингийн орлоготой бол ажлын нэр бизнесийн орлоготой бол үйл
+          ажиллагааны товч танилцуулга
+        </label>
+        <textarea
+          name="description"
+          id="description"
+          className="h-24 my-2"
+          value={formData.description}
+          onChange={(e) =>
+            setFormData((formData) => ({
+              ...formData,
+              description: e.target.value,
+            }))
+          }
+          placeholder="Орлогийн тайлбар"
+          required
+        ></textarea>
+
         <input
           type="submit"
-          value="Contact"
-          className="uppercase text-center text-white bg_primary_color py-4 mt-5 font-bold"
+          value="Илгээх"
+          className="uppercase text-center text-white bg_primary_color py-4 mt-5 cursor-pointer font-bold"
         />
       </form>
     </div>
