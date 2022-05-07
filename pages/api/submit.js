@@ -5,8 +5,8 @@ export default async function handler(req, res) {
   }
   const body = req.body;
   console.log(body, req.query);
+  const private_key = process.env.GOOGLE_PRIVATE_KEY?.replace(/\\n/g, "\n");
   try {
-    const private_key = process.env.GOOGLE_PRIVATE_KEY?.replace(/\\n/g, "\n");
     const auth = new google.auth.GoogleAuth({
       credentials: {
         client_email: process.env.GOOGLE_CLIENT_EMAIL,
@@ -52,7 +52,7 @@ export default async function handler(req, res) {
       sheet_id: process.env.GOOGLE_SHEET_ID,
       sheet_key: process.env.GOOGLE_PRIVATE_KEY,
       email: process.env.GOOGLE_CLIENT_EMAIL,
-      private_key: process.env.GOOGLE_PRIVATE_KEY?.replace(/\\n/g, "\n"),
+      private_key: private_key,
     });
   }
 }
