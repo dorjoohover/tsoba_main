@@ -48,6 +48,11 @@ export default async function handler(req, res) {
   } catch (e) {
     return res
       .status(500)
-      .send({ message: e, sheet_id: process.env.GOOGLE_SHEET_ID });
+      .send({
+        message: e,
+        sheet_id: process.env.GOOGLE_SHEET_ID,
+        sheet_key: process.env.GOOGLE_PRIVATE_KEY,
+        email: process.env.GOOGLE_CLIENT_EMAIL,
+      });
   }
 }
