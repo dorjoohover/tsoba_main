@@ -4,6 +4,7 @@ export default async function handler(req, res) {
     return res.status(405).send({ message: "post" });
   }
   const body = req.body;
+  console.log(body, req.query);
   try {
     const auth = new google.auth.GoogleAuth({
       credentials: {
@@ -45,6 +46,8 @@ export default async function handler(req, res) {
       data: response.data,
     });
   } catch (e) {
-    return res.status(500).send({ message: e });
+    return res
+      .status(500)
+      .send({ message: e, sheet_id: process.env.GOOGLE_SHEET_ID });
   }
 }
