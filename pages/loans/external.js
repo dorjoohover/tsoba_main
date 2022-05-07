@@ -8,7 +8,6 @@ import Footer from "../../src/components/Footer";
 import Copyright from "../../src/components/Copyright";
 import { useState } from "react";
 const Loan = () => {
-
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -65,7 +64,7 @@ const Loan = () => {
           alignItems: "center",
           backgroundPosition: "center",
           backgroundSize: "cover",
-
+          paddingTop: "48px",
           zIndex: 40,
         }}
       >
@@ -77,7 +76,7 @@ const Loan = () => {
           <div className="flex uppercase relative items-center z-20">
             <h5 className="uppercase mr-4 text-sm tracking-widest">Зээл</h5>
             <Circle
-              sx={{ marginRight: "1rem", width: "0.5rem", fill: "#b9a25f" }}
+              sx={{ marginRight: "1rem", width: "0.5rem", fill: "#fec405" }}
             />
             <h5 className="uppercase mr-4 text-sm tracking-widest">
               гадаад ЗАХИАЛАГЧ НАРТ

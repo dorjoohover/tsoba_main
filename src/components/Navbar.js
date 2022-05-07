@@ -112,7 +112,8 @@ const Navbar = ({ color }) => {
                 top: "96px",
                 transition: "0.5s",
                 zIndex: "60",
-                background: `${bgColor}`,
+                background: `#fff`,
+                color: "#171718",
               }}
               className="link"
             >
@@ -161,7 +162,7 @@ const Navbar = ({ color }) => {
           )} */}
         </ul>
         <div className="flex items-center">
-          <Call sx={{ fill: "#b9a25f", height: "3rem", width: "3rem" }} />
+          <Call sx={{ fill: "#fec405", height: "3rem", width: "3rem" }} />
           <div className="ml-4">
             <h2 className="uppercase tracking-widest font-semibold text_primary_color">
               шууд залга
@@ -193,7 +194,7 @@ const Navbar = ({ color }) => {
           px: "10px",
           color: `${textColor}`,
         }}
-        className='mobile_navbar'
+        className="mobile_navbar"
       >
         {list && (
           <span

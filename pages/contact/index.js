@@ -47,15 +47,16 @@ const Contact = () => {
             alignItems: "center",
             backgroundPosition: "center",
             backgroundSize: "cover",
+            paddingTop: '48px'
           }}
         >
           <span className="bg-black opacity-50 absolute inset-0 z-10"></span>
-          <div className="text-white relative z-20">
+          <div className="text-white relative z-20 flex flex-col items-center">
             <h1 className="text-4xl mb-6 font-semibold">Бидэнтэй холбогдох</h1>
             <div className="flex uppercase relative items-center z-20">
               <h5 className="uppercase mr-4 text-sm tracking-widest">нүүр</h5>
               <Circle
-                sx={{ marginRight: "1rem", width: "0.5rem", fill: "#b9a25f" }}
+                sx={{ marginRight: "1rem", width: "0.5rem", fill: "#fec405" }}
               />
               <h5 className="uppercase mr-4 text-sm tracking-widest">
                 бидэнтэй холбогдох
@@ -66,21 +67,21 @@ const Contact = () => {
         <div className="py-48 grid grid-cols-3 contact_grid gap-8">
           <div className="flex flex-col items-center py-16">
             <HomeRounded
-              sx={{ fill: "#b9a25f", width: "60px", height: "60px" }}
+              sx={{ fill: "#fec405", width: "60px", height: "60px" }}
             />
             <h2 className="text-2xl font-semibold my-6">Хаяг</h2>
             <p>СХД 8-р хороо Болгарын гудамж 27-802</p>
           </div>
           <div className="flex flex-col items-center py-16">
             <EmailRounded
-              sx={{ fill: "#b9a25f", width: "60px", height: "60px" }}
+              sx={{ fill: "#fec405", width: "60px", height: "60px" }}
             />
             <h2 className="text-2xl font-semibold my-6">Цахим хаяг</h2>
             <p>altantsetseg.b@homey.mn</p>
           </div>
           <div className="flex flex-col items-center contact_grid_item py-16">
             <LocalPhoneRounded
-              sx={{ fill: "#b9a25f", width: "60px", height: "60px" }}
+              sx={{ fill: "#fec405", width: "60px", height: "60px" }}
             />
             <h2 className="text-2xl font-semibold my-6">Утасны дугаар</h2>
             <p>+(976-11) 77005434 , 80115262</p>

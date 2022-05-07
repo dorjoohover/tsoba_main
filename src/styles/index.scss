@@ -285,6 +285,7 @@ max-width: 1300px;
     .link {
         opacity: 0;
         transform: translateY(-20px);
+        visibility: hidden;
     }
     &:hover {
         svg {
@@ -299,6 +300,7 @@ max-width: 1300px;
             transition: 0.5s;
             display: flex;
             flex-direction: column;
+            visibility: visible;
 
         }
     }

@@ -65,6 +65,7 @@ const Loan = () => {
           backgroundPosition: "center",
           backgroundSize: "cover",
           zIndex: 40,
+          paddingTop: "48px",
         }}
       >
         <span className="bg-black opacity-50 absolute inset-0 z-10"></span>
@@ -73,7 +74,7 @@ const Loan = () => {
           <div className="flex uppercase relative items-center z-20">
             <h5 className="uppercase mr-4 text-sm tracking-widest">Зээл</h5>
             <Circle
-              sx={{ marginRight: "1rem", width: "0.5rem", fill: "#b9a25f" }}
+              sx={{ marginRight: "1rem", width: "0.5rem", fill: "#fec405" }}
             />
             <h5 className="uppercase mr-4 text-sm tracking-widest">
               ДОТООД ЗАХИАЛАГЧ НАРТ
