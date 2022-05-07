@@ -14,13 +14,13 @@ const Header = () => {
         <div className="w-4/5 mx-auto header">
           <div className="relative z-30  ">
             <h5 className=" uppercase text-white text-xl mb-8">
-              Таны Хаус 24 цагт
+              Хаусаа 24 цагт
             </h5>
             <h1 className="text-white capitalize tracking-wider text-6xl font-bold leading-tight  header_text">
-              Homay <br /> Mortage
+              Хүлээлтээс давсан <br /> Хялбар санхүүжилт
             </h1>
             <Link href={"/request"}>
-              <a className="px-12 py-6 text-white font-semibold uppercase whitespace-nowrap bg_heading_color inline tracking-widest items-center request_btn">
+              <a className="px-12 py-6 text-white font-semibold uppercase whitespace-nowrap bg_color inline tracking-widest items-center request_btn">
                 Зээлийн хүсэлт авах
                 <ArrowRightAlt sx={{ marginLeft: "1rem" }} />
               </a>

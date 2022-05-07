@@ -20,7 +20,7 @@ const Footer = () => {
           <div className="flex-1  footer_left">
             <div className="w-48">
               <Image
-                src={"/img/logo.png"}
+                src={"/img/logo_footer.png"}
                 alt="logo"
                 height={1196}
                 width={2300}

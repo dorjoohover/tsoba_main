@@ -23,7 +23,7 @@ const Projects = () => {
         <div className="project_item_2">
           <div className=" mb-6 relative">
             <Image
-              src={"/img/project/img_1.png"}
+              src={"/img/project/sharLogo.jpg"}
               alt="project"
               layout="responsive"
               width={384}

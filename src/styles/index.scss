@@ -1,15 +1,14 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;200;300;400;500;600;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap');
 :root {
-    --primary-color: #b9a25f;
+    --primary-color: #fec405;
     --heading-color: #2d2e32;
-    --bg-color: #181818;
+    --bg-color: #171718;
 }
 * {
-    font-family: 'Noto Sans', sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .splide__pagination {
@@ -95,7 +94,7 @@ p {
     }
     h1 {
         font-family: 'Old Standard TT', serif;
-        color: #2d2e32;
+        color: var(--bg-color);
     }
 }
 .left {
@@ -236,6 +235,7 @@ max-width: 1300px;
         bottom: -15px;
         left: 0;
         z-index: 10;
+        color: var(--primary-color);
     }
 }
 .product_header {
@@ -270,7 +270,8 @@ max-width: 1300px;
 }
 
 .link {
-
+    background-color: #fff;
+    color: var(--bg-color);
     a {
         padding: 1rem 1.5rem;
         border-top: 1px solid #eee;
@@ -344,7 +345,7 @@ max-width: 1300px;
     }
     position: absolute !important;
     z-index: 100;
-    background-color: black;
+    background-color: var(--bg-color);
     padding:5%;
     overflow: hidden !important;
     cursor: pointer;
@@ -352,4 +353,7 @@ max-width: 1300px;
         height: 100% !important;
     }
 
+}
+.splide__arrow svg {
+    fill: #6cb872 !important;
 }

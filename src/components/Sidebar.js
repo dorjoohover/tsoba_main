@@ -1,7 +1,7 @@
 import { MailOutline, Call, LocationOn } from "@mui/icons-material";
 const Sidebar = () => {
   return (
-    <ul className="bg-neutral-900 absolute sidebar pl-10 pr-28 flex justify-between z-40 ">
+    <ul className="bg_color absolute sidebar pl-10 pr-28 flex justify-between z-40 ">
       {/* <li className="py-4 uppercase text-white tracking-wider flex items-center">
         <MailOutline sx={{ fill: "#b9a25f", paddingRight: "0.5rem" }} />
         Contact@tayta.com{" "}

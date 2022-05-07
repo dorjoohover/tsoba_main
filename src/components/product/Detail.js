@@ -65,7 +65,7 @@ export default function ProductDetail() {
       </div>
       <div className="detail grid py-48 grid-cols-3 gap-12">
         <div className="flex flex-col w-4/5 mx-auto text-justify items-center ">
-          <FireplaceRounded sx={{ width: "4rem", height: "4rem" }} />
+          <FireplaceRounded sx={{ width: "4rem", height: "4rem", fill: '#6cb872' }} />
           <h2 className="my-8 font-semibold text-3xl capitalize">халаалт</h2>
           <p>
             Карборобот Унгар улсын нам даралтын уурын зуух 8 ширхэг
@@ -74,7 +74,7 @@ export default function ProductDetail() {
           </p>
         </div>
         <div className="flex flex-col w-4/5 mx-auto text-justify items-center ">
-          <EditRoadRounded sx={{ width: "4rem", height: "4rem" }} />
+          <EditRoadRounded sx={{ width: "4rem", height: "4rem", fill: '#6cb872' }} />
           <h2 className="my-8 font-semibold text-3xl capitalize">зам</h2>
           <p>
             СБД Бэлхийн засмал замаар 16 км яваад, Бэлх Хадатын амаар 4.0 км
@@ -82,12 +82,12 @@ export default function ProductDetail() {
           </p>
         </div>
         <div className="flex flex-col w-4/5 mx-auto text-justify items-center ">
-          <ElectricalServicesRounded sx={{ width: "4rem", height: "4rem" }} />
+          <ElectricalServicesRounded sx={{ width: "4rem", height: "4rem", fill: '#6cb872' }} />
           <h2 className="my-8 font-semibold text-3xl capitalize">цахилгаан</h2>
           <p>КТПН 400 кВа 8 ш суурилуулагдана.</p>
         </div>
         <div className="flex flex-col w-4/5 mx-auto text-justify items-center ">
-          <WaterDamageRounded sx={{ width: "4rem", height: "4rem" }} />
+          <WaterDamageRounded sx={{ width: "4rem", height: "4rem", fill: '#6cb872' }} />
           <h2 className="my-8 font-semibold text-3xl capitalize">Цэвэр ус</h2>
           <p>
             Гүний худаг 120 м, 6 ш эх үүсвэртэй. 200 тн нөөцийн савтай, нэгдсэн
@@ -96,7 +96,7 @@ export default function ProductDetail() {
           </p>
         </div>
         <div className="flex flex-col w-4/5 mx-auto text-justify items-center ">
-          <CountertopsRounded sx={{ width: "4rem", height: "4rem" }} />
+          <CountertopsRounded sx={{ width: "4rem", height: "4rem", fill: '#6cb872' }} />
           <h2 className="my-8 font-semibold text-3xl capitalize">
             Бохирын систем
           </h2>
@@ -106,7 +106,7 @@ export default function ProductDetail() {
           </p>
         </div>
         <div className="flex flex-col w-4/5 mx-auto text-justify items-center ">
-          <CableRounded sx={{ width: "4rem", height: "4rem" }} />
+          <CableRounded sx={{ width: "4rem", height: "4rem", fill: '#6cb872' }} />
           <h2 className="my-8 font-semibold text-3xl capitalize">
             Харилцаа холбоо
           </h2>
