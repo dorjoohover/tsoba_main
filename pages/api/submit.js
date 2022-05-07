@@ -6,10 +6,11 @@ export default async function handler(req, res) {
   const body = req.body;
   console.log(body, req.query);
   try {
+    const private_key = process.env.GOOGLE_PRIVATE_KEY?.replace(/\\n/g, "\n");
     const auth = new google.auth.GoogleAuth({
       credentials: {
         client_email: process.env.GOOGLE_CLIENT_EMAIL,
-        private_key: process.env.GOOGLE_PRIVATE_KEY.replace(/\\n/g, "\n"),
+        private_key: private_key,
       },
       scopes: [
         "https://www.googleapis.com/auth/drive",
