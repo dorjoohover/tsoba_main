@@ -81,11 +81,42 @@ const Navbar = ({ color }) => {
             </Link>
           </li>
           <li
-            className={`text-${color} uppercase font-semibold tracking-wider mx-6`}
+            className={`text-${color} uppercase font-semibold tracking-wider mx-6 nav_btn`}
           >
-            <Link href={"/project"}>
-              <a>төсөл</a>
-            </Link>
+            <button
+              className={`text-${color} uppercase font-semibold tracking-wider px-6 flex items-center`}
+            >
+              төсөл
+              <ArrowDropDown
+                sx={[
+                  {
+                    fontSize: "1.5rem",
+                    marginLeft: "0.5rem",
+                    transition: "0.5s",
+                  },
+                ]}
+              />
+            </button>
+            <Box
+              sx={{
+                display: "flex",
+                flexDirection: "column",
+                position: "absolute",
+                top: "96px",
+                transition: "0.5s",
+                zIndex: "60",
+                background: `#fff`,
+                color: "#171718",
+              }}
+              className="link"
+            >
+              <Link href={"/project/khadat-villa-2"}>
+                <a>Хадат вилла 2</a>
+              </Link>
+              <Link href={"/project"}>
+                <a>Хадат вилла 4</a>
+              </Link>
+            </Box>
           </li>
           <li
             className={`text-${color} uppercase font-semibold tracking-wider  nav_btn`}

@@ -100,6 +100,28 @@ const LoanDetails = ({ items }) => {
                 </div>
               </>
             )}
+            {items == "external" && (
+              <>
+                <div>
+                  <ul>
+                    <h5 className="font-bold">ГАДААД ЗАХИАЛАГЧ НАРТ</h5>
+                    <li className="list-disc ml-4">
+                      Хувь хүнтэй холбоотой лавлагаанууд /E-mongolia/
+                    </li>
+                    <li className="list-disc ml-4">
+                      Цалингийн болон бизнесийн орлого нотлох баримт бичиг
+                    </li>
+                    <li className="list-disc ml-4">Дансны хуулга</li>
+                    <li className="list-disc ml-4">
+                      Бизнесийн үйл ажиллагаатай холбоотой бичиг баримт
+                    </li>
+                    <li className="list-disc ml-4">
+                      Монголд эсвэл гадаадад оршин суугааг нотлох баримт бичиг
+                    </li>
+                  </ul>
+                </div>
+              </>
+            )}
           </div>
         </div>
         <div className="flex-1">

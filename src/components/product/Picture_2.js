@@ -23,7 +23,6 @@ export default function Picture({ start, setStart }) {
               perPage: 1,
             },
           },
-          start: 3,
         }}
         className="relative z-20 product_picture_mini"
       >
@@ -32,7 +31,7 @@ export default function Picture({ start, setStart }) {
           <SplideSlide
             className="flex items-center relative z-20 "
             onClick={(splide, prev, next) => {
-              setStart(4);
+              setStart(0);
             }}
           >
             <Link href={"#splide_1"}>
@@ -46,7 +45,7 @@ export default function Picture({ start, setStart }) {
           <SplideSlide
             className="flex items-center relative z-20 "
             onClick={(splide, prev, next) => {
-              setStart(5);
+              setStart(1);
             }}
           >
             <Link href={"#splide_1"}>
@@ -60,7 +59,7 @@ export default function Picture({ start, setStart }) {
           <SplideSlide
             className="flex items-center relative z-20 "
             onClick={(splide, prev, next) => {
-              setStart(6);
+              setStart(2);
             }}
           >
             <Link href={"#splide_1"}>
@@ -74,7 +73,7 @@ export default function Picture({ start, setStart }) {
           <SplideSlide
             className="flex items-center relative z-20 "
             onClick={(splide, prev, next) => {
-              setStart(7);
+              setStart(3);
             }}
           >
             <Link href={"#splide_1"}>
@@ -88,7 +87,7 @@ export default function Picture({ start, setStart }) {
           <SplideSlide
             className="flex items-center relative z-20 "
             onClick={(splide, prev, next) => {
-              setStart(7);
+              setStart(4);
             }}
           >
             <Link href={"#splide_1"}>
@@ -128,7 +127,7 @@ export default function Picture({ start, setStart }) {
                 <Link href={"#splide"}>
                   <a className="w-full ">
                     <div className="flex justify-center w-full h-full">
-                      <img src={"/img/parthner/0008.jpg"} alt="asdf" />
+                      <img src={"/img/parthner/kh5.jpg"} alt="asdf" />
                     </div>
                   </a>
                 </Link>
@@ -142,7 +141,7 @@ export default function Picture({ start, setStart }) {
                 <Link href={"#splide"}>
                   <a className="w-full ">
                     <div className="flex justify-center w-full h-full">
-                      <img src={"/img/parthner/0009.jpg"} alt="asdf" />
+                      <img src={"/img/parthner/kh6.jpg"} alt="asdf" />
                     </div>
                   </a>
                 </Link>
@@ -156,7 +155,7 @@ export default function Picture({ start, setStart }) {
                 <Link href={"#splide"}>
                   <a className="w-full ">
                     <div className="flex justify-center w-full h-full">
-                      <img src={"/img/parthner/0010.jpg"} alt="asdf" />
+                      <img src={"/img/parthner/kh7.jpg"} alt="asdf" />
                     </div>
                   </a>
                 </Link>
@@ -170,7 +169,7 @@ export default function Picture({ start, setStart }) {
                 <Link href={"#splide"}>
                   <a className="w-full ">
                     <div className="flex justify-center w-full h-full">
-                      <img src={"/img/parthner/0011.jpg"} alt="asdf" />
+                      <img src={"/img/parthner/kh8.jpg"} alt="asdf" />
                     </div>
                   </a>
                 </Link>
@@ -184,53 +183,7 @@ export default function Picture({ start, setStart }) {
                 <Link href={"#splide"}>
                   <a className="w-full ">
                     <div className="flex justify-center w-full h-full">
-                      <img src={"/img/parthner/0012.jpg"} alt="asdf" />
-                    </div>
-                  </a>
-                </Link>
-              </SplideSlide>
-              <SplideSlide
-                className="flex items-center relative z-20 "
-                onClick={(splide, prev, next) => {
-                  setStart(-1);
-                }}
-              >
-                <Link href={"#splide"}>
-                  <a className="w-full ">
-                    <div className="flex justify-center w-full h-full">
-                      <img src={"/img/parthner/0013.jpg"} alt="asdf" />
-                    </div>
-                  </a>
-                </Link>
-              </SplideSlide>
-              <SplideSlide
-                className="flex items-center relative z-20 "
-                onClick={(splide, prev, next) => {
-                  setStart(-1);
-                }}
-              >
-                <Link href={"#splide"}>
-                  <a className="w-full ">
-                    <div className="flex justify-center w-full h-full">
-                      <img src={"/img/parthner/0014.jpg"} alt="asdf" />
-                    </div>
-                  </a>
-                </Link>
-              </SplideSlide>
-              <SplideSlide
-                className="flex items-center relative z-20 "
-                onClick={(splide, prev, next) => {
-                  setStart(-1);
-                }}
-              >
-                <Link href={"#splide"}>
-                  <a className="w-full ">
-                    <div className="flex justify-center w-full h-full">
-                      <img
-                        src={"/img/parthner/kitchen.png"}
-                        alt="asdf"
-                        className="w-full"
-                      />
+                      <img src={"/img/parthner/kh9.jpg"} alt="asdf" />
                     </div>
                   </a>
                 </Link>

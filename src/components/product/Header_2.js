@@ -10,15 +10,15 @@ export default function ProductHeader() {
     const intervalId = setInterval(() => {
       switch (index) {
         case 1:
-          setImg("02.jpg");
+          setImg("/parthner/kh5.jpg");
           setIndex(2);
           break;
         case 2:
-          setImg("03.jpg");
+          setImg("/parthner/kh6.jpg");
           setIndex(3);
           break;
         case 3:
-          setImg("04.jpg");
+          setImg("/parthner/kh7.jpg");
           setIndex(1);
           break;
         default:
@@ -83,7 +83,7 @@ export default function ProductHeader() {
               <h1
                 className={`uppercase text-6xl leading-tight font-bold text-gray-300`}
               >
-                хадат вилла 4 төсөл
+                хадат вилла 2 төсөл
               </h1>
             </div>
           </div>
