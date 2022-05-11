@@ -118,10 +118,10 @@ const Navbar = ({ color }) => {
               className="link"
             >
               <Link href={"/loans/external"}>
-                <a>гадаад харицагч</a>
+                <a>гадаад харилцагч</a>
               </Link>
               <Link href={"/loans/internal"}>
-                <a>дотоод харицагч</a>
+                <a>дотоод харилцагч</a>
               </Link>
               <Link href={"/request"}>
                 <a>зээлийн хүсэлт</a>
@@ -165,7 +165,7 @@ const Navbar = ({ color }) => {
           <Call sx={{ fill: "#fec405", height: "3rem", width: "3rem" }} />
           <div className="ml-4">
             <h2 className="uppercase tracking-widest font-semibold text_primary_color">
-              шууд залга
+              холбоо барих
             </h2>
             <h6 className={`text-${color} uppercase tracking-widest font-bold`}>
               (976-11) 7700 5434
@@ -255,10 +255,10 @@ const Navbar = ({ color }) => {
                 </button>
                 <div className="link">
                   <Link href={"/loans/external"}>
-                    <a>гадаад харицагч</a>
+                    <a>гадаад харилцагч</a>
                   </Link>
                   <Link href={"/loans/internal"}>
-                    <a>дотоод харицагч</a>
+                    <a>дотоод харилцагч</a>
                   </Link>
                   <Link href={"/request"}>
                     <a>зээлийн хүсэлт</a>

@@ -23,14 +23,14 @@ const Projects = () => {
         <div className="project_item_2">
           <div className=" mb-6 relative">
             <Image
-              src={"/img/project/sharLogo.jpg"}
+              src={"/img/project/kh2.jpg"}
               alt="project"
               layout="responsive"
               width={384}
               height={256}
             />
           </div>
-          <h2 className="text-2xl font-semibold mb-4">Тун удахгүй</h2>
+          <h2 className="text-2xl font-semibold mb-4">Хадат Вилла 2</h2>
           <button className="uppercase text-sm tracking-widest font-medium">
             цааш
           </button>

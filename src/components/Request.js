@@ -12,6 +12,9 @@ const Request = ({ formData, setFormData, handleForm }) => {
         <h1 className="font-bold text-6xl text-center mb-8">
           Зээлийн хүсэлт илгээх
         </h1>
+        <label htmlFor="address" className="mt-2 mx-3 text-sm font-bold">
+          Нэр
+        </label>
         <input
           type="text"
           placeholder="Овог, нэр"
@@ -38,6 +41,9 @@ const Request = ({ formData, setFormData, handleForm }) => {
           className="my-2"
           required
         />
+        <label htmlFor="address" className="mt-2 mx-3 text-sm font-bold">
+          Цахим хаяг
+        </label>
         <input
           type="email"
           name="email"
@@ -47,9 +53,12 @@ const Request = ({ formData, setFormData, handleForm }) => {
             setFormData((formData) => ({ ...formData, email: e.target.value }))
           }
           className="my-2"
-          placeholder="Цахим хаяг"
+          placeholder="example@email.com"
           required
         />
+        <label htmlFor="address" className="mt-2 mx-3 text-sm font-bold">
+        Хүсэж буй зээлийн хэмжээ
+        </label>
         <input
           type="number"
           name="loan"
@@ -58,10 +67,13 @@ const Request = ({ formData, setFormData, handleForm }) => {
           onChange={(e) =>
             setFormData((formData) => ({ ...formData, loan: e.target.value }))
           }
-          placeholder="Хүсэж буй зээлийн хэмжээ"
+          placeholder="Тоогоор"
           className="my-2 flex-1"
           required
         />
+        <label htmlFor="address" className="mt-2 mx-3 text-sm font-bold">
+        Регистрийн дугаар
+        </label>
         <input
           type="text"
           name="register"
@@ -78,7 +90,7 @@ const Request = ({ formData, setFormData, handleForm }) => {
           required
         />
         <label htmlFor="address" className="mt-2 mx-3 text-sm font-bold">
-          Одоо оршин суугаа байршил
+          Гэрийн хаяг
         </label>
         <input
           type="text"

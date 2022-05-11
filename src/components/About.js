@@ -6,7 +6,7 @@ const About = () => {
       <div className="relative about_left p-3">
         <div className="relative about_img_1 z-10">
           <Image
-            src={"/img/01.jpg"}
+            src={"/img/about01.png"}
             alt="about"
             layout="responsive"
             width={453}
@@ -27,7 +27,7 @@ const About = () => {
         <div className="about_right">
           <Title
             title={"Товч танилцуулга"}
-            subtitle={"overview"}
+            subtitle={"Homey Mortage"}
             items={"left"}
           />
           <p className="mt-10 mb-4">
