@@ -25,7 +25,7 @@ const Product = () => {
 					<ProductHeader />
 					<ProductDetail />
 
-					<div className="product_picture" id="splide"></div>
+					<div className="product_picture_2" id="splide"></div>
 					<Picture start={start} setStart={setStart} />
 
 					<Footer />
