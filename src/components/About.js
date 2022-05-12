@@ -6,11 +6,12 @@ const About = () => {
       <div className="relative about_left p-3">
         <div className="relative about_img_1 z-10">
           <Image
+            className="about-image-ext"
             src={"/img/about01.png"}
             alt="about"
             layout="responsive"
             width={453}
-            height={600}
+            height={"350%"}
           />
         </div>
         {/* <div className="relative about_img_2 z-20">
