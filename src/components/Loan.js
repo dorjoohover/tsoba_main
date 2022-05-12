@@ -16,7 +16,7 @@ const Loans = () => {
         <div className="mr-24 loan_grid">
           <div className=" relative">
             <Image
-              src={"/img/logo-homey.png"}
+              src={"/img/smile01.jpg"}
               alt="loan"
               layout="responsive"
               width={500}
@@ -36,7 +36,7 @@ const Loans = () => {
         <div className="loan_grid">
           <div className=" relative">
             <Image
-              src={"/img/logo-homey.png"}
+              src={"/img/smile01.jpg"}
               alt="loan"
               layout="responsive"
               width={500}
