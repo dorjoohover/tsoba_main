@@ -152,12 +152,13 @@ p {
     max-width: 768px;
     margin: 0 auto;
     padding: 7% 6%;
-    background-color: white;
+    background-color: rgba($color: #fff, $alpha: 0.85);
     box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.1);
 
     input {
       border: none;
       border-bottom: 1px solid #bababa;
+      background-color: transparent;
     }
 
     label {

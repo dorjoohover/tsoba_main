@@ -173,7 +173,7 @@ p {
   max-width: 768px;
   margin: 0 auto;
   padding: 7% 6%;
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.85);
   -webkit-box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.1);
           box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.1);
 }
@@ -181,6 +181,7 @@ p {
 .request form input {
   border: none;
   border-bottom: 1px solid #bababa;
+  background-color: transparent;
 }
 
 .request form label {

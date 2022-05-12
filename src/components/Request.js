@@ -13,14 +13,18 @@ const Request = ({ formData, setFormData, handleForm }) => {
           Зээлийн хүсэлт илгээх
         </h1>
         <p className="mt-4 mb-4">
-          Гадаадад амьдарч буй Монгол улсын иргэдийг  “Homey Mortgage”-ээс амины орон сууц худалдан авахад зээлд хамрагдах боломжтой эсэхээ шалгуулаарай.
+          Гадаадад амьдарч буй Монгол улсын иргэдийг “Homey Mortgage”-ээс амины
+          орон сууц худалдан авахад зээлд хамрагдах боломжтой эсэхээ
+          шалгуулаарай.
         </p>
-          
+
         <p className="mb-4">
-          Та манай “Homey Mortgage”-ээс өөрийн мөрөөдлийн амины орон сууцаа худалдан аваарай.
+          Та манай “Homey Mortgage”-ээс өөрийн мөрөөдлийн амины орон сууцаа
+          худалдан аваарай.
         </p>
         <p className="mb-6">
-        Доорх хүснэгтийг бөглөснөөр манай зээлийн мэргэжилтэн тантай холбогдох болно.
+          Доорх хүснэгтийг бөглөснөөр манай зээлийн мэргэжилтэн тантай холбогдох
+          болно.
         </p>
         <label htmlFor="address" className="mt-2 mx-3 text-sm font-bold">
           Нэр
@@ -67,7 +71,7 @@ const Request = ({ formData, setFormData, handleForm }) => {
           required
         />
         <label htmlFor="address" className="mt-2 mx-3 text-sm font-bold">
-        Хүсэж буй зээлийн хэмжээ
+          Хүсэж буй зээлийн хэмжээ
         </label>
         <input
           type="number"
@@ -82,7 +86,7 @@ const Request = ({ formData, setFormData, handleForm }) => {
           required
         />
         <label htmlFor="address" className="mt-2 mx-3 text-sm font-bold">
-        Регистрийн дугаар
+          Регистрийн дугаар
         </label>
         <input
           type="text"
