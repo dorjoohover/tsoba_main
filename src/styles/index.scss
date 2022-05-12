@@ -27,7 +27,7 @@ p {
   color: var(--primary-color);
 }
 .bg_primary_color {
-  background-color: var(--primary-color);
+  background-color: var(--primary-color) !important;
 }
 .bg_color {
   background-color: var(--bg-color);
@@ -159,6 +159,9 @@ p {
       border: none;
       border-bottom: 1px solid #bababa;
       background-color: transparent;
+    }
+    .btn-ext {
+      background-color: #fff;
     }
 
     label {

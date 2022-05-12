@@ -158,7 +158,7 @@ const Request = ({ formData, setFormData, handleForm }) => {
         <input
           type="submit"
           value="Илгээх"
-          className="uppercase text-center text-white bg_primary_color py-4 mt-5 cursor-pointer font-bold"
+          className="uppercase text-center text-white bg_primary_color py-4 mt-5 cursor-pointer font-bold btn-ext"
         />
       </form>
     </div>
