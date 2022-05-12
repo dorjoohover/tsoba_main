@@ -24,7 +24,9 @@ const Loans = () => {
             />
           </div>
           <div className="px-6 py-8 bg-white">
-            <h5 className="text_primary_color uppercase mb-2">зээл</h5>
+            <h5 className="text_primary_color uppercase mb-2">
+              <b> зээл</b>
+            </h5>
             <h2 className="capitalize font-bold text-3xl tracking-wider mb-6 font-medium">
               гадаад харилцагч
             </h2>
@@ -42,7 +44,9 @@ const Loans = () => {
             />
           </div>
           <div className="px-6 py-8 bg-white">
-            <h5 className="text_primary_color uppercase mb-2">зээл</h5>
+            <h5 className="text_primary_color uppercase mb-2">
+              <b> зээл</b>
+            </h5>
             <h2 className="capitalize font-bold text-3xl tracking-wider mb-6 font-medium">
               дотоод харилцагч
             </h2>
