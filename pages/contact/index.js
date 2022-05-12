@@ -83,7 +83,7 @@ const Contact = () => {
               sx={{ fill: "#fec405", width: "60px", height: "60px" }}
             />
             <h2 className="text-2xl font-semibold my-6">Цахим хаяг</h2>
-            <p>altantsetseg.b@homey.mn</p>
+            <p>info@homey.mn</p>
           </div>
           <div className="flex flex-col items-center contact_grid_item py-16">
             <LocalPhoneRounded

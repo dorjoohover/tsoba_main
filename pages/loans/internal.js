@@ -60,7 +60,7 @@ const Loan = () => {
       </Head>
       <Navbar />
 
-      <Box
+      <WEB Project
         sx={{
           height: "35vh",
           backgroundImage: "url('/img/contact.jpg')",
@@ -87,7 +87,7 @@ const Loan = () => {
             </h5>
           </div>
         </div>
-      </Box>
+      </WEB Project>
       <Box
         sx={{
           backgroundImage: {

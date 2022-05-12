@@ -34,7 +34,7 @@ const Footer = () => {
               </li>
               <li className="text-white mb-2">
                 <MailOutline sx={{ paddingRight: "0.5rem", fill: "white" }} />{" "}
-                altantsetseg.b@homey.mn
+                info@homey.mn
               </li>
               <li className="text-white mb-2">
                 <Room sx={{ paddingRight: "0.5rem", fill: "white" }} /> СХД 8-р

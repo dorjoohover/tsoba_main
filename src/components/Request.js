@@ -9,9 +9,19 @@ const Request = ({ formData, setFormData, handleForm }) => {
         onSubmit={handleForm}
         className="flex flex-col mx-auto relative z-30  "
       >
-        <h1 className="font-bold text-6xl text-center mb-8">
+        <h1 className="font-bold text-4xl text-center mb-8">
           Зээлийн хүсэлт илгээх
         </h1>
+        <p className="mt-4 mb-4">
+          Гадаадад амьдарч буй Монгол улсын иргэдийг  “Homey Mortgage”-ээс амины орон сууц худалдан авахад зээлд хамрагдах боломжтой эсэхээ шалгуулаарай.
+        </p>
+          
+        <p className="mb-4">
+          Та манай “Homey Mortgage”-ээс өөрийн мөрөөдлийн амины орон сууцаа худалдан аваарай.
+        </p>
+        <p className="mb-6">
+        Доорх хүснэгтийг бөглөснөөр манай зээлийн мэргэжилтэн тантай холбогдох болно.
+        </p>
         <label htmlFor="address" className="mt-2 mx-3 text-sm font-bold">
           Нэр
         </label>
@@ -31,7 +41,7 @@ const Request = ({ formData, setFormData, handleForm }) => {
         </label>
         <input
           type="tel"
-          placeholder="88998899 эсвэл 976-999-99-999"
+          placeholder="Олон улсын гарах кодын хамт оруулаарай."
           value={formData.phone}
           name="name"
           pattern="[0-9]{8}|[0-9]{3}-[0-9]{2}-[0-9]{3}"

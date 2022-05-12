@@ -5,7 +5,7 @@ const Title = ({ title, subtitle, items, color }) => {
         {subtitle}
       </h5>
       <h1
-        className={`capitalize text-6xl leading-tight font-bold text-gray-300`}
+        className={`capitalize text-4xl leading-tight font-bold text-gray-300`}
       >
         {title}
       </h1>
