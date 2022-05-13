@@ -312,7 +312,7 @@ const Navbar = ({ color }) => {
         )}
         <div className="flex items-center py-3 mobile_nav_logo w-28">
           <Image
-            src={"/img/logo.png"}
+            src={`/img/${logo}`}
             alt="logo"
             width={2300}
             height={1196}
