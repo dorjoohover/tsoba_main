@@ -11,19 +11,19 @@ const Navbar = ({ color }) => {
   const [scrollY, setScrollY] = useState("flex");
   const [bgColor, setBgColor] = useState("transparent");
   const [textColor, setColor] = useState("white");
-  const [logo, setLogo] = useState('homey_white.png')
+  const [logo, setLogo] = useState("homey_white.png");
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 0 && window.scrollY < 600) {
         setScrollY("none");
         setBgColor("transparent");
         setColor("white");
-        setLogo('homey_white.png')
+        setLogo("homey_white.png");
       } else if (window.scrollY >= 600) {
         setScrollY("flex");
         setBgColor("white");
         setColor("black");
-        setLogo('logo.png')
+        setLogo("logo.png");
       } else {
         setScrollY("flex");
       }
@@ -327,7 +327,7 @@ const Navbar = ({ color }) => {
                 locale: "en",
               });
             }}
-            className={`text-${color} uppercase font-semibold opacity-0 tracking-wider mx-6 cursor-pointer`}
+            className={`text-${color} uppercase font-semibold opacity-0 tracking-wider cursor-pointer`}
           >
             <p>en</p>
           </div>
@@ -339,7 +339,7 @@ const Navbar = ({ color }) => {
                 locale: "mn",
               });
             }}
-            className={`text-${color} uppercase font-semibold opacity-0 tracking-wider mx-6 cursor-pointer`}
+            className={`text-${color} uppercase font-semibold opacity-0 tracking-wider cursor-pointer`}
           >
             <p>мн</p>
           </div>
