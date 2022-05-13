@@ -3,11 +3,13 @@ import Title from "../Title";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 import Image from "next/image";
 import { Box } from "@mui/material";
+import LoadingScreen from "../Loading";
 export default function ProductHeader() {
   const [img, setImg] = useState("");
   const [index, setIndex] = useState(1);
+  const [loading, setLoading] = useState(true);
   useEffect(() => {
-    const intervalId = setInterval(() => {
+    const intervalId = setTimeout(() => {
       switch (index) {
         case 1:
           setImg("02.jpg");
@@ -27,8 +29,10 @@ export default function ProductHeader() {
     }, 5000);
     return () => {
       clearInterval(intervalId);
+      setLoading(false);
     };
   }, [index, setImg]);
+  if (loading) return <LoadingScreen />;
   return (
     <>
       {img && (
