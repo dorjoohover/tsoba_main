@@ -50,12 +50,12 @@ export default function ProductDetail() {
             />
           </div>
         </div>
-        <div className="absolute w-2/3 flex justify-around banner bg-white px-12 py-16">
+        <div className="absolute w-2/3 flex justify-around bg-white px-12 py-16 banner">
           <span className="text-center">
-            <h1 className="text-6xl font-bold mb-2">80мк<sup>2</sup></h1>
-            <h6 className="uppercase">
-            Талбайн хэмжээ
-            </h6>
+            <h1 className="text-6xl font-bold mb-2">
+              80мк<sup>2</sup>
+            </h1>
+            <h6 className="uppercase">Талбайн хэмжээ</h6>
           </span>
           <span className="text-center">
             <h1 className="text-6xl font-bold mb-2">2</h1>

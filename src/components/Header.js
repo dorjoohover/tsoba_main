@@ -7,12 +7,15 @@ const Header = () => {
   //   console.log({t("home: dorj")});
   return (
     <>
-      <div className="text-white bg-black bg_header  relative">
+      <div
+        id="bg-header-id"
+        className="text-white bg-black bg_header  relative"
+      >
         <Sidebar />
         <span className="bg-black inset-0 opacity-50 absolute z-20"></span>
         <h1 className="relative z-30"></h1>
         <div className="w-4/5 mx-auto header">
-          <div className="relative z-30  ">
+          <div className="relative z-30 ">
             <h5 className=" uppercase text-white text-xl mb-8">
               Хаусаа 24 цагт
             </h5>

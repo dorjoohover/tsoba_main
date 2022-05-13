@@ -5,7 +5,7 @@ import { Call } from "@mui/icons-material";
 import { useEffect, useState } from "react";
 import { Box } from "@mui/material";
 import { List, ArrowDropDown } from "@mui/icons-material";
-const Navbar = ({ color }) => {
+const Navbar = ({ color, check_bg }) => {
   const router = useRouter();
   const [list, setList] = useState(false);
   const [scrollY, setScrollY] = useState("flex");
@@ -14,6 +14,18 @@ const Navbar = ({ color }) => {
   const [logo, setLogo] = useState("homey_white.png");
   useEffect(() => {
     const handleScroll = () => {
+      if (window.scrollY == 0) {
+        if (check_bg != "home") {
+          setBgColor("white");
+          setColor("black");
+          setLogo("logo.png");
+        } else {
+          console.log("yes");
+          setBgColor("transparent");
+          setColor("white");
+          setLogo("homey_white.png");
+        }
+      }
       if (window.scrollY > 0 && window.scrollY < 600) {
         setScrollY("none");
         setBgColor("transparent");
@@ -72,7 +84,7 @@ const Navbar = ({ color }) => {
           color: `${textColor}`,
         }}
       >
-        <div className="flex items-center h-24  w-auto relative">
+        <div className="flex items-center h-24  w-auto relative nav-bg-color">
           <Image src={`/img/${logo}`} alt="logo" width={166.6} height={90} />
         </div>
         <ul className="flex items-center">
@@ -207,6 +219,7 @@ const Navbar = ({ color }) => {
           </div>
         </div>
       </Box>
+
       <Box
         sx={{
           display: {
@@ -227,6 +240,7 @@ const Navbar = ({ color }) => {
           alignItems: "center",
           px: "10px",
           color: `${textColor}`,
+          backgroundColor: `${bgColor}`,
         }}
         className="mobile_navbar"
       >
@@ -238,7 +252,7 @@ const Navbar = ({ color }) => {
         )}
         {!list && (
           <List
-            sx={{ fontSize: "36px", cursor: "pointer" }}
+            sx={{ fontSize: "36px", cursor: "pointer", fill: `${textColor}` }}
             onClick={() => setList(true)}
           />
         )}
@@ -264,11 +278,30 @@ const Navbar = ({ color }) => {
                 </Link>
               </li>
               <li
-                className={`text-${color} uppercase font-semibold tracking-wider mx-6 py-4`}
+                className={`text-${color} uppercase font-semibold tracking-wider py-4 nav_btn_mobile`}
               >
-                <Link href={"/project"}>
-                  <a>төсөл</a>
-                </Link>
+                <button
+                  className={`text-${color} uppercase font-semibold tracking-wider mx-6 py-4 flex items-center px-0`}
+                >
+                  төсөл
+                  <ArrowDropDown
+                    sx={[
+                      {
+                        fontSize: "1.5rem",
+                        marginLeft: "0.5rem",
+                        transition: "0.5s",
+                      },
+                    ]}
+                  />
+                </button>
+                <div className="link">
+                  <Link href={"/project/khadat-villa-2"}>
+                    <a>хадат вилла</a>
+                  </Link>
+                  <Link href={"/project"}>
+                    <a>хадат вилла 2</a>
+                  </Link>
+                </div>
               </li>
               <li
                 className={`text-${color} uppercase font-semibold tracking-wider  nav_btn_mobile`}

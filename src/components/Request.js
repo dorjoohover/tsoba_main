@@ -2,7 +2,7 @@ import Image from "next/image";
 import Parthner from "./Parthner";
 const Request = ({ formData, setFormData, handleForm }) => {
   return (
-    <div className="request relative">
+    <div id="request" className="request relative">
       <span className="absolute bg-white bottom-0 z-10 h-2/5 w-full"></span>
       <form
         action=""
@@ -19,7 +19,6 @@ const Request = ({ formData, setFormData, handleForm }) => {
           холбогдох болно.
         </p>
 
-        
         <label htmlFor="address" className="mt-2 mx-3 text-sm font-bold">
           Нэр
         </label>
