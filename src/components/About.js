@@ -7,7 +7,7 @@ const About = () => {
         <div className="relative about_img_1 z-10">
           <Image
             className="about-image-ext"
-            src={"/img/about01.png"}
+            src={"/img/01.png"}
             alt="about"
             layout="responsive"
             width={453}

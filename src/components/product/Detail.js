@@ -52,9 +52,9 @@ export default function ProductDetail() {
         </div>
         <div className="absolute w-2/3 flex justify-around banner bg-white px-12 py-16">
           <span className="text-center">
-            <h1 className="text-6xl font-bold mb-2">80</h1>
+            <h1 className="text-6xl font-bold mb-2">80мк<sup>2</sup></h1>
             <h6 className="uppercase">
-              мк<sup>2</sup>
+            Талбайн хэмжээ
             </h6>
           </span>
           <span className="text-center">
@@ -62,8 +62,8 @@ export default function ProductDetail() {
             <h6 className="uppercase">давхар</h6>
           </span>
           <span className="text-center">
-            <h1 className="text-6xl font-bold mb-2">195</h1>
-            <h6 className="uppercase">сая</h6>
+            <h1 className="text-6xl font-bold mb-2">195 сая</h1>
+            <h6 className="uppercase">Захиалга авч буй анхны үнэ</h6>
           </span>
           {/* <span className="text-center">
             <h1 className="text-6xl font-bold mb-2">95</h1>

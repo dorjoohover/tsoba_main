@@ -11,16 +11,19 @@ const Navbar = ({ color }) => {
   const [scrollY, setScrollY] = useState("flex");
   const [bgColor, setBgColor] = useState("transparent");
   const [textColor, setColor] = useState("white");
+  const [logo, setLogo] = useState('homey_white.png')
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 0 && window.scrollY < 600) {
         setScrollY("none");
         setBgColor("transparent");
         setColor("white");
+        setLogo('homey_white.png')
       } else if (window.scrollY >= 600) {
         setScrollY("flex");
         setBgColor("white");
         setColor("black");
+        setLogo('logo.png')
       } else {
         setScrollY("flex");
       }
@@ -70,7 +73,7 @@ const Navbar = ({ color }) => {
         }}
       >
         <div className="flex items-center h-24  w-auto relative">
-          <Image src={"/img/logo.png"} alt="logo" width={166.6} height={96} />
+          <Image src={`/img/${logo}`} alt="logo" width={166.6} height={90} />
         </div>
         <ul className="flex items-center">
           <li
@@ -149,10 +152,10 @@ const Navbar = ({ color }) => {
               className="link"
             >
               <Link href={"/loans/external"}>
-                <a>гадаад харилцагч</a>
+                <a>гадаад дахь харилцагч</a>
               </Link>
               <Link href={"/loans/internal"}>
-                <a>дотоод харилцагч</a>
+                <a>дотоод дахь харилцагч</a>
               </Link>
               <Link href={"/request"}>
                 <a>зээлийн хүсэлт</a>

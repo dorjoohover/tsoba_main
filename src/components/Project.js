@@ -5,7 +5,7 @@ const Projects = () => {
 	return (
 		<div className="mx-auto  projects mb-32">
 			<Title
-				title={'Хотхоны сонголт'}
+				title={'Хаус хотхоны сонголт'}
 				subtitle={'ТӨСӨЛ'}
 				items={'center'}
 			/>

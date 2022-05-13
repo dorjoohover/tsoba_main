@@ -16,12 +16,12 @@ const Header = () => {
             <h5 className=" uppercase text-white text-xl mb-8">
               Хаусаа 24 цагт
             </h5>
-            <h1 className="text-white capitalize tracking-wider text-6xl font-bold leading-tight  header_text">
+            <h1 className="text-white capitalize tracking-wider text-6xl font-semibold leading-tight  header_text">
               Хүлээлтээс давсан <br /> Хялбар санхүүжилт
             </h1>
             <Link href={"/request"}>
               <a className="px-12 py-6 text-white font-semibold uppercase whitespace-nowrap bg_color inline tracking-widest items-center request_btn">
-                Зээлийн хүсэлт авах
+                Зээлийн хүсэлт илгээх
                 <ArrowRightAlt sx={{ marginLeft: "1rem" }} />
               </a>
             </Link>

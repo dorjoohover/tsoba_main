@@ -70,58 +70,6 @@ const LoanDetails = ({ items }) => {
               өөрийн санхүүгийн чадамжид суурилсан төлбөрийн графикаар төлөх
               боломжийг олгоно.
             </p>
-
-            {items == "internal" && (
-              <>
-                <div>
-                  <ul>
-                    <h5 className="font-bold">ДОТООД ЗАХИАЛАГЧ НАРТ</h5>
-                    <li className="list-disc ml-4">
-                      Монгол улсын иргэн болон хуулийн этгээд байх
-                    </li>
-                    <li className="list-disc ml-4">
-                      Эрхзүйн бүрэн чадамжтай байх
-                    </li>
-                    <li className="list-disc ml-4">
-                      Орлогын тогтмол эх үүсвэртэй байх
-                    </li>
-                    <li className="list-disc ml-4">
-                      Тогтвортой ажилласан болон бизнес эрхэлсэн хугацаа 6
-                      сараас дээш байх
-                    </li>
-                    <li className="list-disc ml-4">
-                      Хүсэж буй зээлийн дүн худалдан авч байгаа ҮХХ-ийн үнийн
-                      дүнгийн 70% -аас хэтрэхгүй байх
-                    </li>
-                    <li className="list-disc ml-4">
-                      Хугацаа хэтэрсэн чанаргүй зээлийн үлдэгдэлгүй байх
-                    </li>
-                  </ul>
-                </div>
-              </>
-            )}
-            {items == "external" && (
-              <>
-                <div>
-                  <ul>
-                    <h5 className="font-bold">ГАДААД ЗАХИАЛАГЧ НАРТ</h5>
-                    <li className="list-disc ml-4">
-                      Хувь хүнтэй холбоотой лавлагаанууд /E-mongolia/
-                    </li>
-                    <li className="list-disc ml-4">
-                      Цалингийн болон бизнесийн орлого нотлох баримт бичиг
-                    </li>
-                    <li className="list-disc ml-4">Дансны хуулга</li>
-                    <li className="list-disc ml-4">
-                      Бизнесийн үйл ажиллагаатай холбоотой бичиг баримт
-                    </li>
-                    <li className="list-disc ml-4">
-                      Монголд эсвэл гадаадад оршин суугааг нотлох баримт бичиг
-                    </li>
-                  </ul>
-                </div>
-              </>
-            )}
           </div>
         </div>
         <div className="flex-1">
@@ -403,6 +351,111 @@ const LoanDetails = ({ items }) => {
                   </tr>
                 </table>
               )}
+            </AccordionDetails>
+          </Accordion>
+          <Accordion
+            expanded={expanded === "panel3"}
+            onChange={handleChange("panel3")}
+            sx={{ border: "none", background: "transparent" }}
+          >
+            <AccordionSummary
+              aria-controls="panel3d-content"
+              id="panel3d-header"
+              sx={{
+                backgroundColor: "transparent",
+                borderBottom: "1px solid #eee",
+                flexDirection: "row",
+                padding: "10px 0",
+              }}
+            >
+              <Typography
+                sx={{
+                  fontSize: "18px",
+                  fontWeight: "600",
+                  letterSpacing: "2px",
+                  color: "#2d2e32",
+                  lineHeight: "1.4",
+                }}
+              >
+                ТАВИГДАХ ШААРДЛАГА
+              </Typography>
+            </AccordionSummary>
+            <AccordionDetails sx={{ padding: "30px 0", fontSize: "1rem" }}>
+              <>
+                <div>
+                  <ul>
+                    <li className="list-disc ml-4">
+                      Монгол улсын иргэн болон хуулийн этгээд байх
+                    </li>
+                    <li className="list-disc ml-4">
+                      Эрхзүйн бүрэн чадамжтай байх
+                    </li>
+                    <li className="list-disc ml-4">
+                      Орлогын тогтмол эх үүсвэртэй байх
+                    </li>
+                    <li className="list-disc ml-4">
+                      Тогтвортой ажилласан болон бизнес эрхэлсэн хугацаа 6
+                      сараас дээш байх
+                    </li>
+                    <li className="list-disc ml-4">
+                      Хүсэж буй зээлийн дүн худалдан авч байгаа ҮХХ-ийн үнийн
+                      дүнгийн 70% -аас хэтрэхгүй байх
+                    </li>
+                    <li className="list-disc ml-4">
+                      Хугацаа хэтэрсэн чанаргүй зээлийн үлдэгдэлгүй байх
+                    </li>
+                  </ul>
+                </div>
+              </>
+            </AccordionDetails>
+          </Accordion>
+          <Accordion
+            expanded={expanded === "panel4"}
+            onChange={handleChange("panel4")}
+            sx={{ border: "none", background: "transparent" }}
+          >
+            <AccordionSummary
+              aria-controls="panel4d-content"
+              id="panel4d-header"
+              sx={{
+                backgroundColor: "transparent",
+                borderBottom: "1px solid #eee",
+                flexDirection: "row",
+                padding: "10px 0",
+              }}
+            >
+              <Typography
+                sx={{
+                  fontSize: "18px",
+                  fontWeight: "600",
+                  letterSpacing: "2px",
+                  color: "#2d2e32",
+                  lineHeight: "1.4",
+                }}
+              >
+                БҮРДҮҮЛЭХ МАТЕРИАЛИЙН ЖАГШААЛТ
+              </Typography>
+            </AccordionSummary>
+            <AccordionDetails sx={{ padding: "30px 0", fontSize: "1rem" }}>
+              <>
+                <div>
+                  <ul>
+                    <li className="list-disc ml-4">
+                      Хувь хүнтэй холбоотой лавлагаанууд /E-Mongolia/
+                    </li>
+                    <li className="list-disc ml-4">
+                      Цалингийн болон бизнесийн орлого нотлох баримт бичиг
+                    </li>
+                    <li className="list-disc ml-4">Дансны хуулга</li>
+                    <li className="list-disc ml-4">
+                      Бизнесийн үйл ажиллагаатай холбоотой бичиг баримт
+                    </li>
+                    <li className="list-disc ml-4">
+                      Монголд эсвэл гадаадад оршин суугааг нотлох баримт бичиг
+                    </li>
+                  </ul>
+                </div>
+              </>
             </AccordionDetails>
           </Accordion>
         </div>

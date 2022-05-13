@@ -39,6 +39,9 @@ p {
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-size: cover;
+	-webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
 }
 .bg_heading_color {
 	background: var(--heading-color);
@@ -115,6 +118,9 @@ p {
 	background-attachment: fixed;
 	background-repeat: no-repeat;
 	background-size: cover;
+	-webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
 	background-position: center center;
 	padding: 108px 10%;
 	.img {
@@ -143,6 +149,9 @@ p {
 	background-attachment: fixed;
 	background-repeat: no-repeat;
 	background-size: cover;
+	-webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
 	background-position: center center;
 	width: 100%;
 	// padding: 108px 0;
@@ -181,6 +190,9 @@ p {
 	background-image: url('../../public/img/footer.png');
 	background-repeat: no-repeat;
 	background-size: cover;
+	-webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
 	background-position: center center;
 	&_container {
 		max-width: 1300px;
@@ -246,6 +258,9 @@ p {
 	background-repeat: no-repeat;
 	background-position: center center;
 	background-size: cover;
+	-webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
 	background-attachment: fixed;
 }
 .product_picture_2 {
@@ -356,8 +371,4 @@ p {
 }
 .splide__arrow svg {
 	fill: #6cb872 !important;
-}
-.about-image-ext {
-	min-height: 150% !important;
-	max-height: 150% !important;
 }
