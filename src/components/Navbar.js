@@ -296,10 +296,10 @@ const Navbar = ({ color, check_bg }) => {
                 </button>
                 <div className="link">
                   <Link href={"/project/khadat-villa-2"}>
-                    <a>хадат вилла</a>
+                    <a>хадат вилла 2</a>
                   </Link>
                   <Link href={"/project"}>
-                    <a>хадат вилла 2</a>
+                    <a>хадат вилла 4</a>
                   </Link>
                 </div>
               </li>
