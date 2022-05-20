@@ -76,7 +76,7 @@ export default function ProductDetail() {
             sx={{
               width: "4rem",
               height: "4rem",
-              fill: "#6cb872",
+              fill: "#fec405",
             }}
           />
           <h2 className="my-8 font-semibold text-3xl capitalize">халаалт</h2>
@@ -91,7 +91,7 @@ export default function ProductDetail() {
             sx={{
               width: "4rem",
               height: "4rem",
-              fill: "#6cb872",
+              fill: "#fec405",
             }}
           />
           <h2 className="my-8 font-semibold text-3xl capitalize">зам</h2>
@@ -105,7 +105,7 @@ export default function ProductDetail() {
             sx={{
               width: "4rem",
               height: "4rem",
-              fill: "#6cb872",
+              fill: "#fec405",
             }}
           />
           <h2 className="my-8 font-semibold text-3xl capitalize">цахилгаан</h2>
@@ -116,7 +116,7 @@ export default function ProductDetail() {
             sx={{
               width: "4rem",
               height: "4rem",
-              fill: "#6cb872",
+              fill: "#fec405",
             }}
           />
           <h2 className="my-8 font-semibold text-3xl capitalize">Цэвэр ус</h2>
@@ -131,7 +131,7 @@ export default function ProductDetail() {
             sx={{
               width: "4rem",
               height: "4rem",
-              fill: "#6cb872",
+              fill: "#fec405",
             }}
           />
           <h2 className="my-8 font-semibold text-3xl capitalize">
@@ -147,7 +147,7 @@ export default function ProductDetail() {
             sx={{
               width: "4rem",
               height: "4rem",
-              fill: "#6cb872",
+              fill: "#fec405",
             }}
           />
           <h2 className="my-8 font-semibold text-3xl capitalize">

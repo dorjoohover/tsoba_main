@@ -1,12 +1,12 @@
 import Title from "./Title";
 import Image from "next/image";
 import Link from "next/link";
-import { ArrowRightAlt, AccountBalance } from "@mui/icons-material";
-import { Box, Grid, Typography } from "@mui/material";
+import { ArrowRightAlt, AccountBalance, DateRange, House, PriceCheck } from "@mui/icons-material";
+import { Box, Grid, Typography,  } from "@mui/material";
 
 const InternalLoan = () => {
   return (
-    <Box sx={{ maxWidth: "1300px", margin: "90px auto" }}>
+    <Box sx={{ maxWidth: "1300px", margin: "90px auto", padding: '10px' }}>
       <Box
         sx={{
           display: "flex",
@@ -17,12 +17,12 @@ const InternalLoan = () => {
       >
         <Title
           subtitle={"Зээлийн мэдээлэл"}
-          title={"Гадаадад оршин суугаа харилцагчдад"}
+          title={"Дотоодод оршин суугаа харилцагчдад"}
         />
         <Box sx={{ width: "50%", display: "block", textAlign: "end" }}>
-          <Link href={"/request"}>
+          <Link href={"/loans/internal"}>
             <a className="px-12 py-6 text-white font-semibold uppercase whitespace-nowrap bg_color inline tracking-widest items-center request_btn">
-              Зээлийн хүсэлт илгээх
+              Дэлгэрэнгүй
               <ArrowRightAlt sx={{ marginLeft: "1rem" }} />
             </a>
           </Link>
@@ -43,6 +43,7 @@ const InternalLoan = () => {
                 "rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px",
             }}
             p={4}
+            minHeight={320}
           >
             <AccountBalance
               sx={{
@@ -54,11 +55,10 @@ const InternalLoan = () => {
               }}
             />
             <Typography variant="h5" fontWeight={600} my={3}>
-              Credit Repair
+              10 - 12%
             </Typography>
             <Typography variant="p" textAlign={"center"}>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae
-              accusamus assumenda sequi maxime amet! Inventore.
+              Зээлийн хүү
             </Typography>
           </Box>
         </Grid>
@@ -72,8 +72,9 @@ const InternalLoan = () => {
                 "rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px",
             }}
             p={4}
+            minHeight={320}
           >
-            <AccountBalance
+            <DateRange
               sx={{
                 fontSize: "120px",
                 background: "#fec405",
@@ -83,11 +84,10 @@ const InternalLoan = () => {
               }}
             />
             <Typography variant="h5" fontWeight={600} my={3}>
-              Credit Repair
+              18 - 24 сар
             </Typography>
             <Typography variant="p" textAlign={"center"}>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae
-              accusamus assumenda sequi maxime amet! Inventore.
+              Зээлийн хугацаа
             </Typography>
           </Box>
         </Grid>
@@ -101,8 +101,9 @@ const InternalLoan = () => {
                 "rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px",
             }}
             p={4}
+            minHeight={320}
           >
-            <AccountBalance
+            <House
               sx={{
                 fontSize: "120px",
                 background: "#fec405",
@@ -112,11 +113,10 @@ const InternalLoan = () => {
               }}
             />
             <Typography variant="h5" fontWeight={600} my={3}>
-              Credit Repair
+              30%
             </Typography>
             <Typography variant="p" textAlign={"center"}>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae
-              accusamus assumenda sequi maxime amet! Inventore.
+              Хуваан төлөхгүй
             </Typography>
           </Box>
         </Grid>
@@ -130,8 +130,9 @@ const InternalLoan = () => {
                 "rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px",
             }}
             p={4}
+            minHeight={320}
           >
-            <AccountBalance
+            <PriceCheck
               sx={{
                 fontSize: "120px",
                 background: "#fec405",
@@ -141,11 +142,10 @@ const InternalLoan = () => {
               }}
             />
             <Typography variant="h5" fontWeight={600} my={3}>
-              Credit Repair
+              ₮ төгрөг
             </Typography>
             <Typography variant="p" textAlign={"center"}>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae
-              accusamus assumenda sequi maxime amet! Inventore.
+              Боломжит валют
             </Typography>
           </Box>
         </Grid>

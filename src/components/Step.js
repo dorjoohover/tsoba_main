@@ -1,7 +1,7 @@
-import { Box, Grid } from "@mui/material";
+  import { Box, Grid } from "@mui/material";
 import Title from "./Title";
 import { styled } from "@mui/material/styles";
-import { House } from "@mui/icons-material";
+import { House , CreditScore , Key} from "@mui/icons-material";
 import { Typography } from "antd";
 const GripItem = styled(Grid)`
   min-width: 396px;
@@ -46,10 +46,10 @@ const GripItem = styled(Grid)`
 
 const Step = () => {
   return (
-    <Box sx={{ maxWidth: "1300px", margin: "0 auto 90px auto" }}>
+    <Box sx={{ maxWidth: "1300px", margin: "0 auto 90px auto" , padding: '10px'}}>
       <Title
-        subtitle={"Featured Services"}
-        title={"All The Services That Our Company Provides"}
+        subtitle={"Зээлийн алхам"}
+        title={"Хэрхэн лизингийн үйлчилгээнд хамрагдах вэ?"}
         items={"center"}
       />
       <Grid
@@ -65,13 +65,12 @@ const Step = () => {
             alignItems={"center"}
             display={"flex"}
             flexDirection={"column"}
+            minHeight={250}
           >
             <House sx={{ fontSize: "60px", fill: "#fec405" }} />
-            <Typography variant={"h2"}>Хаусаа сонгох</Typography>
+            <Typography variant={"h2"}>Бүтээгдэхүүн сонгох</Typography>
             <Typography variant="p">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas
-              illo quos cupiditate architecto? Accusantium voluptate amet
-              officia tempore quod quaerat.
+              Өөрт тохирсон хаусаа сонгох
             </Typography>
           </Box>
         </GripItem>
@@ -82,13 +81,13 @@ const Step = () => {
             alignItems={"center"}
             display={"flex"}
             flexDirection={"column"}
+            minHeight={250}
           >
-            <House sx={{ fontSize: "60px", fill: "#fec405" }} />
-            <Typography variant={"h2"}>Хаусаа сонгох</Typography>
+            <CreditScore sx={{ fontSize: "60px", fill: "#fec405" }} />
+            <Typography variant={"h2"}>Хүсэлт гаргах </Typography>
             <Typography variant="p">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas
-              illo quos cupiditate architecto? Accusantium voluptate amet
-              officia tempore quod quaerat.
+              Ямар бүтээгдэхүүн авах гэж байгаагаа хүсэлт болгон илгээх
+
             </Typography>
           </Box>
         </GripItem>
@@ -99,13 +98,12 @@ const Step = () => {
             alignItems={"center"}
             display={"flex"}
             flexDirection={"column"}
+            minHeight={250}
           >
-            <House sx={{ fontSize: "60px", fill: "#fec405" }} />
-            <Typography variant={"h2"}>Хаусаа сонгох</Typography>
+            <Key sx={{ fontSize: "60px", fill: "#fec405" }} />
+            <Typography variant={"h2"}>Бүтээгдэхүүн хүлээн авах</Typography>
             <Typography variant="p">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas
-              illo quos cupiditate architecto? Accusantium voluptate amet
-              officia tempore quod quaerat.
+              Монголд байхгүй ч та хүссэн хөрөнгөө лизингээр авах
             </Typography>
           </Box>
         </GripItem>

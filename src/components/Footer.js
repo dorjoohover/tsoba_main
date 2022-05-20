@@ -37,7 +37,7 @@ const Footer = () => {
                 info@homey.mn
               </li>
               <li className="text-white mb-2">
-                <Room sx={{ paddingRight: "0.5rem", fill: "white" }} /> СХД 8-р
+                <Room sx={{ paddingRight: "0.5rem", fill: "white" }} /> СБД 8-р
                 хороо Болгарын гудамж 27-802
               </li>
               <li className="text-white mb-2">

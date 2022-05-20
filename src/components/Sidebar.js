@@ -12,7 +12,7 @@ const Sidebar = () => {
       </li>
       <li className="py-4  text-white tracking-wider flex items-center">
         <LocationOn sx={{ fill: "#fec405", paddingRight: "0.5rem" }} />
-        СХД 8-р хороо Болгарын гудамж 27-802
+        СБД 8-р хороо Болгарын гудамж 27-802
       </li>
     </ul>
   );
