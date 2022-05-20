@@ -14,6 +14,9 @@ import Loans from "../src/components/Loan";
 import Request from "../src/components/Request";
 import Footer from "../src/components/Footer";
 import Copyright from "../src/components/Copyright";
+import Step from "../src/components/Step";
+import InternalLoan from "../src/components/Loan_2";
+import MiniRequest from "../src/components/MIniRequest";
 export async function getStaticProps({ locale }) {
   return {
     props: {
@@ -78,9 +81,11 @@ function Home(props) {
       <Navbar check_bg={"home"} />
       <Header />
       <About />
+      <Step />
       <Projects />
       <Loans />
-      <Request
+      <InternalLoan />
+      <MiniRequest
         handleForm={handleForm}
         formData={formData}
         setFormData={setFormData}

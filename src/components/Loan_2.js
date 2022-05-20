@@ -4,7 +4,7 @@ import Link from "next/link";
 import { ArrowRightAlt, AccountBalance } from "@mui/icons-material";
 import { Box, Grid, Typography } from "@mui/material";
 
-const Loans = () => {
+const InternalLoan = () => {
   return (
     <Box sx={{ maxWidth: "1300px", margin: "90px auto" }}>
       <Box
@@ -154,4 +154,4 @@ const Loans = () => {
   );
 };
 
-export default Loans;
+export default InternalLoan;
