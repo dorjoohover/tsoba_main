@@ -42,6 +42,7 @@ const Contact = () => {
         <link rel="icon" href="/img/lil_logo.png" />
       </Head>
       <Navbar />
+      <span className="h-24"></span>
       <div>
         <Box
           sx={{

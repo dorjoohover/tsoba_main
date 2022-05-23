@@ -125,10 +125,10 @@ const Navbar = ({ color, check_bg }) => {
               }}
               className="link"
             >
-              <Link href={"/project/khadat-villa-2"}>
+              <Link href={"/"}>
                 <a>Хадат вилла 2</a>
               </Link>
-              <Link href={"/project"}>
+              <Link href={"/"}>
                 <a>Хадат вилла 4</a>
               </Link>
             </Box>
@@ -163,13 +163,13 @@ const Navbar = ({ color, check_bg }) => {
               }}
               className="link"
             >
-              <Link href={"/loans/external"}>
+              <Link href={"/"}>
                 <a>гадаад дахь харилцагч</a>
               </Link>
-              <Link href={"/loans/internal"}>
+              <Link href={"/"}>
                 <a>дотоод дахь харилцагч</a>
               </Link>
-              <Link href={"/request"}>
+              <Link href={"/"}>
                 <a>зээлийн хүсэлт</a>
               </Link>
             </Box>
@@ -178,7 +178,7 @@ const Navbar = ({ color, check_bg }) => {
           <li
             className={`text-${color} uppercase font-semibold tracking-wider mx-6`}
           >
-            <Link href={"/contact"}>
+            <Link href={"/"}>
               <a>холбогдох</a>
             </Link>
           </li>
@@ -295,10 +295,10 @@ const Navbar = ({ color, check_bg }) => {
                   />
                 </button>
                 <div className="link">
-                  <Link href={"/project/khadat-villa-2"}>
+                  <Link href={"/"}>
                     <a>хадат вилла 2</a>
                   </Link>
-                  <Link href={"/project"}>
+                  <Link href={"/"}>
                     <a>хадат вилла 4</a>
                   </Link>
                 </div>
@@ -321,13 +321,13 @@ const Navbar = ({ color, check_bg }) => {
                   />
                 </button>
                 <div className="link">
-                  <Link href={"/loans/external"}>
+                  <Link href={"/"}>
                     <a>гадаад харилцагч</a>
                   </Link>
-                  <Link href={"/loans/internal"}>
+                  <Link href={"/"}>
                     <a>дотоод харилцагч</a>
                   </Link>
-                  <Link href={"/request"}>
+                  <Link href={"/"}>
                     <a>зээлийн хүсэлт</a>
                   </Link>
                 </div>
@@ -335,7 +335,7 @@ const Navbar = ({ color, check_bg }) => {
               <li
                 className={`text-${color} uppercase font-semibold tracking-wider mx-6 py-4`}
               >
-                <Link href={"/contact"}>
+                <Link href={"/"}>
                   <a>холбогдох</a>
                 </Link>
               </li>

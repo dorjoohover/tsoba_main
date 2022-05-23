@@ -1,8 +1,10 @@
-  import { Box, Grid } from "@mui/material";
-import Title from "./Title";
+import { Box, Grid } from "@mui/material";
+
 import { styled } from "@mui/material/styles";
-import { House , CreditScore , Key} from "@mui/icons-material";
+import { House, CreditScore, Key } from "@mui/icons-material";
 import { Typography } from "antd";
+import HeaderTitle from "./Header_title";
+import Image from "next/image";
 const GripItem = styled(Grid)`
   min-width: 396px;
   position: relative;
@@ -46,68 +48,116 @@ const GripItem = styled(Grid)`
 
 const Step = () => {
   return (
-    <Box sx={{ maxWidth: "1300px", margin: "0 auto 90px auto" , padding: '10px'}}>
-      <Title
-        subtitle={"Зээлийн алхам"}
-        title={"Хэрхэн лизингийн үйлчилгээнд хамрагдах вэ?"}
-        items={"center"}
+    <Box
+      sx={{
+        maxWidth: "1100px",
+        margin: "auto",
+        padding: "300px 10px 90px 10px",
+      }}
+    >
+      <HeaderTitle
+        first_text={"ХЭРХЭН ХАУСАА"}
+        last_text={"ХУДАЛДАН АВАХ ВЭ?"}
       />
-      <Grid
-        container
-        mt={8}
-        columns={{ xs: 3, sx: 3, sm: 4, md: 12, lg: 12 }}
-        justifyContent={"center"}
+      <Box
+        display={"flex"}
+        justifyContent={"space-between"}
+        alignItems={"center"}
+        mt={16}
       >
-        <GripItem item xs={1} sm={4} md={6} lg={4} sx={1}>
-          <Box
-            sx={{ border: " 1px #fec405 dashed" }}
-            p={3}
-            alignItems={"center"}
-            display={"flex"}
-            flexDirection={"column"}
-            minHeight={250}
-          >
-            <House sx={{ fontSize: "60px", fill: "#fec405" }} />
-            <Typography variant={"h2"}>Бүтээгдэхүүн сонгох</Typography>
-            <Typography variant="p">
-              Өөрт тохирсон хаусаа сонгох
-            </Typography>
+        <div className="flex flex-col item-between">
+          <Box minWidth={320} maxWidth={320} mb={16}>
+            <div className="flex justify-between w-full items-end mb-4">
+              <h2 className="text-xl">Хаусаа сонгох</h2>
+              <h1 className="text-5xl text_primary_color font-semibold ">01</h1>
+            </div>
+            <p className="text-justify">
+              Үл хөдлөх хөрөгшийн салбарт ажиллаж буй олон жилийн туршлагатай,
+              барилгын тэргүүлэх компаниудын төсөлтэй танилцаж хаусаа сонгох
+              боломжтой.{" "}
+            </p>
           </Box>
-        </GripItem>
-        <GripItem item xs={1} sm={4} md={6} lg={4} sx={1}>
-          <Box
-            sx={{ border: " 1px #fec405 dashed" }}
-            p={3}
-            alignItems={"center"}
-            display={"flex"}
-            flexDirection={"column"}
-            minHeight={250}
-          >
-            <CreditScore sx={{ fontSize: "60px", fill: "#fec405" }} />
-            <Typography variant={"h2"}>Хүсэлт гаргах </Typography>
-            <Typography variant="p">
-              Ямар бүтээгдэхүүн авах гэж байгаагаа хүсэлт болгон илгээх
-
-            </Typography>
+          <Box minWidth={320} maxWidth={320}>
+            <div className="flex justify-between w-full items-end mb-4">
+              <h2 className="text-xl">Хаусаа хүлээж авах</h2>
+              <h1 className="text-5xl text_primary_color font-semibold ">03</h1>
+            </div>
+            <p className="text-justify">
+              Бидний хамтын ажиллагааны үр дүнд та Эх орондоо өөрийн үл хөдлөх
+              хөрөнгийг худалдан авч түлхүүрээ гардан авах болно.
+            </p>
           </Box>
-        </GripItem>
-        <GripItem item xs={1} sm={4} md={12} lg={4} sx={1}>
+        </div>
+        <Box
+          position={"relative"}
+          height={472}
+          sx={{ top: "-32px", width: "auto" }}
+          display={"flex"}
+        >
           <Box
-            sx={{ border: " 1px #fec405 dashed" }}
-            p={3}
-            alignItems={"center"}
-            display={"flex"}
-            flexDirection={"column"}
-            minHeight={250}
-          >
-            <Key sx={{ fontSize: "60px", fill: "#fec405" }} />
-            <Typography variant={"h2"}>Бүтээгдэхүүн хүлээн авах</Typography>
-            <Typography variant="p">
-              Монголд байхгүй ч та хүссэн хөрөнгөө лизингээр авах
-            </Typography>
-          </Box>
-        </GripItem>
-      </Grid>
+            backgroundColor={"rgba(0, 0, 0, .15)"}
+            width={"117px"}
+            position={"absolute"}
+            height={"1.6px"}
+            top={"80px"}
+            left={"-117px"}
+          ></Box>
+          <Box
+            border={"#FEC405 solid 2px"}
+            borderRadius={"100%"}
+            position={"absolute"}
+            top={"76px"}
+            left={"-127px"}
+            p={0.5}
+          ></Box>
+          <Box
+            backgroundColor={"rgba(0, 0, 0, .15)"}
+            width={"117px"}
+            position={"absolute"}
+            height={"1.6px"}
+            left={"-117px"}
+            bottom={"80px"}
+          ></Box>
+          <Box
+            border={"#FEC405 solid 2px"}
+            borderRadius={"100%"}
+            position={"absolute"}
+            bottom={"74px"}
+            left={"-127px"}
+            p={0.5}
+          ></Box>
+          <Box
+            backgroundColor={"rgba(0, 0, 0, .15)"}
+            position={"relative"}
+            width={"1.6px"}
+          ></Box>
+          <Box
+            backgroundColor={"rgba(0, 0, 0, .15)"}
+            width={"117px"}
+            position={"absolute"}
+            height={"1.6px"}
+            top={"calc(50% - 0.8px)"}
+            left={"0px"}
+          ></Box>
+          <Box
+            border={"#FEC405 solid 2px"}
+            borderRadius={"100%"}
+            position={"absolute"}
+            top={"calc(50% - 4.8px)"}
+            right={"-127px"}
+            p={0.5}
+          ></Box>
+        </Box>
+        <Box minWidth={320} maxWidth={320}>
+          <div className="flex justify-between w-full items-end mb-4">
+            <h2 className="text-xl">Худалдан авах хүсэлт илгээх</h2>
+            <h1 className="text-5xl text_primary_color font-semibold ">02</h1>
+          </div>
+          <p className="text-justify">
+            Та хүссэн хаусаа төлбөрийн нөхцөл сонгон худалдан авах боломжтой.
+          </p>
+        </Box>
+      </Box>
     </Box>
   );
 };

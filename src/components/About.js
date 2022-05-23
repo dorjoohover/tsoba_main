@@ -1,36 +1,31 @@
 import Image from "next/image";
 import Title from "./Title";
+import { Box } from "@mui/material";
+import HeaderTitle from "./Header_title";
 const About = () => {
   return (
-    <div className="flex mx-auto  mx-auto about py-32 mb-32 justify-center">
-      <div className="relative about_left p-3">
-        <div className="relative about_img_1 z-10">
+    <Box
+      maxWidth={1100}
+      display={"flex"}
+      mx={"auto"}
+      alignItems="center"
+      flexDirection={"column"}
+      py={4}
+    >
+      <HeaderTitle first_text={"БИДНИЙ"} last_text={"тухай"} />
+      <div className="flex items-center">
+        <Box width={"70%"}>
           <Image
             className="about-image-ext"
-            src={"/img/01.png"}
+            src={"/img/logo-homey.png"}
             alt="about"
             layout="responsive"
-            width={453}
-            height={"350%"}
+            width={2300}
+            height={1196}
           />
-        </div>
-        {/* <div className="relative about_img_2 z-20">
-          <Image
-            src={"/img/01.jpg"}
-            alt="about"
-            layout="responsive"
-            width={456}
-            height={622}
-          />
-        </div> */}
-      </div>
-      <div className="text-left ml-12 p-3">
-        <div className="about_right">
-          <Title
-            title={"Товч танилцуулга"}
-            subtitle={"Homey Mortage"}
-            items={"left"}
-          />
+        </Box>
+
+        <div className="text-left ml-12 p-3">
           <p className="mt-10 mb-4">
             Амины орон сууцны зах зээл хурдацтай тэлж буй энэ үед иргэдэд бага
             хүүтэй хурдан шуурхай үйлчилгээтэй санхүүгийн байгууллагын эрэлт
@@ -41,17 +36,9 @@ const About = () => {
             орон сууцыг нь хамгийн бага хүүтэй олгох санхүүгийн үйлчилгээ
             үзүүлэх зорилготойгоор нээгдлээ.
           </p>
-          <p>
-            Бид төслүүдтэй хамтран ажиллахдаа урт хугацаандаа үнэ цэн өсөх,
-            хотоос гадна байгаль дунд, дэд бүтцээ бүрэн шийдсэн, туршлагатай
-            компаниудтай хамтран ажиллахыг зорих бөгөөд нэн тэргүүнд зах зээлд
-            хамгийн эрэлт өндөр байгаа Хадат вилла 4 төслийг сонгон хамтран
-            ажиллахаар боллоо. Зөвхөн дотооддоо төдийгүй гадаад дахь
-            Монголчууддаа зориулсан зээлийн бүтээгдэхүүнийг мөн санал болгох юм.
-          </p>
         </div>
       </div>
-    </div>
+    </Box>
   );
 };
 

@@ -6,7 +6,7 @@ import getConfig from "next/config";
 import { appWithTranslation } from "next-i18next";
 import Layout from "../src/components/Layout";
 import LoadingScreen from "../src/components/Loading";
-
+import '@splidejs/react-splide/css';
 function MyApp({ Component, pageProps }) {
   const [loading, setLoading] = React.useState(false);
 

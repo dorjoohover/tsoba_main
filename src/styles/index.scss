@@ -51,6 +51,7 @@ p {
     letter-spacing: 0.5rem;
   }
 }
+
 .sidebar {
   transform: rotate(-90deg) translate(calc(-50% + 29px), -50%);
   top: 0;
@@ -59,7 +60,18 @@ p {
 }
 
 .header_text {
-  margin-bottom: 126px;
+  transform: translate(-50%, -50%);
+}
+
+.header_banner {
+  max-width: 1300px;
+  left: 50%;
+  bottom: 0;
+  transform: translate(-50%, 70%);
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  div {
+    min-width: 345px;
+  }
 }
 .about {
   &_right {

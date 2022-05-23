@@ -29,6 +29,7 @@ const Product = () => {
           }}
         >
           <Navbar />
+          <span className="h-24"></span>
           <ProductHeader />
           <ProductDetail />
           <div id="product_picture" className="product_picture"></div>

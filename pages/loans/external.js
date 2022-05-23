@@ -59,7 +59,7 @@ const Loan = () => {
         <link rel="icon" href="/img/lil_logo.png" />
       </Head>
       <Navbar />
-
+      <span className="h-24"></span>
       <Box
         sx={{
           height: "35vh",

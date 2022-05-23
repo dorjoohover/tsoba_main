@@ -17,6 +17,9 @@ import Copyright from "../src/components/Copyright";
 import Step from "../src/components/Step";
 import InternalLoan from "../src/components/Loan_2";
 import MiniRequest from "../src/components/MIniRequest";
+import { Box } from "@mui/material";
+import Condition from "../src/components/Condition";
+import HeaderRequest from "../src/components/Header_request";
 export async function getStaticProps({ locale }) {
   return {
     props: {
@@ -80,16 +83,20 @@ function Home(props) {
 
       <Navbar check_bg={"home"} />
       <Header />
+      <Box backgroundColor={"#D3D3D330"}>
+        <Step />
+      </Box>
       <About />
-      <Step />
+      <Condition />
+      <HeaderRequest />
       <Projects />
-      <Loans />
+      {/* <Loans />
       <InternalLoan />
       <MiniRequest
         handleForm={handleForm}
         formData={formData}
         setFormData={setFormData}
-      />
+      /> */}
       <Footer />
       <Copyright />
       {/* <div className="mt-screen">{t("home:dorj")}</div> */}
