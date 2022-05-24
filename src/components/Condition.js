@@ -25,6 +25,7 @@ const Condition = () => {
         }}
       />
       <Typography
+        className="p-size-ext"
         variant="body1"
         fontFamily={'"Montserrat", sans-serif'}
         my={2}
@@ -299,7 +300,7 @@ const Condition = () => {
         </Box>
       </Box>
       <Link href="/">
-        <BootstrapButton variant="contained">
+        <BootstrapButton variant="contained" className="full-width">
           Дэлгэрэнгүй мэдээлэлтэй танилцах
         </BootstrapButton>
       </Link>

@@ -230,6 +230,7 @@
 
 @media only screen and (max-width: 768px) {
   .header_text {
+    width: 100%;
     h5 {
       font-size: 16px;
       margin-bottom: 10px;
@@ -286,7 +287,8 @@
     display: flex;
     flex-direction: column;
     padding: 15px 20px;
-    transform: translate(-50%, 95%);
+    transform: translate(-50%, 55%) !important;
+    width: 85% !important;
     div {
       &:nth-child(1) {
         margin-bottom: 20px;
@@ -451,11 +453,13 @@
     background-attachment: scroll;
     height: 100vh;
   }
+
   .header {
     .relative {
       margin-top: 65%;
     }
     .header_text {
+      width: 100%;
       margin-bottom: 70px;
     }
   }
@@ -584,9 +588,16 @@
   }
 }
 @media only screen and (max-width: 600px) {
+  .css-1dvs5r2 {
+    left: 55%;
+  }
+  .grid-cols-2 {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+
   .step {
     position: absolute;
-    left: 70%;
+    left: 65%;
     transform: translateX(-50%);
     p {
       font-size: 13px;
@@ -647,6 +658,8 @@
   .fl-direction {
     flex-direction: column;
     text-align: center;
+    width: 90%;
+    margin: 0 auto;
     ul {
       margin: 25px auto !important;
     }
@@ -655,6 +668,9 @@
     p {
       margin: 25px 0;
     }
+  }
+  .p-size-ext {
+    margin: 0 20px !important;
   }
   .header-bg-size {
     height: 100vh;
@@ -666,10 +682,18 @@
       span {
         height: 100% !important;
         overflow-x: none;
+        .fam01 {
+          margin-left: -190% !important;
+        }
+        .fam02 {
+          margin-left: -40% !important;
+        }
+        .fam03 {
+          margin-left: -120% !important;
+        }
         img {
           min-width: 360% !important;
           max-width: 360% !important;
-          margin-left: -40% !important;
         }
       }
     }

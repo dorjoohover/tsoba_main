@@ -17,7 +17,7 @@ const Projects = () => {
               height={256}
             />
           </div>
-          <div className="flex px-4 justify-between items-center fl-direction">
+          <div className="flex px-4 justify-between items-center ">
             <h2 className="text-2xl font-semibold ">Хадат Вилла 4</h2>
             <Link href={"/"}>
               <button className="uppercase text-sm tracking-widest font-medium border-b-2">
@@ -36,7 +36,7 @@ const Projects = () => {
               height={256}
             />
           </div>
-          <div className="flex px-4 justify-between items-center fl-direction">
+          <div className="flex px-4 justify-between items-center ">
             <h2 className="text-2xl font-semibold ">Хадат Вилла 2</h2>
             <Link href={"/"}>
               <button className="uppercase text-sm tracking-widest font-medium border-b-2">

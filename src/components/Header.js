@@ -46,6 +46,7 @@ const Header = () => {
             <SplideSlide>
               <div className="screen_slide">
                 <Image
+                  className="fam01"
                   src={"/img/fam01.png"}
                   alt={"header"}
                   layout="responsive"
@@ -57,6 +58,7 @@ const Header = () => {
             <SplideSlide>
               <div className="screen_slide">
                 <Image
+                  className="fam02"
                   src={"/img/fam02.png"}
                   alt={"header"}
                   layout="responsive"
@@ -68,6 +70,7 @@ const Header = () => {
             <SplideSlide>
               <div className="screen_slide">
                 <Image
+                  className="fam03"
                   src={"/img/fam03.png"}
                   alt={"header"}
                   layout="responsive"
