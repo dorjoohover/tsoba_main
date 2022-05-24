@@ -19,6 +19,7 @@ const Footer = () => {
           display="flex"
           maxWidth={1200}
           py={6}
+          px={2}
           mx="auto"
           sx={{ borderBottom: "rgba(255,255,255, 0.4) 1px solid" }}
         >
