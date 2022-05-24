@@ -17,6 +17,7 @@ const Footer = () => {
       <div className="relative mx-auto z-20">
         <Box
           display="flex"
+          className="fl-direction"
           maxWidth={1200}
           py={6}
           px={2}
