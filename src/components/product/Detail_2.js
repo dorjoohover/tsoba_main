@@ -61,7 +61,7 @@ export default function ProductDetail() {
             <h6 className="uppercase">давхар</h6>
           </span>
           <span className="text-center">
-            <h1 className="text-6xl font-bold mb-2">400 сая</h1>
+            <h1 className="text-6xl font-bold mb-2">350-400 сая</h1>
             <h6 className="uppercase">Захиалга авч буй үнэ</h6>
           </span>
           {/* <span className="text-center">
@@ -83,7 +83,7 @@ export default function ProductDetail() {
           <p>
             Карборобот Унгар улсын нам даралтын уурын зуух 8 ширхэг
             суурилуулагдсан бөгөөд айл бүр нэгдсэн халаалтын шугамд холбогдсон.
-            Зам
+            
           </p>
         </div>
         <div className="flex flex-col w-4/5 mx-auto text-justify items-center ">
@@ -97,7 +97,7 @@ export default function ProductDetail() {
           <h2 className="my-8 font-semibold text-3xl capitalize">зам</h2>
           <p>
             СБД Бэлхийн засмал замаар 16 км яваад, Бэлх Хадатын амаар 4.0 км
-            асфальтан замаар явж хотхонд хүрнэ
+            асфальтан замаар явж хотхонд хүрнэ.
           </p>
         </div>
         <div className="flex flex-col w-4/5 mx-auto text-justify items-center ">
@@ -155,7 +155,7 @@ export default function ProductDetail() {
           </h2>
           <p>
             Мобиком, Юнителийн гар утасны сүлжээ орсон. Юнивишний гурвалсан
-            үйлчилгээ орохоор төлөвлөгдсөн
+            үйлчилгээ орохоор төлөвлөгдсөн.
           </p>
         </div>
       </div>

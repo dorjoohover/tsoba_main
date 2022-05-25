@@ -21,7 +21,7 @@ const Header = () => {
           >
             Хүлээлтээс давсан <br /> Хялбар санхүүжилт
           </h1>
-          <Link href={"/"}>
+          <Link href={"/request"}>
             <a className="bg_primary_color text-white px-6 font-semibold  py-4 main_link">
               Зээлийн хүсэлт илгээх
             </a>

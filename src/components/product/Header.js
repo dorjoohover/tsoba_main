@@ -82,7 +82,7 @@ export default function ProductHeader() {
           <div className="m-auto w-4/5 product_header py-24 relative z-20">
             <div className={`title text-center`}>
               <h5 className="uppercase text_primary_color mb-6 font-semibold text-xl">
-                захиалга авж эхэллээ.
+                захиалга авч эхэллээ.
               </h5>
               <h1
                 className={`uppercase text-6xl leading-tight font-bold text-gray-300`}

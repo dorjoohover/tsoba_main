@@ -113,20 +113,7 @@ export default function Picture({ start, setStart }) {
               </a>
             </Link>
           </SplideSlide>
-          <SplideSlide
-            className="flex items-center relative z-20 "
-            onClick={(splide, prev, next) => {
-              setStart(6);
-            }}
-          >
-            <Link href={"#splide_1"}>
-              <a className="w-full ">
-                <div className="flex justify-center w-full h-full">
-                  <img src={"/img/parthner/0014.jpg"} alt="asdf" />
-                </div>
-              </a>
-            </Link>
-          </SplideSlide>
+          
           <SplideSlide
             className="flex items-center relative z-20 "
             onClick={(splide, prev, next) => {
@@ -136,13 +123,13 @@ export default function Picture({ start, setStart }) {
             <Link href={"#splide_1"}>
               <a className="w-full ">
                 <div className="flex justify-center w-full">
-                  <img src={"/img/parthner/kitchen.png"} alt="asdf" />
+                  <img src={"/img/parthner/kit.jpg"} alt="asdf" />
                 </div>
               </a>
             </Link>
           </SplideSlide>
         </>{" "}
-        )
+        
       </Splide>
       {start > -1 && (
         <>
@@ -269,7 +256,7 @@ export default function Picture({ start, setStart }) {
                   <a className="w-full ">
                     <div className="flex justify-center w-full h-full">
                       <img
-                        src={"/img/parthner/kitchen.png"}
+                        src={"/img/parthner/kit.jpg"}
                         alt="asdf"
                         className="w-full"
                       />

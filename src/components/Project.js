@@ -19,7 +19,7 @@ const Projects = () => {
           </div>
           <div className="flex px-4 justify-between items-center ">
             <h2 className="text-2xl font-semibold ">Хадат Вилла 4</h2>
-            <Link href={"/"}>
+            <Link href={"/project"}>
               <button className="uppercase text-sm tracking-widest font-medium border-b-2">
                 цааш
               </button>
@@ -38,7 +38,7 @@ const Projects = () => {
           </div>
           <div className="flex px-4 justify-between items-center ">
             <h2 className="text-2xl font-semibold ">Хадат Вилла 2</h2>
-            <Link href={"/"}>
+            <Link href={"/project/khadat-villa-2"}>
               <button className="uppercase text-sm tracking-widest font-medium border-b-2">
                 цааш
               </button>

@@ -3,7 +3,7 @@ import { Circle } from "@mui/icons-material";
 import { Box } from "@mui/material";
 import Navbar from "../../src/components/Navbar";
 import LoanDetails from "../../src/components/Loan/loan";
-import Request from "../../src/components/Request";
+import Header_request from "../../src/components/Header_request";
 import Footer from "../../src/components/Footer";
 import Copyright from "../../src/components/Copyright";
 import { useState } from "react";
@@ -107,7 +107,8 @@ const Loan = () => {
         <LoanDetails items={"external"} />
       </Box>
       <Box sx={{ height: "140px" }}></Box>
-      <Request
+
+      <Header_request
         handleForm={handleForm}
         formData={formData}
         setFormData={setFormData}
