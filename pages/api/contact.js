@@ -4,7 +4,11 @@ export default async function handler(req, res) {
     return res.status("405").send({ message: "post" });
   }
   const body = req.body;
-  console.log(process.env.GOOGLE_CLIENT_EMAIL);
+  console.log(
+    process.env.GOOGLE_CLIENT_EMAIL,
+    process.env.GOOGLE_PRIVATE_KEY?.replace(/\\n/g, "\n"),
+    process.env.GOOGLE_SHEET_ID
+  );
   try {
     const auth = new google.auth.GoogleAuth({
       credentials: {
