@@ -7,7 +7,8 @@ export default async function handler(req, res) {
   console.log(
     process.env.GOOGLE_CLIENT_EMAIL,
     process.env.GOOGLE_PRIVATE_KEY?.replace(/\\n/g, "\n"),
-    process.env.GOOGLE_CONTACT_SHEET_ID
+    process.env.GOOGLE_CONTACT_SHEET_ID,
+    "contact"
   );
   try {
     const auth = new google.auth.GoogleAuth({
