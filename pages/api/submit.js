@@ -1,5 +1,7 @@
 import { google } from "googleapis";
+import nodemailer from "nodemailer";
 export default async function handler(req, res) {
+  require("dotenv").config();
   if (req.method !== "POST") {
     return res.status(405).send({ message: "post" });
   }
@@ -10,6 +12,42 @@ export default async function handler(req, res) {
     process.env.GOOGLE_SHEET_ID
     // req.body
   );
+  const transporter = nodemailer.createTransport({
+    host: "smtp.gmail.com",
+    port: 587,
+    secure: false,
+    auth: {
+      user: process.env.SMTP_USER,
+      pass: process.env.SMTP_PASSWORD,
+    },
+    requireTLS: true,
+    tls: {
+      ciphers: "SSLv3",
+    },
+  });
+  console.log(body);
+  const data = {
+    from: body.mail,
+    to: "temuulenhover@gmail.com",
+    subject: `Зээлийн хүсэлт ${body.name}`,
+    html: `<h1>${body.name} Хүсэлт гаргаж байна</h1> <br>
+      
+        <p><strong>Нэр: </strong> ${body.name}</p><br>
+        <p><strong>Утас: </strong> ${body.phone}</p><br>
+        <p><strong>Хаяг: </strong> ${body.email}</p><br>
+        <p><strong>Сонирхож буй хотхоны нэр: </strong> ${body.interest}</p><br>
+        <p><strong>Ажлын нэр: </strong> ${body.business}</p><br>
+        <p><strong>Оршин суугаа газар: </strong> ${body.address}</p><br>
+        <p><strong>Цалин: </strong> ${body.salary}</p><br>
+        <p><strong>Үйл ажиллагааны товч тайлбар: </strong> ${body.description}</p><br>
+        
+      `,
+  };
+  transporter.sendMail(data, function (err, info) {
+    if (err) console.log(err);
+    else console.log(info);
+  });
+
   console.log(req.body);
   console.log(req.query);
   const private_key = process.env.GOOGLE_PRIVATE_KEY?.replace(/\\n/g, "\n");
