@@ -84,7 +84,7 @@ const Request = ({ formData, setFormData, handleForm, alert }) => {
         <label htmlFor="address" className="mt-2 mx-3 text-sm font-bold">
           Таны сонирхож буй хотхоны нэр
         </label>
-        <input
+        {/* <input
           type="text"
           placeholder="Хаус хотхоны нэр"
           value={formData.interest}
@@ -97,7 +97,24 @@ const Request = ({ formData, setFormData, handleForm, alert }) => {
           }
           className="my-2"
           required
-        />
+        /> */}
+        <select
+          name="interest"
+          id="interest"
+          placeholder="Хаус хотхоны нэр"
+          onChange={(e) =>
+            setFormData((formData) => ({
+              ...formData,
+              interset: e.target.value,
+            }))
+          }
+          value={formData.interset}
+          required
+          className="bg-transparent"
+        >
+          <option value="Хадат Вилла 2">Хадат Вилла 2</option>
+          <option value="Хадат Вилла 4">Хадат Вилла 4</option>
+        </select>
         <label htmlFor="address" className="mt-2 mx-3 text-sm font-bold">
           Оршин суугаа улс болон хот
         </label>
