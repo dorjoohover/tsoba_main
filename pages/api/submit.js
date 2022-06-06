@@ -13,6 +13,7 @@ export default async function handler(req, res) {
     // req.body
   );
   const transporter = nodemailer.createTransport({
+    service: "gmail",
     host: "smtp.gmail.com",
     port: 587,
     secure: false,
@@ -26,9 +27,10 @@ export default async function handler(req, res) {
     },
   });
   console.log(body);
+  var maillist = ["altantsetseg.b@homey.mn", "bolormaa.ts@homey.mn"];
   const data = {
     from: body.mail,
-    to: "temuulenhover@gmail.com",
+    to: maillist,
     subject: `Зээлийн хүсэлт ${body.name}`,
     html: `<h1>${body.name} Хүсэлт гаргаж байна</h1> <br>
       
@@ -40,6 +42,18 @@ export default async function handler(req, res) {
         <p><strong>Оршин суугаа газар: </strong> ${body.address}</p><br>
         <p><strong>Цалин: </strong> ${body.salary}</p><br>
         <p><strong>Үйл ажиллагааны товч тайлбар: </strong> ${body.description}</p><br>
+        
+      `,
+    text: `${body.name} Хүсэлт гаргаж байна \n
+      
+        <Нэр: </strong> ${body.name} \n
+        <Утас: </strong> ${body.phone} \n
+        <Хаяг: </strong> ${body.email} \n
+        <Сонирхож буй хотхоны нэр: </strong> ${body.interest} \n
+        <Ажлын нэр: </strong> ${body.business} \n
+        <Оршин суугаа газар: </strong> ${body.address} \n
+        <Цалин: </strong> ${body.salary} \n
+        <Үйл ажиллагааны товч тайлбар: </strong> ${body.description} \n
         
       `,
   };

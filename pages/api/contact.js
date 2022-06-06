@@ -16,7 +16,8 @@ export default async function handler(req, res) {
   );
 
   const transporter = nodemailer.createTransport({
-    host: "smtp.office365.com",
+    service: "gmail",
+    host: "smtp.gmail.com",
     port: 587,
     secure: false,
     auth: {
@@ -28,11 +29,17 @@ export default async function handler(req, res) {
       ciphers: "SSLv3",
     },
   });
+  var maillist = ["altantsetseg.b@homey.mn", "bolormaa.ts@homey.mn"];
   console.log(body);
   const data = {
     from: body.mail,
-    to: "altantsetseg.b@homey.mn",
+    to: maillist,
     subject: `Холбогдох хүсэлт ${body.name}`,
+    text: `${body.name} Холбогдож байна \n
+
+        Хаяг:  ${body.email} \n
+        Хүсэлт:  ${body.message} \n
+      `,
     html: `<h1>${body.name} Холбогдож байна</h1> <br>
       
         <p><strong>Хаяг: </strong> ${body.email}</p><br>
