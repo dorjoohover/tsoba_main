@@ -37,7 +37,6 @@ const LoanRequest = () => {
       },
       body: JSON.stringify(form),
     }).then(() => {
-      console.log("asdf");
       setFormData((formData) => ({
         ...formData,
         name: "",
