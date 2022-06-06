@@ -102,13 +102,13 @@ const Request = ({ formData, setFormData, handleForm, alert }) => {
           name="interest"
           id="interest"
           placeholder="Хаус хотхоны нэр"
-          onChange={(e) =>
+          onChange={(e) => {
             setFormData((formData) => ({
               ...formData,
-              interset: e.target.value,
-            }))
-          }
-          value={formData.interset}
+              interest: e.target.value,
+            }));
+          }}
+          value={formData.interest}
           required
           className="bg-transparent"
         >

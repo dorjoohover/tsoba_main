@@ -13,7 +13,7 @@ const LoanRequest = () => {
     address: "",
     salary: "",
     description: "",
-    interest: "",
+    interest: "Хадат Вилла 2",
     business: "",
   });
   const [alert, setAlert] = useState(false);
@@ -29,27 +29,31 @@ const LoanRequest = () => {
       interest: formData.interest,
       business: formData.business,
     };
-    const res = fetch("/api/submit", {
+    const res = await fetch("/api/submit", {
       method: "POST",
       headers: {
         Accept: "application/json",
         "Content-Type": "application/json",
       },
       body: JSON.stringify(form),
+    }).then(() => {
+      console.log("asdf");
+      setFormData((formData) => ({
+        ...formData,
+        name: "",
+        email: "",
+        phone: "",
+        address: "",
+        salary: "",
+        description: "",
+        interest: "Хадат Вилла 2",
+        business: "",
+      }));
     });
-    setFormData((formData) => ({
-      ...formData,
-      name: "",
-      email: "",
-      phone: "",
-      address: "",
-      salary: "",
-      description: "",
-      interest: "",
-      business: "",
-    }));
+
     setAlert(true);
   };
+  console.log(formData);
   return (
     <>
       <Head>
