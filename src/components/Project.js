@@ -26,7 +26,7 @@ const Projects = () => {
             </Link>
           </div>
         </div>
-        <div className="project_item_2">
+        {/* <div className="project_item_2">
           <div className=" mb-6 relative">
             <Image
               src={"/img/project/kh2.jpg"}
@@ -44,7 +44,7 @@ const Projects = () => {
               </button>
             </Link>
           </div>
-        </div>
+        </div> */}
       </div>
     </Box>
   );
