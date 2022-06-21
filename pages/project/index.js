@@ -36,8 +36,8 @@ const Product = () => {
             width="853"
             height="480"
             src="https://my.matterport.com/show/?m=bndY2be9AZj"
-            frameborder="0"
-            allowfullscreen
+            frameBorder="0"
+            allowFullScreen
             allow="xr-spatial-tracking"
           ></iframe>
           <Picture start={start} setStart={setStart} />
