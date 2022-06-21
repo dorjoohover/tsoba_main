@@ -112,7 +112,7 @@ const Request = ({ formData, setFormData, handleForm, alert }) => {
           required
           className="bg-transparent"
         >
-          <option value="Хадат Вилла 2">Хадат Вилла 2</option>
+          {/* <option value="Хадат Вилла 2">Хадат Вилла 2</option> */}
           <option value="Хадат Вилла 4">Хадат Вилла 4</option>
         </select>
         <label htmlFor="address" className="mt-2 mx-3 text-sm font-bold">

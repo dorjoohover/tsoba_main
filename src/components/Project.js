@@ -6,7 +6,7 @@ const Projects = () => {
   return (
     <Box mx="auto" py={"90px"} maxWidth={1200}>
       <HeaderTitle first_text={"САНАЛ БОЛГОХ"} last_text={"ХАУС ХОТХОН"} />
-      <div className="grid grid-cols-2 mt-8 gap-20 p-3 project">
+      <div className="grid grid-cols-1 mt-8 gap-20 p-3 project">
         <div className="project_item_1">
           <div className=" mb-6 relative ">
             <Image
