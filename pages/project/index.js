@@ -32,7 +32,14 @@ const Product = () => {
           <span className="h-24"></span>
           <ProductHeader />
           <ProductDetail />
-          <div id="product_picture" className="product_picture"></div>
+          <iframe
+            width="853"
+            height="480"
+            src="https://my.matterport.com/show/?m=bndY2be9AZj"
+            frameborder="0"
+            allowfullscreen
+            allow="xr-spatial-tracking"
+          ></iframe>
           <Picture start={start} setStart={setStart} />
 
           <Footer />

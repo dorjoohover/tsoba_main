@@ -9,7 +9,11 @@
 }
 
 * {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
+}
+
+iframe {
+  width: 100%;
 }
 
 .splide__pagination {
@@ -107,7 +111,7 @@ body {
 }
 
 .about_img_2::after {
-  content: '';
+  content: "";
   width: 100%;
   height: 100%;
   background-color: var(--primary-color);
@@ -178,14 +182,24 @@ body {
 }
 
 .request {
-  background-image: url("../../public/img/02.png");
+  width: 100%;
+  height: 100%;
+  padding-top: 108px;
+  padding-bottom: 108px;
+}
+
+.request::before {
+  content: "";
+  top: 0;
+  left: 0%;
+  position: absolute;
+  background-image: url("../../public/img/smile01.jpg");
+  width: 100%;
+  height: 100%;
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
-  width: 100%;
-  padding-top: 108px;
-  padding-bottom: 108px;
 }
 
 .request form {
@@ -214,6 +228,12 @@ body {
 .request form select {
   border: none;
   border-bottom: 1px solid #bababa;
+}
+
+@media (max-width: 1200px) {
+  .request::before {
+    background-attachment: scroll;
+  }
 }
 
 .footer {
@@ -274,7 +294,7 @@ body {
 }
 
 .detail .img::after {
-  content: '';
+  content: "";
   position: absolute;
   top: 15px;
   left: 15px;
@@ -285,7 +305,7 @@ body {
 }
 
 .detail .banner {
-  bottom: -15px;
+  bottom: -80px;
   left: 0;
   z-index: 10;
   color: var(--primary-color);
@@ -295,8 +315,7 @@ body {
   background-color: rgba(255, 255, 255, 0.8);
 }
 
-#product_picture,
-#product_picture_2 {
+#product_picture {
   height: 80vh;
   background-image: url("../../public/img/08.jpg");
   background-repeat: no-repeat;
@@ -305,8 +324,20 @@ body {
   background-attachment: fixed;
 }
 
-#product_picture_2 {
-  background-image: url("../../public/img/parthner/kh10.jpg");
+.product_picture_2 {
+  width: 100%;
+  height: 80vh;
+  background-image: url("../../public/img/header_request_bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+@media (max-width: 1200px) {
+  .product_picture_2 {
+    background-attachment: scroll;
+  }
 }
 
 .splide {
@@ -450,16 +481,16 @@ body {
 
 .lds-ripple div {
   position: absolute;
-  border: 4px solid red;
+  border: 4px solid black;
   opacity: 1;
   border-radius: 50%;
   -webkit-animation: lds-ripple 1s cubic-bezier(0, 0.2, 0.8, 1) infinite;
-          animation: lds-ripple 1s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+  animation: lds-ripple 1s cubic-bezier(0, 0.2, 0.8, 1) infinite;
 }
 
 .lds-ripple div:nth-child(2) {
   -webkit-animation-delay: -0.5s;
-          animation-delay: -0.5s;
+  animation-delay: -0.5s;
 }
 
 @-webkit-keyframes lds-ripple {
