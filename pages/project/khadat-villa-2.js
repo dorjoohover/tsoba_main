@@ -22,7 +22,7 @@ const Product = () => {
             marginTop: {
               xs: "82.2px",
               md: "82.2px",
-              sm: "82.2px",
+              sm: "82.22px",
               lg: "0",
               xl: "0",
             },
