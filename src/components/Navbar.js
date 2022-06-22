@@ -165,9 +165,9 @@ const Navbar = ({ color, check_bg }) => {
               <Link href={"/loans/external"}>
                 <a>гадаад дахь харилцагч</a>
               </Link>
-              <Link href={"/loans/internal"}>
+              {/* <Link href={"/loans/internal"}>
                 <a>дотоод дахь харилцагч</a>
-              </Link>
+              </Link> */}
               <Link href={"/request"}>
                 <a>зээлийн хүсэлт</a>
               </Link>

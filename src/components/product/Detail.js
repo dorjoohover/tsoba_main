@@ -35,7 +35,9 @@ export default function ProductDetail() {
           </p>
           <br />
           <p>
-          Хадат вилла 4 төсөл маань хэрэглэгчдийн олж харж амжаагүй байгаа дараах үнэ цэнүүдийг нийтэд ойлгуулж чадсанаар бусад төслүүдээс ялгарч давуу талыг бий болгож байна.
+            Хадат вилла 4 төсөл маань хэрэглэгчдийн олж харж амжаагүй байгаа
+            дараах үнэ цэнүүдийг нийтэд ойлгуулж чадсанаар бусад төслүүдээс
+            ялгарч давуу талыг бий болгож байна.
           </p>
           <ul className="pb-32 ml-5">
             <li className="list-disc">Тансаг байгаль, алсыг харах харууц</li>
@@ -52,7 +54,7 @@ export default function ProductDetail() {
         <div className="flex-1 pl-3">
           <div className="img">
             <Image
-              src={"/img/khadat-4.jpg"}
+              src={"/img/house.jpg"}
               alt="product"
               width={630}
               height={833}
@@ -62,18 +64,20 @@ export default function ProductDetail() {
         </div>
         <div className="absolute w-2/3 flex justify-around bg-white px-12 py-16 banner">
           <span className="text-center">
-            <h1 className="text-6xl font-bold mb-2">
+            <h1 className="text-5xl font-bold mb-2">
               80мк<sup>2</sup>
             </h1>
             <h6 className="uppercase">Талбайн хэмжээ</h6>
           </span>
           <span className="text-center">
-            <h1 className="text-6xl font-bold mb-2">2</h1>
-            <h6 className="uppercase">давхар</h6>
+            <h1 className="text-5xl font-bold mb-2">215 сая</h1>
+            <h6 className="uppercase">Захиалга авч буй үнэ</h6>
           </span>
           <span className="text-center">
-            <h1 className="text-6xl font-bold mb-2">195 сая</h1>
-            <h6 className="uppercase">Захиалга авч буй анхны үнэ</h6>
+            <h1 className="text-5xl font-bold mb-2">
+              30мк<sup>2</sup>, 60мк<sup>2</sup>
+            </h1>
+            <h6 className="uppercase">Хувийн эзэмшлийн газар</h6>
           </span>
           {/* <span className="text-center">
             <h1 className="text-6xl font-bold mb-2">95</h1>
@@ -99,7 +103,8 @@ export default function ProductDetail() {
           <h2 className="my-8 font-semibold text-3xl capitalize">зам</h2>
           <p>
             СБД Бэлхийн засмал замаар 16 км яваад, Бэлх Хадатын амаар 4.0 км
-            асфальтан замаар явж хотхонд хүрнэ.
+            асфальтан замаар явж хотхонд хүрнэ.2022 оны 9 сард 1.1км зам
+            ашиглалтанд орно.
           </p>
         </div>
         <div className="flex flex-col w-4/5 mx-auto text-justify items-center ">
@@ -113,7 +118,7 @@ export default function ProductDetail() {
           <WaterDamageRounded
             sx={{ width: "4rem", height: "4rem", fill: "#fec405" }}
           />
-          <h2 className="my-8 font-semibold text-3xl capitalize">Цэвэр ус</h2>
+          <h2 className="my-8 font-semibold text-3xl">Цэвэр ус</h2>
           <p>
             Гүний худаг 120 м, 6 ш эх үүсвэртэй. 200 тн нөөцийн савтай, нэгдсэн
             байдлаар халаалтын шугамтай зэрэгцэн угсрагдаж айл бүртэй
@@ -124,9 +129,7 @@ export default function ProductDetail() {
           <CountertopsRounded
             sx={{ width: "4rem", height: "4rem", fill: "#fec405" }}
           />
-          <h2 className="my-8 font-semibold text-3xl capitalize">
-            Бохирын систем
-          </h2>
+          <h2 className="my-8 font-semibold text-3xl">Бохирын систем</h2>
           <p>
             Септик системээр бохирын асуудлыг шийдсэн бөгөөд айл бүр бохирын
             системтэй холбогдоно.
@@ -136,9 +139,7 @@ export default function ProductDetail() {
           <CableRounded
             sx={{ width: "4rem", height: "4rem", fill: "#fec405" }}
           />
-          <h2 className="my-8 font-semibold text-3xl capitalize">
-            Харилцаа холбоо
-          </h2>
+          <h2 className="my-8 font-semibold text-3xl">Харилцаа холбоо</h2>
           <p>
             Мобиком, Юнителийн гар утасны сүлжээ орсон. Юнивишний гурвалсан
             үйлчилгээ орохоор төлөвлөгдсөн.

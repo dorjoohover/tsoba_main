@@ -40,6 +40,7 @@ const Product = () => {
             allowFullScreen
             allow="xr-spatial-tracking"
           ></iframe>
+          <br />
           <Picture start={start} setStart={setStart} />
 
           <Footer />
