@@ -158,7 +158,7 @@ const LoanDetails = ({ items }) => {
                 <>
                   <table>
                     <tr>
-                      <th></th>
+                      <th>215 саяын байр</th>
                       <th></th>
                       <th></th>
                       <th></th>
@@ -166,17 +166,17 @@ const LoanDetails = ({ items }) => {
                     <tr>
                       <td className="px-2"></td>
                       <td className="px-2">Байрны нийт үнэ</td>
-                      <td className="px-2">71,956$</td>
+                      <td className="px-2">68,855$</td>
                     </tr>
                     <tr>
                       <td className="px-2"></td>
                       <td className="px-2">Зээлээр санхүүжүүлэх дүн-70%</td>
-                      <td className="px-2">50,376$</td>
+                      <td className="px-2">48,199$</td>
                     </tr>
                     <tr>
                       <td className="px-2"></td>
                       <td className="px-2">Урьдчилгаа</td>
-                      <td className="px-2">21,590$</td>
+                      <td className="px-2">20,656$</td>
                     </tr>
                     <tr>
                       <td className="px-2"></td>
@@ -193,16 +193,166 @@ const LoanDetails = ({ items }) => {
                     <tr>
                       <td className="px-2"></td>
                       <td className="px-2 pb-4">Сард төлөх зээлийн хэмжээ</td>
-                      <td className="px-2  border-r-2">2,221$</td>
-                      <td className="px-2 ">2,910$</td>
+                      <td className="px-2  border-r-2">2,125$</td>
+                      <td className="px-2 ">2,785$</td>
                     </tr>
                     <tr className="border-t-2 py-2">
                       <td className="px-2"></td>
                       <td className="px-2  py-4">
                         Графикийн дагуу төлөхөд харилцагчийн төлөх хүү
                       </td>
-                      <td className="px-2  ">2,937$</td>
-                      <td className="px-2 ">2,018$</td>
+                      <td className="px-2  ">2,810$</td>
+                      <td className="px-2 ">1,930$</td>
+                    </tr>
+                  </table>
+
+                  <table>
+                    <tr>
+                      <th>235 саяын байр</th>
+                      <th></th>
+                      <th></th>
+                      <th></th>
+                    </tr>
+                    <tr>
+                      <td className="px-2"></td>
+                      <td className="px-2">Байрны нийт үнэ</td>
+                      <td className="px-2">75,260$</td>
+                    </tr>
+                    <tr>
+                      <td className="px-2"></td>
+                      <td className="px-2">Зээлээр санхүүжүүлэх дүн-70%</td>
+                      <td className="px-2">52,682$</td>
+                    </tr>
+                    <tr>
+                      <td className="px-2"></td>
+                      <td className="px-2">Урьдчилгаа</td>
+                      <td className="px-2">22,578$</td>
+                    </tr>
+                    <tr>
+                      <td className="px-2"></td>
+                      <td className="px-2">Хугацаа</td>
+                      <td className="px-2 font-bold border-r-2">24 сар</td>
+                      <td className="px-2 font-bold">18 сар</td>
+                    </tr>
+                    <tr>
+                      <td className="px-2"></td>
+                      <td className="px-2">Хүү</td>
+                      <td className="px-2 font-bold border-r-2">5.5%</td>
+                      <td className="px-2 font-bold">5%</td>
+                    </tr>
+                    <tr>
+                      <td className="px-2"></td>
+                      <td className="px-2 pb-4">Сард төлөх зээлийн хэмжээ</td>
+                      <td className="px-2  border-r-2">2,323$</td>
+                      <td className="px-2 ">3,044$</td>
+                    </tr>
+                    <tr className="border-t-2 py-2">
+                      <td className="px-2"></td>
+                      <td className="px-2  py-4">
+                        Графикийн дагуу төлөхөд харилцагчийн төлөх хүү
+                      </td>
+                      <td className="px-2  ">3,071$</td>
+                      <td className="px-2 ">2,110$</td>
+                    </tr>
+                  </table>
+
+                  <table>
+                    <tr>
+                      <th>245 саяын байр</th>
+                      <th></th>
+                      <th></th>
+                      <th></th>
+                    </tr>
+                    <tr>
+                      <td className="px-2"></td>
+                      <td className="px-2">Байрны нийт үнэ</td>
+                      <td className="px-2">78,463$</td>
+                    </tr>
+                    <tr>
+                      <td className="px-2"></td>
+                      <td className="px-2">Зээлээр санхүүжүүлэх дүн-70%</td>
+                      <td className="px-2">54,923$</td>
+                    </tr>
+                    <tr>
+                      <td className="px-2"></td>
+                      <td className="px-2">Урьдчилгаа</td>
+                      <td className="px-2">23,539$</td>
+                    </tr>
+                    <tr>
+                      <td className="px-2"></td>
+                      <td className="px-2">Хугацаа</td>
+                      <td className="px-2 font-bold border-r-2">24 сар</td>
+                      <td className="px-2 font-bold">18 сар</td>
+                    </tr>
+                    <tr>
+                      <td className="px-2"></td>
+                      <td className="px-2">Хүү</td>
+                      <td className="px-2 font-bold border-r-2">5.5%</td>
+                      <td className="px-2 font-bold">5%</td>
+                    </tr>
+                    <tr>
+                      <td className="px-2"></td>
+                      <td className="px-2 pb-4">Сард төлөх зээлийн хэмжээ</td>
+                      <td className="px-2  border-r-2">2,422$</td>
+                      <td className="px-2 ">3,174$</td>
+                    </tr>
+                    <tr className="border-t-2 py-2">
+                      <td className="px-2"></td>
+                      <td className="px-2  py-4">
+                        Графикийн дагуу төлөхөд харилцагчийн төлөх хүү
+                      </td>
+                      <td className="px-2  ">3,202$</td>
+                      <td className="px-2 ">2,200$</td>
+                    </tr>
+                  </table>
+
+                  <table>
+                    <tr>
+                      <th>265 саяын байр</th>
+                      <th></th>
+                      <th></th>
+                      <th></th>
+                    </tr>
+                    <tr>
+                      <td className="px-2"></td>
+                      <td className="px-2">Байрны нийт үнэ</td>
+                      <td className="px-2">84,868$</td>
+                    </tr>
+                    <tr>
+                      <td className="px-2"></td>
+                      <td className="px-2">Зээлээр санхүүжүүлэх дүн-70%</td>
+                      <td className="px-2">59,408$</td>
+                    </tr>
+                    <tr>
+                      <td className="px-2"></td>
+                      <td className="px-2">Урьдчилгаа</td>
+                      <td className="px-2">25,460$</td>
+                    </tr>
+                    <tr>
+                      <td className="px-2"></td>
+                      <td className="px-2">Хугацаа</td>
+                      <td className="px-2 font-bold border-r-2">24 сар</td>
+                      <td className="px-2 font-bold">18 сар</td>
+                    </tr>
+                    <tr>
+                      <td className="px-2"></td>
+                      <td className="px-2">Хүү</td>
+                      <td className="px-2 font-bold border-r-2">5.5%</td>
+                      <td className="px-2 font-bold">5%</td>
+                    </tr>
+                    <tr>
+                      <td className="px-2"></td>
+                      <td className="px-2 pb-4">Сард төлөх зээлийн хэмжээ</td>
+                      <td className="px-2  border-r-2">2,620$</td>
+                      <td className="px-2 ">3,433$</td>
+                    </tr>
+                    <tr className="border-t-2 py-2">
+                      <td className="px-2"></td>
+                      <td className="px-2  py-4">
+                        Графикийн дагуу төлөхөд харилцагчийн төлөх хүү
+                      </td>
+                      <td className="px-2  ">3,463$</td>
+                      <td className="px-2 ">2,379$</td>
                     </tr>
                   </table>
                 </>
@@ -295,61 +445,256 @@ const LoanDetails = ({ items }) => {
                 </table>
               )}
               {items == "external" && (
-                <table>
-                  <tr>
-                    <th></th>
-                    <th></th>
-                    <th></th>
-                    <th></th>
-                  </tr>
-                  <tr>
-                    <td className="px-2"></td>
-                    <td className="px-2">Байрны нийт үнэ</td>
-                    <td className="px-2">71,956$</td>
-                  </tr>
-                  <tr>
-                    <td className="px-2"></td>
-                    <td className="px-2">Зээлээр санхүүжүүлэх дүн-70%</td>
-                    <td className="px-2">50,376$</td>
-                  </tr>
-                  <tr>
-                    <td className="px-2"></td>
-                    <td className="px-2">Урьдчилгаа</td>
-                    <td className="px-2">14,393$</td>
-                  </tr>
-                  <tr>
-                    <td className="px-2"></td>
-                    <td className="px-2">Хугацаа</td>
-                    <td className="px-2 font-bold border-r-2">24 сар</td>
-                    <td className="px-2 font-bold">18 сар</td>
-                  </tr>
-                  <tr>
-                    <td className="px-2"></td>
-                    <td className="px-2">Хүү</td>
-                    <td className="px-2 font-bold border-r-2">5.5%</td>
-                    <td className="px-2 font-bold">5%</td>
-                  </tr>
-                  <tr>
-                    <td className="px-2"></td>
-                    <td className="px-2 pb-4">Эхний 6 сар</td>
-                    <td className="px-2 font-bold border-r-2">3,420$</td>
-                    <td className="px-2 font-bold">4,109$</td>
-                  </tr>
-                  <tr>
-                    <td className="px-2"></td>
-                    <td className="px-2 pb-4">Сард төлөх зээлийн хэмжээ</td>
-                    <td className="px-2  border-r-2">2,221$</td>
-                    <td className="px-2 ">2,910$</td>
-                  </tr>
-                  <tr className="border-t-2 py-2">
-                    <td className="px-2"></td>
-                    <td className="px-2  py-4">
-                      Графикийн дагуу төлөхөд харилцагчийн төлөх хүү
-                    </td>
-                    <td className="px-2  ">2,937$</td>
-                    <td className="px-2 ">2,018$</td>
-                  </tr>
-                </table>
+                <>
+                  <table>
+                    <tr>
+                      <th>215 саяын байр</th>
+                      <th></th>
+                      <th></th>
+                      <th></th>
+                    </tr>
+                    <tr>
+                      <td className="px-2"></td>
+                      <td className="px-2">Байрны нийт үнэ</td>
+                      <td className="px-2">68,855$</td>
+                    </tr>
+                    <tr>
+                      <td className="px-2"></td>
+                      <td className="px-2">Зээлээр санхүүжүүлэх дүн-70%</td>
+                      <td className="px-2">48,199$</td>
+                    </tr>
+                    <tr>
+                      <td className="px-2"></td>
+                      <td className="px-2">Урьдчилгаа</td>
+                      <td className="px-2">13,771$</td>
+                    </tr>
+                    <tr>
+                      <td className="px-2"></td>
+                      <td className="px-2">
+                        Хуваан төлөх урьдчилгаа төлбөрийн хэмжээ
+                      </td>
+                      <td className="px-2">6,886$</td>
+                    </tr>
+                    <tr>
+                      <td className="px-2"></td>
+                      <td className="px-2">Хугацаа</td>
+                      <td className="px-2 font-bold border-r-2">24 сар</td>
+                      <td className="px-2 font-bold">18 сар</td>
+                    </tr>
+                    <tr>
+                      <td className="px-2"></td>
+                      <td className="px-2">Хүү</td>
+                      <td className="px-2 font-bold border-r-2">5.5%</td>
+                      <td className="px-2 font-bold">5%</td>
+                    </tr>
+                    <tr>
+                      <td className="px-2"></td>
+                      <td className="px-2 pb-4">Эхний 6 сар</td>
+                      <td className="px-2 font-bold border-r-2">3,273$</td>
+                      <td className="px-2 font-bold">3,933$</td>
+                    </tr>
+                    <tr>
+                      <td className="px-2"></td>
+                      <td className="px-2 pb-4">Сард төлөх зээлийн хэмжээ</td>
+                      <td className="px-2  border-r-2">2,125$</td>
+                      <td className="px-2 ">2,785$</td>
+                    </tr>
+                    <tr className="border-t-2 py-2">
+                      <td className="px-2"></td>
+                      <td className="px-2  py-4">
+                        Графикийн дагуу төлөхөд харилцагчийн төлөх хүү
+                      </td>
+                      <td className="px-2  ">2,810$</td>
+                      <td className="px-2 ">1,930$</td>
+                    </tr>
+                  </table>
+                  <table>
+                    <tr>
+                      <th>235 саяын байр</th>
+                      <th></th>
+                      <th></th>
+                      <th></th>
+                    </tr>
+                    <tr>
+                      <td className="px-2"></td>
+                      <td className="px-2">Байрны нийт үнэ</td>
+                      <td className="px-2">75,260$</td>
+                    </tr>
+                    <tr>
+                      <td className="px-2"></td>
+                      <td className="px-2">Зээлээр санхүүжүүлэх дүн-70%</td>
+                      <td className="px-2">52,682$</td>
+                    </tr>
+                    <tr>
+                      <td className="px-2"></td>
+                      <td className="px-2">Урьдчилгаа</td>
+                      <td className="px-2">15,052$</td>
+                    </tr>
+                    <tr>
+                      <td className="px-2"></td>
+                      <td className="px-2">
+                        Хуваан төлөх урьдчилгаа төлбөрийн хэмжээ
+                      </td>
+                      <td className="px-2">7,526$</td>
+                    </tr>
+                    <tr>
+                      <td className="px-2"></td>
+                      <td className="px-2">Хугацаа</td>
+                      <td className="px-2 font-bold border-r-2">24 сар</td>
+                      <td className="px-2 font-bold">18 сар</td>
+                    </tr>
+                    <tr>
+                      <td className="px-2"></td>
+                      <td className="px-2">Хүү</td>
+                      <td className="px-2 font-bold border-r-2">5.5%</td>
+                      <td className="px-2 font-bold">5%</td>
+                    </tr>
+                    <tr>
+                      <td className="px-2"></td>
+                      <td className="px-2 pb-4">Эхний 6 сар</td>
+                      <td className="px-2 font-bold border-r-2">3,577$</td>
+                      <td className="px-2 font-bold">4,298$</td>
+                    </tr>
+                    <tr>
+                      <td className="px-2"></td>
+                      <td className="px-2 pb-4">Сард төлөх зээлийн хэмжээ</td>
+                      <td className="px-2  border-r-2">2,323$</td>
+                      <td className="px-2 ">3,044$</td>
+                    </tr>
+                    <tr className="border-t-2 py-2">
+                      <td className="px-2"></td>
+                      <td className="px-2  py-4">
+                        Графикийн дагуу төлөхөд харилцагчийн төлөх хүү
+                      </td>
+                      <td className="px-2  ">3,071$</td>
+                      <td className="px-2 ">2,110$</td>
+                    </tr>
+                  </table>
+                  <table>
+                    <tr>
+                      <th>245 саяын байр</th>
+                      <th></th>
+                      <th></th>
+                      <th></th>
+                    </tr>
+                    <tr>
+                      <td className="px-2"></td>
+                      <td className="px-2">Байрны нийт үнэ</td>
+                      <td className="px-2">78,463$</td>
+                    </tr>
+                    <tr>
+                      <td className="px-2"></td>
+                      <td className="px-2">Зээлээр санхүүжүүлэх дүн-70%</td>
+                      <td className="px-2">54,923$</td>
+                    </tr>
+                    <tr>
+                      <td className="px-2"></td>
+                      <td className="px-2">Урьдчилгаа</td>
+                      <td className="px-2">15,693$</td>
+                    </tr>
+                    <tr>
+                      <td className="px-2"></td>
+                      <td className="px-2">
+                        Хуваан төлөх урьдчилгаа төлбөрийн хэмжээ
+                      </td>
+                      <td className="px-2">7,846$</td>
+                    </tr>
+                    <tr>
+                      <td className="px-2"></td>
+                      <td className="px-2">Хугацаа</td>
+                      <td className="px-2 font-bold border-r-2">24 сар</td>
+                      <td className="px-2 font-bold">18 сар</td>
+                    </tr>
+                    <tr>
+                      <td className="px-2"></td>
+                      <td className="px-2">Хүү</td>
+                      <td className="px-2 font-bold border-r-2">5.5%</td>
+                      <td className="px-2 font-bold">5%</td>
+                    </tr>
+                    <tr>
+                      <td className="px-2"></td>
+                      <td className="px-2 pb-4">Эхний 6 сар</td>
+                      <td className="px-2 font-bold border-r-2">3,730$</td>
+                      <td className="px-2 font-bold">4,481$</td>
+                    </tr>
+                    <tr>
+                      <td className="px-2"></td>
+                      <td className="px-2 pb-4">Сард төлөх зээлийн хэмжээ</td>
+                      <td className="px-2  border-r-2">2,422$</td>
+                      <td className="px-2 ">3,174$</td>
+                    </tr>
+                    <tr className="border-t-2 py-2">
+                      <td className="px-2"></td>
+                      <td className="px-2  py-4">
+                        Графикийн дагуу төлөхөд харилцагчийн төлөх хүү
+                      </td>
+                      <td className="px-2  ">3,202$</td>
+                      <td className="px-2 ">2,200$</td>
+                    </tr>
+                  </table>
+                  <table>
+                    <tr>
+                      <th>265 саяын байр</th>
+                      <th></th>
+                      <th></th>
+                      <th></th>
+                    </tr>
+                    <tr>
+                      <td className="px-2"></td>
+                      <td className="px-2">Байрны нийт үнэ</td>
+                      <td className="px-2">84,868$</td>
+                    </tr>
+                    <tr>
+                      <td className="px-2"></td>
+                      <td className="px-2">Зээлээр санхүүжүүлэх дүн-70%</td>
+                      <td className="px-2">59,408$</td>
+                    </tr>
+                    <tr>
+                      <td className="px-2"></td>
+                      <td className="px-2">Урьдчилгаа</td>
+                      <td className="px-2">16,947$</td>
+                    </tr>
+                    <tr>
+                      <td className="px-2"></td>
+                      <td className="px-2">
+                        Хуваан төлөх урьдчилгаа төлбөрийн хэмжээ
+                      </td>
+                      <td className="px-2">8,487$</td>
+                    </tr>
+                    <tr>
+                      <td className="px-2"></td>
+                      <td className="px-2">Хугацаа</td>
+                      <td className="px-2 font-bold border-r-2">24 сар</td>
+                      <td className="px-2 font-bold">18 сар</td>
+                    </tr>
+                    <tr>
+                      <td className="px-2"></td>
+                      <td className="px-2">Хүү</td>
+                      <td className="px-2 font-bold border-r-2">5.5%</td>
+                      <td className="px-2 font-bold">5%</td>
+                    </tr>
+                    <tr>
+                      <td className="px-2"></td>
+                      <td className="px-2 pb-4">Эхний 6 сар</td>
+                      <td className="px-2 font-bold border-r-2">4,034$</td>
+                      <td className="px-2 font-bold">4,847$</td>
+                    </tr>
+                    <tr>
+                      <td className="px-2"></td>
+                      <td className="px-2 pb-4">Сард төлөх зээлийн хэмжээ</td>
+                      <td className="px-2  border-r-2">2,620$</td>
+                      <td className="px-2 ">3,433$</td>
+                    </tr>
+                    <tr className="border-t-2 py-2">
+                      <td className="px-2"></td>
+                      <td className="px-2  py-4">
+                        Графикийн дагуу төлөхөд харилцагчийн төлөх хүү
+                      </td>
+                      <td className="px-2  ">3,463$</td>
+                      <td className="px-2 ">2,379$</td>
+                    </tr>
+                  </table>
+                </>
               )}
             </AccordionDetails>
           </Accordion>

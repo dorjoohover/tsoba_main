@@ -9,6 +9,7 @@ import {
   YouTube,
   Twitter,
   Instagram,
+  Telegram,
 } from "@mui/icons-material";
 import { Box } from "@mui/material";
 const Footer = () => {
@@ -36,7 +37,15 @@ const Footer = () => {
             <li className=" text-white mb-4 ml-12">Бидэнтэй холбоо барих:</li>
             <li className="text-white mb-2">
               <PhoneAndroid sx={{ paddingRight: "0.5rem", fill: "white" }} />{" "}
-              +(976-11) 77005434 , 80115262
+              +(976-11) 77005434 ,
+              <Image
+                src={"/img/telegram.png"}
+                alt="logo"
+                height={18}
+                width={18}
+              />
+              <Image src={"/img/viber.png"} alt="logo" height={22} width={22} />
+              80115262
             </li>
             <li className="text-white mb-2">
               <MailOutline sx={{ paddingRight: "0.5rem", fill: "white" }} />{" "}

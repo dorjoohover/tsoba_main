@@ -158,6 +158,9 @@ export default function ProductDetail() {
           </p>
         </div>
       </div>
+      <center>
+        <h1>Хадат Вилла 4 төсөл</h1>
+      </center>
       <Box display={"flex"} justifyContent={"center"}>
         <Link href="https://cdn.fbsbx.com/v/t59.2708-21/283197136_570055881240913_1062287272156225492_n.pdf/KH4-%D0%B1%D1%80%D0%BE%D1%88%D1%83%D1%80.pdf?_nc_cat=107&ccb=1-7&_nc_sid=0cab14&_nc_ohc=wlWqeIUaIv0AX-V7WzD&_nc_ht=cdn.fbsbx.com&oh=03_AVI_MrplIeQWE3_POKO7iIWa0C6GJMDJqZSCj3uArUgjrQ&oe=62B4B040&dl=1">
           <BootstrapButton variant="contained" className="full-width">

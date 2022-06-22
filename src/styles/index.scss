@@ -13,7 +13,12 @@
 iframe {
   width: 100%;
 }
-
+center {
+  h1 {
+    font-weight: bold;
+    font-size: 1.875rem;
+  }
+}
 .splide__pagination {
   display: none !important;
 }
