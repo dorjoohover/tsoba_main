@@ -1,5 +1,8 @@
 import Image from "next/image";
 import Title from "../Title";
+import { Box, Typography, Button } from "@mui/material";
+import { styled } from "@mui/material/styles";
+import Link from "next/link";
 import {
   EditRoadRounded,
   FireplaceRounded,
@@ -8,6 +11,15 @@ import {
   CountertopsRounded,
   CableRounded,
 } from "@mui/icons-material";
+const BootstrapButton = styled(Button)({
+  borderRadius: 0,
+  backgroundColor: "#FEC405",
+  margin: "0 20px",
+  "&:hover": {
+    backgroundColor: "#FEC405",
+    borderColor: "#FEC405",
+  },
+});
 export default function ProductDetail() {
   return (
     <>
@@ -103,7 +115,7 @@ export default function ProductDetail() {
           <h2 className="my-8 font-semibold text-3xl capitalize">зам</h2>
           <p>
             СБД Бэлхийн засмал замаар 16 км яваад, Бэлх Хадатын амаар 4.0 км
-            асфальтан замаар явж хотхонд хүрнэ.2022 оны 9 сард 1.1км зам
+            асфальтан замаар явж хотхонд хүрнэ. 2022 оны 9 сард 1.1 км зам
             ашиглалтанд орно.
           </p>
         </div>
@@ -146,6 +158,14 @@ export default function ProductDetail() {
           </p>
         </div>
       </div>
+      <Box display={"flex"} justifyContent={"center"}>
+        <Link href="https://cdn.fbsbx.com/v/t59.2708-21/283197136_570055881240913_1062287272156225492_n.pdf/KH4-%D0%B1%D1%80%D0%BE%D1%88%D1%83%D1%80.pdf?_nc_cat=107&ccb=1-7&_nc_sid=0cab14&_nc_ohc=wlWqeIUaIv0AX-V7WzD&_nc_ht=cdn.fbsbx.com&oh=03_AVI_MrplIeQWE3_POKO7iIWa0C6GJMDJqZSCj3uArUgjrQ&oe=62B4B040&dl=1">
+          <BootstrapButton variant="contained" className="full-width">
+            Брошур татах
+          </BootstrapButton>
+        </Link>
+      </Box>
+      <br />
     </>
   );
 }
