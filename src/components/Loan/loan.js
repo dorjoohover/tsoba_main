@@ -158,7 +158,7 @@ const LoanDetails = ({ items }) => {
                 <>
                   <table>
                     <tr>
-                      <th>215 саяын байр</th>
+                      <th>215 сая</th>
                       <th></th>
                       <th></th>
                       <th></th>
@@ -208,7 +208,7 @@ const LoanDetails = ({ items }) => {
 
                   <table>
                     <tr>
-                      <th>235 саяын байр</th>
+                      <th>235 сая</th>
                       <th></th>
                       <th></th>
                       <th></th>
@@ -258,7 +258,7 @@ const LoanDetails = ({ items }) => {
 
                   <table>
                     <tr>
-                      <th>245 саяын байр</th>
+                      <th>245 сая</th>
                       <th></th>
                       <th></th>
                       <th></th>
@@ -308,7 +308,7 @@ const LoanDetails = ({ items }) => {
 
                   <table>
                     <tr>
-                      <th>265 саяын байр</th>
+                      <th>265 сая</th>
                       <th></th>
                       <th></th>
                       <th></th>
@@ -448,7 +448,7 @@ const LoanDetails = ({ items }) => {
                 <>
                   <table>
                     <tr>
-                      <th>215 саяын байр</th>
+                      <th>215 сая</th>
                       <th></th>
                       <th></th>
                       <th></th>
@@ -510,7 +510,7 @@ const LoanDetails = ({ items }) => {
                   </table>
                   <table>
                     <tr>
-                      <th>235 саяын байр</th>
+                      <th>235 сая</th>
                       <th></th>
                       <th></th>
                       <th></th>
@@ -572,7 +572,7 @@ const LoanDetails = ({ items }) => {
                   </table>
                   <table>
                     <tr>
-                      <th>245 саяын байр</th>
+                      <th>245 сая</th>
                       <th></th>
                       <th></th>
                       <th></th>
@@ -634,7 +634,7 @@ const LoanDetails = ({ items }) => {
                   </table>
                   <table>
                     <tr>
-                      <th>265 саяын байр</th>
+                      <th>265 сая</th>
                       <th></th>
                       <th></th>
                       <th></th>
@@ -778,7 +778,7 @@ const LoanDetails = ({ items }) => {
                   lineHeight: "1.4",
                 }}
               >
-                БҮРДҮҮЛЭХ МАТЕРИАЛИЙН ЖАГШААЛТ
+                БҮРДҮҮЛЭХ МАТЕРИАЛИЙН ЖАГСААЛТ
               </Typography>
             </AccordionSummary>
             <AccordionDetails sx={{ padding: "30px 0", fontSize: "1rem" }}>
