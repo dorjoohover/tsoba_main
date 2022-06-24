@@ -83,11 +83,11 @@ function Home(props) {
 
       <Navbar check_bg={"home"} />
       <Header />
+      <Condition />
       <Box backgroundColor={"#D3D3D330"}>
         <Step />
       </Box>
-      <About />
-      <Condition />
+
       <HeaderRequest />
       <Projects />
       {/* <Loans />

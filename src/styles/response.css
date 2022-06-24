@@ -59,15 +59,6 @@
   }
 }
 
-@media only screen and (max-width: 1200px) {
-  .step {
-    position: absolute;
-    left: 60%;
-    -webkit-transform: translateX(-50%);
-            transform: translateX(-50%);
-  }
-}
-
 @media only screen and (max-width: 900px) {
   .project h2 {
     font-size: 20px;
@@ -232,11 +223,22 @@
 }
 
 @media only screen and (max-width: 768px) {
+  .step-container-right {
+    display: none;
+  }
+  .step-container {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .sub-title-text {
+    font-size: 11px;
+  }
   .header_text {
-    width: 100%;
+    width: 80%;
   }
   .header_text h5 {
-    font-size: 16px;
+    font-size: 42px;
     margin-bottom: 10px;
   }
   .header_text h1 {
@@ -262,17 +264,16 @@
 }
 
 @media only screen and (max-width: 600px) {
-  .step {
-    position: absolute;
-    left: 70%;
-    -webkit-transform: translateX(-50%);
-            transform: translateX(-50%);
+  .step-container {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .step p {
     font-size: 13px;
   }
   .step h1 {
-    font-size: 30px;
+    font-size: 65px !important;
   }
   .step h2 {
     font-size: 20px;
@@ -584,12 +585,6 @@
   .grid-cols-2 {
     -ms-grid-columns: (minmax(0, 1fr))[1];
         grid-template-columns: repeat(1, minmax(0, 1fr));
-  }
-  .step {
-    position: absolute;
-    left: 65%;
-    -webkit-transform: translateX(-50%);
-            transform: translateX(-50%);
   }
   .step p {
     font-size: 13px;

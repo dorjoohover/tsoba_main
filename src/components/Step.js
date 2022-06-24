@@ -50,253 +50,113 @@ const Step = () => {
   return (
     <Box
       sx={{
-        maxWidth: "1100px",
-        margin: "auto",
-        padding: "300px 10px 90px 10px",
-        paddingTop: {
-          lg: "300px",
-          md: "300px",
-          sm: "500px",
-        },
+        maxWidth: "100%",
+        margin: "0 auto 0 0",
+        padding: "0px 0px 90px 0px",
+        // paddingTop: {
+        //   lg: "300px",
+        //   md: "300px",
+        //   sm: "500px",
+        // },
       }}
     >
       <HeaderTitle
         first_text={"ХЭРХЭН ХАУСАА"}
         last_text={"ХУДАЛДАН АВАХ ВЭ?"}
       />
-      <Box
-        display={"flex"}
-        justifyContent={"space-between"}
-        alignItems={"center"}
-        mt={16}
-        sx={{
-          justifyContent: {
-            lg: "space-between",
-            md: "center",
-            sm: "center",
-          },
-        }}
-      >
-        <div className="flex flex-col item-between step">
-          <Box
-            minWidth={233}
-            maxWidth={233}
-            sx={{
-              marginBottom: {
-                md: "180px",
-                lg: "128px",
-                sm: "180px",
-                xs: "200px",
-              },
-            }}
-          >
-            <div className="flex justify-between w-full items-end mb-4">
-              <h2 className="text-xl">Хаусаа сонгох</h2>
-              <h1 className="text-5xl text_primary_color font-semibold ">01</h1>
-            </div>
-            <p className="text-justify">
-              Үл хөдлөх хөрөнгийн салбарт ажиллаж буй олон жилийн туршлагатай,
-              барилгын тэргүүлэх компаниудын төсөлтэй танилцаж хаусаа сонгох
-              боломжтой.{" "}
-            </p>
-          </Box>
-          <Box minWidth={233} maxWidth={233}>
-            <div className="flex justify-between w-full items-end mb-4">
-              <h2 className="text-xl">Хаусаа хүлээж авах</h2>
-              <h1 className="text-5xl text_primary_color font-semibold ">03</h1>
-            </div>
-            <p className="text-justify">
-              Бидний хамтын ажиллагааны үр дүнд та Эх орондоо өөрийн үл хөдлөх
-              хөрөнгийг худалдан авч түлхүүрээ гардан авах болно.
-            </p>
-          </Box>
-        </div>
+      <div className="step-container">
         <Box
-          position={"relative"}
-          height={472}
-          sx={{
-            top: "-32px",
-            width: "auto",
-            left: {
-              lg: "0",
-              md: "calc(-10% - 117px)",
-              sm: "calc(-20% - 117px)",
-              xs: "0",
-            },
-          }}
           display={"flex"}
-        >
-          <Box
-            backgroundColor={"rgba(0, 0, 0, .15)"}
-            width={"117px"}
-            position={"absolute"}
-            height={"1px"}
-            top={"80px"}
-            left={"-117px"}
-            sx={{
-              left: {
-                lg: "-117px",
-                md: "0",
-                sm: "0",
-                xs: "0",
-              },
-              right: {
-                lg: "0",
-                md: "-117px",
-                sm: "-117px",
-                xs: "-117px",
-              },
-              width: {
-                lg: "117px",
-                md: "117px",
-                sm: "80px",
-                xs: "40px",
-              },
-            }}
-          ></Box>
-          <Box
-            border={"#FEC405 solid 2px"}
-            borderRadius={"100%"}
-            position={"absolute"}
-            top={"76px"}
-            left={"-127px"}
-            p={0.5}
-            sx={{
-              left: {
-                lg: "-127px",
-                md: "auto",
-                sm: "auto",
-                xs: "auto",
-              },
-              right: {
-                lg: "auto",
-                md: "-127px",
-                sm: "-90px",
-                xs: "-50px",
-              },
-            }}
-          ></Box>
-          <Box
-            backgroundColor={"rgba(0, 0, 0, .15)"}
-            width={"117px"}
-            position={"absolute"}
-            height={"1px"}
-            left={"-117px"}
-            bottom={"80px"}
-            sx={{
-              left: {
-                lg: "-117px",
-                md: "auto",
-                sm: "auto",
-                xs: "auto",
-              },
-              right: {
-                lg: "auto",
-                md: "-117px",
-                sm: "-80px",
-                xs: "-40px",
-              },
-              width: {
-                lg: "117px",
-                md: "117px",
-                sm: "80px",
-                xs: "40px",
-              },
-            }}
-          ></Box>
-          <Box
-            border={"#FEC405 solid 2px"}
-            borderRadius={"100%"}
-            position={"absolute"}
-            bottom={"74px"}
-            left={"-127px"}
-            p={0.5}
-            sx={{
-              left: {
-                lg: "-127px",
-                md: "auto",
-                sm: "auto",
-                xs: "auto",
-              },
-              right: {
-                lg: "auto",
-                md: "-127px",
-                sm: "-90px",
-                xs: "-50px",
-              },
-            }}
-          ></Box>
-          <Box
-            backgroundColor={"rgba(0, 0, 0, .15)"}
-            position={"relative"}
-            width={"1px"}
-          ></Box>
-          <Box
-            backgroundColor={"rgba(0, 0, 0, .15)"}
-            width={"117px"}
-            position={"absolute"}
-            height={"1px"}
-            top={"calc(50% - 0.8px)"}
-            left={"0px"}
-            sx={{
-              width: {
-                lg: "117px",
-                md: "117px",
-                sm: "80px",
-                xs: "40px",
-              },
-            }}
-          ></Box>
-          <Box
-            border={"#FEC405 solid 2px"}
-            borderRadius={"100%"}
-            position={"absolute"}
-            top={"calc(50% - 4.8px)"}
-            right={"-127px"}
-            p={0.5}
-            sx={{
-              right: {
-                lg: "-127px",
-                md: "-127px",
-                sm: "-90px",
-                xs: "-50px",
-              },
-            }}
-          ></Box>
-        </Box>
-        <Box
-          minWidth={233}
-          maxWidth={233}
+          justifyContent={"space-between"}
+          alignItems={"center"}
+          height="100vh"
+          className="step-container-box"
+          pl={8}
           sx={{
-            position: {
-              lg: "relative",
-              md: "absolute",
-              sm: "absolute",
-              xs: "absolute",
-            },
-            left: {
-              lg: "0",
-              md: "60%",
-              sm: "60%",
-              xs: "65%",
-            },
-            transform: {
-              lg: "none",
-              md: " translateX(-50%)",
-              sm: " translateX(-50%)",
-              xs: " translateX(-50%)",
-            },
+            paddingLeft: "0",
+          }}
+          sm={{
+            paddingLeft: "0",
           }}
         >
-          <div className="flex justify-between w-full items-end mb-4 step_2">
-            <h2 className="text-xl">Худалдан авах хүсэлт илгээх</h2>
-            <h1 className="text-5xl text_primary_color font-semibold ">02</h1>
+          <div className="flex flex-col item-between step">
+            <Box
+              minWidth={450}
+              maxWidth={450}
+              display={"flex"}
+              alignItems={"flex-start"}
+              mt={3}
+              className="step-box"
+            >
+              <div className="flex  align-center   mb-4 step-size">
+                <h1 className="text-7xl text_primary_color font-semibold ">
+                  01
+                </h1>
+              </div>
+              <div>
+                <h2 className="text-3xl font-semibold">Хаусаа сонгох</h2>
+                <p className="text-justify step-text-down">
+                  Үл хөдлөх хөрөнгийн салбарт ажиллаж буй олон жилийн
+                  туршлагатай, барилгын тэргүүлэх компаниудын төсөлтэй танилцаж
+                  хаусаа сонгох боломжтой.{" "}
+                </p>
+              </div>
+            </Box>
+            <Box
+              minWidth={450}
+              maxWidth={450}
+              display={"flex"}
+              alignItems={"flex-start"}
+              mt={3}
+            >
+              <div className="flex  align-center   mb-4 step-size">
+                <h1 className="text-7xl text_primary_color font-semibold ">
+                  02
+                </h1>
+              </div>
+              <div>
+                <h2 className="text-3xl font-semibold">
+                  Худалдан авах хүсэлт илгээх
+                </h2>
+                <p className="text-justify step-text-down">
+                  Та хүссэн хаусаа төлбөрийн нөхцөл сонгон худалдан авах
+                  боломжтой.
+                </p>
+              </div>
+            </Box>
+            <Box
+              minWidth={450}
+              maxWidth={450}
+              display={"flex"}
+              alignItems={"flex-start"}
+              mt={3}
+            >
+              <div className="flex  align-center   mb-4 step-size">
+                <h1 className="text-7xl text_primary_color font-semibold ">
+                  03
+                </h1>
+              </div>
+              <div>
+                <h2 className="text-3xl font-semibold">Хаусаа хүлээж авах</h2>
+                <p className="text-justify step-text-down">
+                  Бидний хамтын ажиллагааны үр дүнд та Эх орондоо өөрийн үл
+                  хөдлөх хөрөнгийг худалдан авч түлхүүрээ гардан авах болно.
+                </p>
+              </div>
+            </Box>
           </div>
-          <p className="text-justify step_2_text">
-            Та хүссэн хаусаа төлбөрийн нөхцөл сонгон худалдан авах боломжтой.
-          </p>
         </Box>
-      </Box>
+        <div className="step-container-right">
+          <Image
+            className="about-image-ext"
+            src={"/img/step-bg.png"}
+            alt="about"
+            layout="responsive"
+            width={2300}
+            height={2300}
+          />
+        </div>
+      </div>
     </Box>
   );
 };

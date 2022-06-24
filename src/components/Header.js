@@ -12,23 +12,23 @@ const Header = () => {
   return (
     <>
       <div className="relative header-bg-size">
-        <div className="absolute z-30 top-1/2 left-1/2 header_text text-center">
-          <h5 className=" tracking-widest text-white mb-6 font-extralight text-2xl">
+        <div className="absolute z-30 top-1/2 left-1/2 header_text text-left">
+          <h5 className=" tracking-widest text-white mb-12 font-extrabold text-6xl header-title-width">
             Хаусаа 24 цагт
           </h5>
-          <h1
+          {/* <h1
             className={`text-5xl leading-tight font-semibold text-white mb-10`}
           >
             Хүлээлтээс давсан <br /> Хялбар санхүүжилт
-          </h1>
+          </h1> */}
           <Link href={"/request"}>
-            <a className="bg_primary_color text-white px-6 font-semibold  py-4 main_link">
+            <a className="bg_primary_color text-white px-6 font-semibold  py-4 main_link text-3xl">
               Зээлийн хүсэлт илгээх
             </a>
           </Link>
         </div>
         <span className="bg-black absolute inset-0 opacity-50 z-20"></span>
-        <Banner />
+
         <Splide
           className="screen"
           options={{
@@ -82,6 +82,13 @@ const Header = () => {
           </>
           )
         </Splide>
+
+        <div className="absolute z-30 top-3/4 left-1/2 sub-title-extra ">
+          <h5 className=" tracking-widest text-white mb-2 font-lightbold text-base sub-title-text">
+            Таны сэтгэл санаанд үндэслэн худалдан авалтыг дэмжинэ.
+          </h5>
+          <div id="lineh1"></div>
+        </div>
       </div>
     </>
   );
