@@ -17,14 +17,15 @@ const HeaderRequest = () => {
   return (
     <Box
       sx={{
-        backgroundImage: 'url("/img/header_request_bg.jpg")',
-        backgroundSize: "260%",
+        backgroundImage: 'url("/img/extra/kh4cover.jpg")',
+        backgroundSize: "100%",
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
       }}
       py={"40px"}
       position={"relative"}
       px={"10px"}
+      className="header-request-size"
     >
       <Box position="relative" zIndex={20} maxWidth={1200} mx="auto">
         <div className="text-center">
@@ -71,9 +72,9 @@ const HeaderRequest = () => {
             }}
           >
             Та манай “Homey Mortgage”-ээс өөрийн мөрөөдлийн амины орон сууцаа
-            худалдан авах зээлд хамрагдах боломжтой эсэхээ хүсэлтийг
-            бөглөн шалгуулаарай. Хүсэлтийг илгээснээр манай зээлийн мэргэжилтэн
-            тантай холбогдох болно.
+            худалдан авах зээлд хамрагдах боломжтой эсэхээ хүсэлтийг бөглөн
+            шалгуулаарай. Хүсэлтийг илгээснээр манай зээлийн мэргэжилтэн тантай
+            холбогдох болно.
           </Typography>
           <Link href="/request">
             <a className=" my-auto">

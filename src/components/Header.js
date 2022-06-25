@@ -14,7 +14,7 @@ const Header = () => {
       <div className="relative header-bg-size">
         <div className="absolute z-30 top-1/2 left-1/2 header_text text-left">
           <h5 className=" tracking-widest text-white mb-12 font-extrabold text-6xl header-title-width">
-            Хаусаа 24 цагт
+            Хүлээлтээс давсан хялбар санхүүжилт
           </h5>
           {/* <h1
             className={`text-5xl leading-tight font-semibold text-white mb-10`}
@@ -52,6 +52,7 @@ const Header = () => {
                   layout="responsive"
                   width={3800}
                   height={2000}
+                  unoptimized
                 />
               </div>
             </SplideSlide>
@@ -64,6 +65,7 @@ const Header = () => {
                   layout="responsive"
                   width={3800}
                   height={2000}
+                  unoptimized
                 />
               </div>
             </SplideSlide>
@@ -76,6 +78,7 @@ const Header = () => {
                   layout="responsive"
                   width={3800}
                   height={2000}
+                  unoptimized
                 />
               </div>
             </SplideSlide>
@@ -85,7 +88,7 @@ const Header = () => {
 
         <div className="absolute z-30 top-3/4 left-1/2 sub-title-extra ">
           <h5 className=" tracking-widest text-white mb-2 font-lightbold text-base sub-title-text">
-            Таны сэтгэл санаанд үндэслэн худалдан авалтыг дэмжинэ.
+            Хаусаа 24 цагт
           </h5>
           <div id="lineh1"></div>
         </div>

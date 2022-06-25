@@ -163,7 +163,7 @@ const Navbar = ({ color, check_bg }) => {
               className="link"
             >
               <Link href={"/loans/external"}>
-                <a>гадаад дахь харилцагч</a>
+                <a>зээлийн тодорхойлолт</a>
               </Link>
               {/* <Link href={"/loans/internal"}>
                 <a>дотоод дахь харилцагч</a>
@@ -331,11 +331,11 @@ const Navbar = ({ color, check_bg }) => {
                 </button>
                 <div className="link">
                   <Link href={"/loans/external"}>
-                    <a>гадаад харилцагч</a>
+                    <a>зээлийн тодорхойлолт</a>
                   </Link>
-                  <Link href={"/loans/internal"}>
+                  {/* <Link href={"/loans/internal"}>
                     <a>дотоод харилцагч</a>
-                  </Link>
+                  </Link> */}
                   <Link href={"/request"}>
                     <a>зээлийн хүсэлт</a>
                   </Link>

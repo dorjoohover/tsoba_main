@@ -15,7 +15,7 @@ const Projects = () => {
           allowFullScreen
           allow="xr-spatial-tracking"
         ></iframe>
-        <div className="project_item_1">
+        {/* <div className="project_item_1">
           <div className=" mb-6 relative ">
             <Image
               src={"/img/extra/kh4cover.jpg"}
@@ -33,7 +33,7 @@ const Projects = () => {
               </button>
             </Link>
           </div>
-        </div>
+        </div> */}
         {/* <div className="project_item_2">
           <div className=" mb-6 relative">
             <Image

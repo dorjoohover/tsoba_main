@@ -108,6 +108,7 @@ const Step = () => {
               display={"flex"}
               alignItems={"flex-start"}
               mt={3}
+              className="step-box"
             >
               <div className="flex  align-center   mb-4 step-size">
                 <h1 className="text-7xl text_primary_color font-semibold ">
@@ -130,6 +131,7 @@ const Step = () => {
               display={"flex"}
               alignItems={"flex-start"}
               mt={3}
+              className="step-box"
             >
               <div className="flex  align-center   mb-4 step-size">
                 <h1 className="text-7xl text_primary_color font-semibold ">
