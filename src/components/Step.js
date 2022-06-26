@@ -150,8 +150,7 @@ const Step = () => {
         </Box>
         <div className="step-container-right">
           <Image
-            className="about-image-ext"
-            src={"/img/step-bg.png"}
+            src={"/img/step-bg-2.png"}
             alt="about"
             layout="responsive"
             width={2300}
