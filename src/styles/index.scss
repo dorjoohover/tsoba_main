@@ -494,6 +494,15 @@ body {
     opacity: 0;
   }
 }
+.ssswiper {
+  background-color: gray;
+}
+.tab {
+  color: black !important;
+}
+.step {
+  padding-left: 20px !important;
+}
 .step-container {
   display: flex;
   justify-content: space-between;
@@ -546,4 +555,41 @@ body {
     height: 100px;
     opacity: 0;
   }
+}
+.check-list {
+  margin: 0;
+  padding-left: 1.2rem;
+}
+
+.check-list li {
+  position: relative;
+  list-style-type: none;
+  padding-left: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.check-list li:before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  top: -2px;
+  width: 5px;
+  height: 11px;
+  border-width: 0 2px 2px 0;
+  border-style: solid;
+  border-color: #fec405;
+  transform-origin: bottom left;
+  transform: rotate(45deg);
+}
+
+/* Boilerplate stuff */
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+.check-list-size {
+  display: flex;
+  align-items: center;
 }

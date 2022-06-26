@@ -567,6 +567,18 @@ body {
   }
 }
 
+.ssswiper {
+  background-color: gray;
+}
+
+.tab {
+  color: black !important;
+}
+
+.step {
+  padding-left: 20px !important;
+}
+
 .step-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -639,5 +651,51 @@ body {
     height: 100px;
     opacity: 0;
   }
+}
+
+.check-list {
+  margin: 0;
+  padding-left: 1.2rem;
+}
+
+.check-list li {
+  position: relative;
+  list-style-type: none;
+  padding-left: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.check-list li:before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  top: -2px;
+  width: 5px;
+  height: 11px;
+  border-width: 0 2px 2px 0;
+  border-style: solid;
+  border-color: #fec405;
+  -webkit-transform-origin: bottom left;
+          transform-origin: bottom left;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+/* Boilerplate stuff */
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.check-list-size {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 /*# sourceMappingURL=index.css.map */
