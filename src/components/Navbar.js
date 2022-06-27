@@ -25,6 +25,7 @@ const Navbar = ({ color, check_bg }) => {
         .catch((err) => {
           // some error handling
         });
+      fetchBusinesses();
     };
     const handleScroll = () => {
       if (window.scrollY == 0) {
@@ -58,7 +59,6 @@ const Navbar = ({ color, check_bg }) => {
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-    fetchBusinesses();
   }, []);
   return (
     <Box
