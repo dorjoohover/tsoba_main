@@ -13,7 +13,11 @@ const BootstrapButton = styled(Button)({
 });
 const Condition = () => {
   return (
-    <Box backgroundColor={"#D3D3D330"} py={"90px"}>
+    <Box
+      backgroundColor={"#D3D3D330"}
+      py={"90px"}
+      className="condition-header-size"
+    >
       <HeaderTitle
         first_text={"ЗАХИАЛАГЧИД САНАЛ БОЛГОХ"}
         last_text={"НӨХЦӨЛ"}
@@ -61,7 +65,7 @@ const Condition = () => {
             lg: "none",
             md: "repeat(2, 1fr)",
             sm: "repeat(2, 1fr)",
-            xs: "repeat(1, 1fr)",
+            xs: "repeat(2, 1fr)",
           },
           gridGap: {
             lg: "none",
@@ -80,6 +84,12 @@ const Condition = () => {
             md: "900px",
             sm: "auto",
             xs: "auto",
+          },
+          paddingRight: {
+            lg: "auto",
+            md: "auto",
+            sm: "30px",
+            xs: "30px",
           },
         }}
       >

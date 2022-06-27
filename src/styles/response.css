@@ -68,6 +68,13 @@
     background-attachment: scroll;
     height: 100vh;
   }
+  .header-content-size span {
+    width: 100% !important;
+    height: 130% !important;
+  }
+  .step {
+    padding-left: 5%;
+  }
   .header_text h1 {
     font-size: 30px;
   }
@@ -220,25 +227,48 @@
   .project h2 {
     font-size: 20px;
   }
+  .step {
+    padding-left: 5%;
+  }
+  .header-content-size span {
+    width: 100% !important;
+    height: 120% !important;
+  }
 }
 
 @media only screen and (max-width: 768px) {
   .step-container-right {
     display: none;
   }
+  .header-bg-size {
+    height: 60vh;
+  }
+  .header-button {
+    width: 70px;
+    height: 70px;
+  }
+  .step {
+    padding-left: 0%;
+  }
   .step-container {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
   }
+  .header_text a {
+    font-size: 11px !important;
+  }
+  .condition-header-size {
+    margin-top: 5%;
+  }
   .sub-title-text {
     font-size: 11px;
   }
   .header_text {
-    width: 80%;
+    width: 100%;
   }
   .header_text h5 {
-    font-size: 36px;
+    font-size: 52px;
     margin-bottom: 10px;
   }
   .header_text h1 {
@@ -389,6 +419,17 @@
         -ms-flex-pack: center;
             justify-content: center;
   }
+  .sub-title-text {
+    font-size: 11px;
+  }
+  .sub-title-extra {
+    -webkit-transform: translate(-50%);
+            transform: translate(-50%);
+    top: 95%;
+  }
+  .header-bg-size {
+    height: 20vh;
+  }
   .step p {
     font-size: 13px;
   }
@@ -449,6 +490,19 @@
 @media only screen and (max-width: 600px) {
   .tab {
     font-size: 12px !important;
+  }
+  .condition-header-size {
+    margin-top: 15%;
+  }
+  .step {
+    padding-left: 0%;
+  }
+  .header-button {
+    width: 70px;
+    height: 70px;
+  }
+  .header_text h5 {
+    font-size: 28px;
   }
   .css-1dvs5r2 {
     left: 55%;
@@ -548,7 +602,7 @@
     margin: 0 20px !important;
   }
   .header-bg-size {
-    height: 100vh;
+    height: 40vh;
   }
   .screen {
     height: 100vh;
@@ -579,6 +633,9 @@
   .css-85cajt {
     height: 60vh;
   }
+  .condition-header-size {
+    margin-top: 10%;
+  }
 }
 
 @media only screen and (max-width: 480px) {
@@ -589,6 +646,17 @@
     background-repeat: no-repeat;
     background-attachment: scroll;
     height: 100vh;
+  }
+  .condition-header-size {
+    margin-top: 20%;
+  }
+  .header_text a {
+    font-size: 11px !important;
+  }
+  .header-button {
+    width: 70px;
+    height: 70px;
+    margin-top: 50px;
   }
   .header .relative {
     margin-top: 65%;
