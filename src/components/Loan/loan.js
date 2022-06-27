@@ -163,7 +163,7 @@ const LoanDetails = ({ items }) => {
             </div>
             <div className="flex-1 check-list-size">
               <div>
-                <ul class="check-list">
+                <ul className="check-list">
                   <li>Монгол улсын иргэн болон хуулийн этгээд байх</li>
                   <li>Эрхзүйн бүрэн чадамжтай байх</li>
                   <li>Орлогын тогтмол эх үүсвэртэй байх</li>
@@ -208,7 +208,7 @@ const LoanDetails = ({ items }) => {
             </div>
             <div className="flex-1 check-list-size">
               <div>
-                <ul class="check-list">
+                <ul className="check-list">
                   <li>Хувь хүнтэй холбоотой лавлагаанууд /E-Mongolia/</li>
                   <li>Цалингийн болон бизнесийн орлого нотлох баримт бичиг</li>
                   <li>Дансны хуулга</li>

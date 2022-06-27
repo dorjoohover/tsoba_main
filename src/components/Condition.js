@@ -317,7 +317,7 @@ const Condition = () => {
 						Дотоод дахь харилцагч
 					</BootstrapButton>
 				</Link> */}
-        <Link href="/loans/external">
+        <Link href="/loans/external" passHref={true}>
           <BootstrapButton variant="contained" className="full-width">
             Гадаад дахь харилцагч
           </BootstrapButton>
