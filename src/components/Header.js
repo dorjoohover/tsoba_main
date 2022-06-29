@@ -12,24 +12,39 @@ const Header = () => {
   return (
     <>
       <div className="relative header-bg-size">
-        <div className="absolute z-30 top-1/2 left-1/2 header_text text-left">
-          <h5 className=" tracking-widest text-white mb-12 font-extrabold text-6xl header-title-width">
-            Хүлээлтээс давсан хялбар санхүүжилт
-          </h5>
-          {/* <h1
-            className={`text-5xl leading-tight font-semibold text-white mb-10`}
-          >
-            Хүлээлтээс давсан <br /> Хялбар санхүүжилт
-          </h1> */}
-          <Link href={"/request"}>
-            <a className="bg_primary_color text-white px-6 font-semibold  py-4 main_link text-3xl">
-              Зээлийн хүсэлт илгээх
-            </a>
-          </Link>
-        </div>
-        <span className="bg-black absolute inset-0 opacity-50 z-20"></span>
+        <div className="absolute z-30 top-1/2 left-1/2 header_text text-left flex">
+          <div className="header-content-size header-content-title">
+            <h5 className=" tracking-widest text-black mb-12 font-extrabold text-7xl header-title-width">
+              Хаусаа{" "}
+              <strong>
+                {" "}
+                <br /> 24{" "}
+              </strong>
+              цагт
+            </h5>
 
-        <Splide
+            <div className=" header-button">
+              <Link href={"/request"}>
+                <a className=" text-white font-semibold main_link">
+                  Зээлийн хүсэлт илгээх
+                </a>
+              </Link>
+            </div>
+          </div>
+          <div className="header-content-size header-bg-image">
+            <Image
+              src={"/img/step-bg-cut2.png"}
+              alt={"header"}
+              layout="responsive"
+              width={3800}
+              height={2000}
+              unoptimized
+            />
+          </div>
+        </div>
+        {/* <span className="bg-black absolute inset-0 opacity-50 z-20"></span> */}
+
+        {/* <Splide
           className="screen"
           options={{
             type: "loop",
@@ -84,11 +99,11 @@ const Header = () => {
             </SplideSlide>
           </>
           )
-        </Splide>
+        </Splide> */}
 
-        <div className="absolute z-30 top-3/4 left-1/2 sub-title-extra ">
-          <h5 className=" tracking-widest text-white mb-2 font-lightbold text-base sub-title-text">
-            Хаусаа 24 цагт
+        <div className="absolute z-30 left-1/2 sub-title-extra ">
+          <h5 className=" tracking-widest text-white mb-2 font-lightbold text-base sub-title-text text-black">
+            Хүлээлтээс давсан хялбар санхүүжилт.
           </h5>
           <div id="lineh1"></div>
         </div>

@@ -13,6 +13,20 @@ const Navbar = ({ color, check_bg }) => {
   const [textColor, setColor] = useState("white");
   const [logo, setLogo] = useState("homey_white.png");
   useEffect(() => {
+    const fetchBusinesses = () => {
+      return fetch("theURL", { method: "GET" })
+        .then((res) => normalizeResponseErrors(res))
+        .then((res) => {
+          return res.json();
+        })
+        .then((rcvdBusinesses) => {
+          // some stuff
+        })
+        .catch((err) => {
+          // some error handling
+        });
+      fetchBusinesses();
+    };
     const handleScroll = () => {
       if (window.scrollY == 0) {
         if (check_bg != "home") {
@@ -21,8 +35,8 @@ const Navbar = ({ color, check_bg }) => {
           setLogo("logo.png");
         } else {
           setBgColor("transparent");
-          setColor("white");
-          setLogo("homey_white.png");
+          setColor("black");
+          setLogo("logo.png");
         }
       }
       if (window.scrollY > 0 && window.scrollY < 600) {

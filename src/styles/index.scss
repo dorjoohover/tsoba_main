@@ -75,7 +75,8 @@ body {
 
 .header_text {
   transform: translate(-50%, -50%);
-  width: 80%;
+  width: 100%;
+  height: 45%;
 }
 
 .header_banner {
@@ -494,6 +495,15 @@ body {
     opacity: 0;
   }
 }
+.ssswiper {
+  background-color: gray;
+}
+.tab {
+  color: black !important;
+}
+.step {
+  padding-left: 20%;
+}
 .step-container {
   display: flex;
   justify-content: space-between;
@@ -518,23 +528,74 @@ body {
     width: 100px;
   }
 }
+.header-bg-size {
+  height: 100vh;
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.9),
+      rgba(255, 255, 255, 0.9)
+    ),
+    url("../../public/img/step-bg-cut2.png");
+  background-size: 70%;
+  background-repeat: no-repeat;
+  background-position-x: right;
+  background-position-y: center;
+}
+.header-button {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  background-color: #fec405;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .step-text-down {
   margin-top: 20px;
 }
 .header-title-width {
-  width: 50%;
-  text-transform: uppercase;
+  width: 100%;
 }
 .sub-title-extra {
-  transform: translate(-50%);
+  transform: translate(-75%);
   width: 100%;
   text-align: center;
+  top: 85%;
+  position: relative;
+  right: 25%;
+}
+
+.sub-title-text {
+  text-transform: uppercase;
+  font-size: 11px;
+}
+.header-content-title {
+  padding-left: 10%;
+}
+strong {
+  color: #fec405;
+}
+.header-content-size {
+  width: 50%;
+
+  span {
+    width: 100% !important;
+    height: 180% !important;
+  }
+}
+.header-bg-image {
+  span {
+    overflow: visible !important;
+  }
+  img {
+    margin-top: -10% !important;
+  }
 }
 #lineh1 {
   background: #fec405;
-  height: 100px;
+  height: 50px;
   width: 5px;
-  height: 100px;
+  height: 50px;
   margin: auto;
   animation: lineH 1s infinite linear;
 }
@@ -543,7 +604,45 @@ body {
     height: 0px;
   }
   100% {
-    height: 100px;
+    height: 50px;
     opacity: 0;
   }
+}
+
+.check-list {
+  margin: 0;
+  padding-left: 1.2rem;
+}
+
+.check-list li {
+  position: relative;
+  list-style-type: none;
+  padding-left: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.check-list li:before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  top: -2px;
+  width: 5px;
+  height: 11px;
+  border-width: 0 2px 2px 0;
+  border-style: solid;
+  border-color: #fec405;
+  transform-origin: bottom left;
+  transform: rotate(45deg);
+}
+
+/* Boilerplate stuff */
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+.check-list-size {
+  display: flex;
+  align-items: center;
 }
