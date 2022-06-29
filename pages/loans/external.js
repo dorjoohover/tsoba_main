@@ -60,6 +60,7 @@ const Loan = () => {
       </Head>
       <Navbar />
       <span className="h-24"></span>
+
       <Box
         sx={{
           height: "35vh",
@@ -77,7 +78,7 @@ const Loan = () => {
         <span className="bg-black opacity-50 absolute inset-0 z-10"></span>
         <div className="text-white relative z-20 text-center flex flex-col items-center">
           <h1 className="text-4xl mb-6 font-semibold uppercase">
-            гадаад дахь ЗАХИАЛАГЧ НАРТ
+            Зээлийн тооцоолол
           </h1>
           <div className="flex uppercase relative items-center z-20">
             <h5 className="uppercase mr-4 text-sm tracking-widest">Зээл</h5>
@@ -85,11 +86,12 @@ const Loan = () => {
               sx={{ marginRight: "1rem", width: "0.5rem", fill: "#fec405" }}
             />
             <h5 className="uppercase mr-4 text-sm tracking-widest">
-              гадаад дахь ЗАХИАЛАГЧ НАРТ
+              Зээлийн тооцоолол
             </h5>
           </div>
         </div>
       </Box>
+
       <Box
         sx={{
           backgroundImage: {
