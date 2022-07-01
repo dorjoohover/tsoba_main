@@ -161,6 +161,7 @@ const Navbar = ({ color, check_bg }) => {
                     transition: "0.5s",
                   },
                 ]}
+                className="svg_1"
               />
             </button>
             <Box
@@ -176,12 +177,57 @@ const Navbar = ({ color, check_bg }) => {
               }}
               className="link"
             >
-              <Link href={"/loans/external"}>
-                <a>зээлийн тодорхойлолт</a>
-              </Link>
+              {/* <Link href={"/loans/external"}>
+                <a>зээлийн тооцоолол</a>
+              </Link> */}
+              <div className="nav_btn_2">
+                <button
+                  className={`text-${color} uppercase font-semibold tracking-wider px-6 flex items-center`}
+                >
+                  зээлийн тооцоолол
+                  <ArrowDropDown
+                    sx={[
+                      {
+                        fontSize: "1.5rem",
+                        marginLeft: "0.5rem",
+                        transition: "0.5s",
+                      },
+                    ]}
+                    className="svg_2"
+                  />
+                </button>
+                <Box
+                  sx={{
+                    display: "flex",
+                    flexDirection: "column",
+                    position: "absolute",
+                    top: "0px",
+                    left: "100%",
+                    transition: "0.5s",
+                    zIndex: "60",
+                    background: `#fff`,
+                    color: "#171718",
+                  }}
+                  className="link_2"
+                >
+                  <Link href={"/loans/external_mn"}>
+                    <a style={{ border: "none" }}>mn</a>
+                  </Link>
+
+                  {/* <Link href={"/loans/internal"}>
+                <a>дотоод дахь харилцагч</a>
+              </Link> */}
+                  <Link href={"/loans/external"}>
+                    <a>en</a>
+                  </Link>
+                </Box>
+              </div>
               {/* <Link href={"/loans/internal"}>
                 <a>дотоод дахь харилцагч</a>
               </Link> */}
+              <Link href={"/loans/material_requirement"}>
+                <a>Бүрдүүлэх материал</a>
+              </Link>
               <Link href={"/request"}>
                 <a>зээлийн хүсэлт</a>
               </Link>
@@ -341,15 +387,61 @@ const Navbar = ({ color, check_bg }) => {
                         transition: "0.5s",
                       },
                     ]}
+                    className="svg_1"
                   />
                 </button>
                 <div className="link">
-                  <Link href={"/loans/external"}>
-                    <a>зээлийн тодорхойлолт</a>
-                  </Link>
+                  {/* <Link href={"/loans/external"}>
+                    <a>зээлийн тооцоолол</a>
+                  </Link> */}
+                  <div className="nav_btn_2">
+                    <button
+                      className={`text-${color} uppercase font-semibold tracking-wider px-6 flex items-center`}
+                    >
+                      зээлийн тооцоолол
+                      <ArrowDropDown
+                        sx={[
+                          {
+                            fontSize: "1.5rem",
+                            marginLeft: "0.5rem",
+                            transition: "0.5s",
+                          },
+                        ]}
+                        className="svg_2"
+                      />
+                    </button>
+                    <Box
+                      sx={{
+                        display: "flex",
+                        flexDirection: "column",
+                        position: "absolute",
+                        top: "0px",
+                        left: "100%",
+                        transition: "0.5s",
+                        zIndex: "60",
+                        background: `#fff`,
+                        color: "#171718",
+                      }}
+                      className="link_2"
+                    >
+                      <Link href={"/loans/external_mn"}>
+                        <a style={{ border: "none" }}>mn</a>
+                      </Link>
+
+                      {/* <Link href={"/loans/internal"}>
+                <a>дотоод дахь харилцагч</a>
+              </Link> */}
+                      <Link href={"/loans/external"}>
+                        <a>en</a>
+                      </Link>
+                    </Box>
+                  </div>
                   {/* <Link href={"/loans/internal"}>
                     <a>дотоод харилцагч</a>
                   </Link> */}
+                  <Link href={"/loans/material_requirement"}>
+                    <a>Бүрдүүлэх материал</a>
+                  </Link>
                   <Link href={"/request"}>
                     <a>зээлийн хүсэлт</a>
                   </Link>

@@ -91,45 +91,51 @@ const LoanDetails = ({ items }) => {
               <br />
               <table>
                 <tr>
+                  <th></th>
+                  <th></th>
+                  <th></th>
+                  <th></th>
+                </tr>
+                <tr>
                   <td className="px-2"></td>
                   <td className="px-2">Байрны нийт үнэ</td>
-                  <td className="px-2">68,855$</td>
+                  <td className="px-2">215,000,000</td>
                 </tr>
                 <tr>
                   <td className="px-2"></td>
                   <td className="px-2">Зээлээр санхүүжүүлэх дүн-70%</td>
-                  <td className="px-2">48,199$</td>
+                  <td className="px-2">150,500,000</td>
                 </tr>
                 <tr>
                   <td className="px-2"></td>
                   <td className="px-2">Урьдчилгаа</td>
-                  <td className="px-2">20,656$</td>
+                  <td className="px-2">64,500,000</td>
                 </tr>
                 <tr>
                   <td className="px-2"></td>
                   <td className="px-2">Хугацаа</td>
                   <td className="px-2 font-bold border-r-2">24 сар</td>
-                  <td className="px-2 font-bold td_extra">18 сар</td>
+                  <td className="px-2 font-bold">18 сар</td>
                 </tr>
                 <tr>
                   <td className="px-2"></td>
                   <td className="px-2">Хүү</td>
-                  <td className="px-2 font-bold border-r-2">5.5%</td>
-                  <td className="px-2 font-bold">5%</td>
+                  <td className="px-2 font-bold border-r-2">12%</td>
+                  <td className="px-2 font-bold">10%</td>
                 </tr>
                 <tr>
                   <td className="px-2"></td>
                   <td className="px-2 pb-4">Сард төлөх зээлийн хэмжээ</td>
-                  <td className="px-2  border-r-2">2,125$</td>
-                  <td className="px-2 ">2,785$</td>
+                  <td className="px-2 font-bold border-r-2">7,084,000</td>
+                  <td className="px-2 font-bold">9,030,000</td>
                 </tr>
                 <tr className="border-t-2 py-2">
                   <td className="px-2"></td>
-                  <td className="px-2  py-4">
+                  <td className="px-2 font-bold py-4">
                     Графикийн дагуу төлөхөд харилцагчийн төлөх хүү
                   </td>
-                  <td className="px-2  ">2,810$</td>
-                  <td className="px-2 ">1,930$</td>
+                  <td className="px-2 font-bold ">19,500,000</td>
+                  <td className="px-2 font-bold">12,100,000</td>
                 </tr>
               </table>
             </div>
@@ -143,26 +149,32 @@ const LoanDetails = ({ items }) => {
               <br />
               <table>
                 <tr>
+                  <th></th>
+                  <th></th>
+                  <th></th>
+                  <th></th>
+                </tr>
+                <tr>
                   <td className="px-2"></td>
                   <td className="px-2">Байрны нийт үнэ</td>
-                  <td className="px-2">68,855$</td>
+                  <td className="px-2"> 215,000,000</td>
                 </tr>
                 <tr>
                   <td className="px-2"></td>
                   <td className="px-2">Зээлээр санхүүжүүлэх дүн-70%</td>
-                  <td className="px-2">48,199$</td>
+                  <td className="px-2"> 150,500,000</td>
                 </tr>
                 <tr>
                   <td className="px-2"></td>
                   <td className="px-2">Урьдчилгаа</td>
-                  <td className="px-2">13,771$</td>
+                  <td className="px-2"> 43,000,000</td>
                 </tr>
                 <tr>
                   <td className="px-2"></td>
                   <td className="px-2">
                     Хуваан төлөх урьдчилгаа төлбөрийн хэмжээ
                   </td>
-                  <td className="px-2">6,886$</td>
+                  <td className="px-2"> 21,500,000</td>
                 </tr>
                 <tr>
                   <td className="px-2"></td>
@@ -173,28 +185,28 @@ const LoanDetails = ({ items }) => {
                 <tr>
                   <td className="px-2"></td>
                   <td className="px-2">Хүү</td>
-                  <td className="px-2 font-bold border-r-2">5.5%</td>
-                  <td className="px-2 font-bold">5%</td>
+                  <td className="px-2 font-bold border-r-2">12%</td>
+                  <td className="px-2 font-bold">10%</td>
                 </tr>
                 <tr>
                   <td className="px-2"></td>
                   <td className="px-2 pb-4">Эхний 6 сар</td>
-                  <td className="px-2 font-bold border-r-2">3,273$</td>
-                  <td className="px-2 font-bold">3,933$</td>
+                  <td className="px-2 font-bold border-r-2"> 10,600,000</td>
+                  <td className="px-2 font-bold"> 12,600,000</td>
                 </tr>
                 <tr>
                   <td className="px-2"></td>
                   <td className="px-2 pb-4">Сард төлөх зээлийн хэмжээ</td>
-                  <td className="px-2  border-r-2">2,125$</td>
-                  <td className="px-2 ">2,785$</td>
+                  <td className="px-2 font-bold border-r-2"> 7,084,000</td>
+                  <td className="px-2 font-bold"> 9,030,000</td>
                 </tr>
                 <tr className="border-t-2 py-2">
                   <td className="px-2"></td>
-                  <td className="px-2  py-4">
+                  <td className="px-2 font-bold py-4">
                     Графикийн дагуу төлөхөд харилцагчийн төлөх хүү
                   </td>
-                  <td className="px-2  ">2,810$</td>
-                  <td className="px-2 ">1,930$</td>
+                  <td className="px-2 font-bold "> 19,500,000</td>
+                  <td className="px-2 font-bold"> 12,100,000</td>
                 </tr>
               </table>
             </div>
@@ -211,19 +223,25 @@ const LoanDetails = ({ items }) => {
               <br />
               <table>
                 <tr>
+                  <th></th>
+                  <th></th>
+                  <th></th>
+                  <th></th>
+                </tr>
+                <tr>
                   <td className="px-2"></td>
                   <td className="px-2">Байрны нийт үнэ</td>
-                  <td className="px-2">75,260$</td>
+                  <td className="px-2"> 235,000,000</td>
                 </tr>
                 <tr>
                   <td className="px-2"></td>
                   <td className="px-2">Зээлээр санхүүжүүлэх дүн-70%</td>
-                  <td className="px-2">52,682$</td>
+                  <td className="px-2"> 164,500,000</td>
                 </tr>
                 <tr>
                   <td className="px-2"></td>
                   <td className="px-2">Урьдчилгаа</td>
-                  <td className="px-2">22,578$</td>
+                  <td className="px-2"> 70,500,000</td>
                 </tr>
                 <tr>
                   <td className="px-2"></td>
@@ -234,22 +252,22 @@ const LoanDetails = ({ items }) => {
                 <tr>
                   <td className="px-2"></td>
                   <td className="px-2">Хүү</td>
-                  <td className="px-2 font-bold border-r-2">5.5%</td>
-                  <td className="px-2 font-bold">5%</td>
+                  <td className="px-2 font-bold border-r-2">12%</td>
+                  <td className="px-2 font-bold">10%</td>
                 </tr>
                 <tr>
                   <td className="px-2"></td>
                   <td className="px-2 pb-4">Сард төлөх зээлийн хэмжээ</td>
-                  <td className="px-2  border-r-2">2,323$</td>
-                  <td className="px-2 ">3,044$</td>
+                  <td className="px-2 font-bold border-r-2"> 7,700,000</td>
+                  <td className="px-2 font-bold"> 9,800,000</td>
                 </tr>
                 <tr className="border-t-2 py-2">
                   <td className="px-2"></td>
-                  <td className="px-2  py-4">
+                  <td className="px-2 font-bold py-4">
                     Графикийн дагуу төлөхөд харилцагчийн төлөх хүү
                   </td>
-                  <td className="px-2  ">3,071$</td>
-                  <td className="px-2 ">2,110$</td>
+                  <td className="px-2 font-bold "> 21,300,000</td>
+                  <td className="px-2 font-bold"> 13,300,000</td>
                 </tr>
               </table>
             </div>
@@ -263,26 +281,32 @@ const LoanDetails = ({ items }) => {
               <br />
               <table>
                 <tr>
+                  <th></th>
+                  <th></th>
+                  <th></th>
+                  <th></th>
+                </tr>
+                <tr>
                   <td className="px-2"></td>
                   <td className="px-2">Байрны нийт үнэ</td>
-                  <td className="px-2">75,260$</td>
+                  <td className="px-2"> 235,000,000</td>
                 </tr>
                 <tr>
                   <td className="px-2"></td>
                   <td className="px-2">Зээлээр санхүүжүүлэх дүн-70%</td>
-                  <td className="px-2">52,682$</td>
+                  <td className="px-2"> 164,500,000</td>
                 </tr>
                 <tr>
                   <td className="px-2"></td>
                   <td className="px-2">Урьдчилгаа</td>
-                  <td className="px-2">15,052$</td>
+                  <td className="px-2"> 47,000,000</td>
                 </tr>
                 <tr>
                   <td className="px-2"></td>
                   <td className="px-2">
                     Хуваан төлөх урьдчилгаа төлбөрийн хэмжээ
                   </td>
-                  <td className="px-2">7,526$</td>
+                  <td className="px-2"> 23,500,000</td>
                 </tr>
                 <tr>
                   <td className="px-2"></td>
@@ -293,28 +317,28 @@ const LoanDetails = ({ items }) => {
                 <tr>
                   <td className="px-2"></td>
                   <td className="px-2">Хүү</td>
-                  <td className="px-2 font-bold border-r-2">5.5%</td>
-                  <td className="px-2 font-bold">5%</td>
+                  <td className="px-2 font-bold border-r-2">12%</td>
+                  <td className="px-2 font-bold">10%</td>
                 </tr>
                 <tr>
                   <td className="px-2"></td>
                   <td className="px-2 pb-4">Эхний 6 сар</td>
-                  <td className="px-2 font-bold border-r-2">3,577$</td>
-                  <td className="px-2 font-bold">4,298$</td>
+                  <td className="px-2 font-bold border-r-2"> 11,600,000</td>
+                  <td className="px-2 font-bold"> 13,700,000</td>
                 </tr>
                 <tr>
                   <td className="px-2"></td>
                   <td className="px-2 pb-4">Сард төлөх зээлийн хэмжээ</td>
-                  <td className="px-2  border-r-2">2,323$</td>
-                  <td className="px-2 ">3,044$</td>
+                  <td className="px-2 font-bold border-r-2"> 7,700,000</td>
+                  <td className="px-2 font-bold"> 9,800,000</td>
                 </tr>
                 <tr className="border-t-2 py-2">
                   <td className="px-2"></td>
-                  <td className="px-2  py-4">
+                  <td className="px-2 font-bold py-4">
                     Графикийн дагуу төлөхөд харилцагчийн төлөх хүү
                   </td>
-                  <td className="px-2  ">3,071$</td>
-                  <td className="px-2 ">2,110$</td>
+                  <td className="px-2 font-bold "> 21,300,000</td>
+                  <td className="px-2 font-bold"> 13,300,000</td>
                 </tr>
               </table>
             </div>
@@ -331,19 +355,25 @@ const LoanDetails = ({ items }) => {
               <br />
               <table>
                 <tr>
+                  <th></th>
+                  <th></th>
+                  <th></th>
+                  <th></th>
+                </tr>
+                <tr>
                   <td className="px-2"></td>
                   <td className="px-2">Байрны нийт үнэ</td>
-                  <td className="px-2">78,463$</td>
+                  <td className="px-2"> 245,000,000</td>
                 </tr>
                 <tr>
                   <td className="px-2"></td>
                   <td className="px-2">Зээлээр санхүүжүүлэх дүн-70%</td>
-                  <td className="px-2">54,923$</td>
+                  <td className="px-2"> 171,500,000</td>
                 </tr>
                 <tr>
                   <td className="px-2"></td>
                   <td className="px-2">Урьдчилгаа</td>
-                  <td className="px-2">23,539$</td>
+                  <td className="px-2"> 73,500,000</td>
                 </tr>
                 <tr>
                   <td className="px-2"></td>
@@ -354,22 +384,22 @@ const LoanDetails = ({ items }) => {
                 <tr>
                   <td className="px-2"></td>
                   <td className="px-2">Хүү</td>
-                  <td className="px-2 font-bold border-r-2">5.5%</td>
-                  <td className="px-2 font-bold">5%</td>
+                  <td className="px-2 font-bold border-r-2">12%</td>
+                  <td className="px-2 font-bold">10%</td>
                 </tr>
                 <tr>
                   <td className="px-2"></td>
                   <td className="px-2 pb-4">Сард төлөх зээлийн хэмжээ</td>
-                  <td className="px-2  border-r-2">2,422$</td>
-                  <td className="px-2 ">3,174$</td>
+                  <td className="px-2 font-bold border-r-2"> 8,070,000</td>
+                  <td className="px-2 font-bold"> 10,200,000</td>
                 </tr>
                 <tr className="border-t-2 py-2">
                   <td className="px-2"></td>
-                  <td className="px-2  py-4">
+                  <td className="px-2 font-bold py-4">
                     Графикийн дагуу төлөхөд харилцагчийн төлөх хүү
                   </td>
-                  <td className="px-2  ">3,202$</td>
-                  <td className="px-2 ">2,200$</td>
+                  <td className="px-2 font-bold "> 22,200,000</td>
+                  <td className="px-2 font-bold"> 13,800,000</td>
                 </tr>
               </table>
             </div>
@@ -383,26 +413,32 @@ const LoanDetails = ({ items }) => {
               <br />
               <table>
                 <tr>
+                  <th></th>
+                  <th></th>
+                  <th></th>
+                  <th></th>
+                </tr>
+                <tr>
                   <td className="px-2"></td>
                   <td className="px-2">Байрны нийт үнэ</td>
-                  <td className="px-2">78,463$</td>
+                  <td className="px-2"> 245,000,000</td>
                 </tr>
                 <tr>
                   <td className="px-2"></td>
                   <td className="px-2">Зээлээр санхүүжүүлэх дүн-70%</td>
-                  <td className="px-2">54,923$</td>
+                  <td className="px-2"> 171,500,000</td>
                 </tr>
                 <tr>
                   <td className="px-2"></td>
                   <td className="px-2">Урьдчилгаа</td>
-                  <td className="px-2">15,693$</td>
+                  <td className="px-2"> 49,000,000</td>
                 </tr>
                 <tr>
                   <td className="px-2"></td>
                   <td className="px-2">
                     Хуваан төлөх урьдчилгаа төлбөрийн хэмжээ
                   </td>
-                  <td className="px-2">7,846$</td>
+                  <td className="px-2"> 24,500,000</td>
                 </tr>
                 <tr>
                   <td className="px-2"></td>
@@ -413,28 +449,28 @@ const LoanDetails = ({ items }) => {
                 <tr>
                   <td className="px-2"></td>
                   <td className="px-2">Хүү</td>
-                  <td className="px-2 font-bold border-r-2">5.5%</td>
-                  <td className="px-2 font-bold">5%</td>
+                  <td className="px-2 font-bold border-r-2">12%</td>
+                  <td className="px-2 font-bold">10%</td>
                 </tr>
                 <tr>
                   <td className="px-2"></td>
                   <td className="px-2 pb-4">Эхний 6 сар</td>
-                  <td className="px-2 font-bold border-r-2">3,730$</td>
-                  <td className="px-2 font-bold">4,481$</td>
+                  <td className="px-2 font-bold border-r-2"> 12,100,000</td>
+                  <td className="px-2 font-bold"> 14,300,000</td>
                 </tr>
                 <tr>
                   <td className="px-2"></td>
                   <td className="px-2 pb-4">Сард төлөх зээлийн хэмжээ</td>
-                  <td className="px-2  border-r-2">2,422$</td>
-                  <td className="px-2 ">3,174$</td>
+                  <td className="px-2 font-bold border-r-2"> 8,070,000</td>
+                  <td className="px-2 font-bold"> 10,200,000</td>
                 </tr>
                 <tr className="border-t-2 py-2">
                   <td className="px-2"></td>
-                  <td className="px-2  py-4">
+                  <td className="px-2 font-bold py-4">
                     Графикийн дагуу төлөхөд харилцагчийн төлөх хүү
                   </td>
-                  <td className="px-2  ">3,202$</td>
-                  <td className="px-2 ">2,200$</td>
+                  <td className="px-2 font-bold "> 22,200,000</td>
+                  <td className="px-2 font-bold"> 13,800,000</td>
                 </tr>
               </table>
             </div>
@@ -451,45 +487,51 @@ const LoanDetails = ({ items }) => {
               <br />
               <table>
                 <tr>
+                  <th></th>
+                  <th></th>
+                  <th></th>
+                  <th></th>
+                </tr>
+                <tr>
                   <td className="px-2"></td>
                   <td className="px-2">Байрны нийт үнэ</td>
-                  <td className="px-2">84,868$</td>
+                  <td className="px-2"> 265,000,000</td>
                 </tr>
                 <tr>
                   <td className="px-2"></td>
                   <td className="px-2">Зээлээр санхүүжүүлэх дүн-70%</td>
-                  <td className="px-2">59,408$</td>
+                  <td className="px-2"> 185,500,000</td>
                 </tr>
                 <tr>
                   <td className="px-2"></td>
                   <td className="px-2">Урьдчилгаа</td>
-                  <td className="px-2">25,460$</td>
+                  <td className="px-2"> 79,500,000</td>
                 </tr>
                 <tr>
                   <td className="px-2"></td>
                   <td className="px-2">Хугацаа</td>
                   <td className="px-2 font-bold border-r-2">24 сар</td>
-                  <td className="px-2 font-bold  td_extra">18 сар</td>
+                  <td className="px-2 font-bold">18 сар</td>
                 </tr>
                 <tr>
                   <td className="px-2"></td>
                   <td className="px-2">Хүү</td>
-                  <td className="px-2 font-bold border-r-2">5.5%</td>
-                  <td className="px-2 font-bold">5%</td>
+                  <td className="px-2 font-bold border-r-2">12%</td>
+                  <td className="px-2 font-bold">10%</td>
                 </tr>
                 <tr>
                   <td className="px-2"></td>
                   <td className="px-2 pb-4">Сард төлөх зээлийн хэмжээ</td>
-                  <td className="px-2  border-r-2">2,620$</td>
-                  <td className="px-2 ">3,433$</td>
+                  <td className="px-2 font-bold border-r-2"> 8,730,000</td>
+                  <td className="px-2 font-bold"> 11,100,000</td>
                 </tr>
                 <tr className="border-t-2 py-2">
                   <td className="px-2"></td>
-                  <td className="px-2  py-4">
+                  <td className="px-2 font-bold py-4">
                     Графикийн дагуу төлөхөд харилцагчийн төлөх хүү
                   </td>
-                  <td className="px-2  ">3,463$</td>
-                  <td className="px-2 ">2,379$</td>
+                  <td className="px-2 font-bold "> 24,000,000</td>
+                  <td className="px-2 font-bold"> 15,000,000</td>
                 </tr>
               </table>
             </div>
@@ -503,26 +545,32 @@ const LoanDetails = ({ items }) => {
               <br />
               <table>
                 <tr>
+                  <th></th>
+                  <th></th>
+                  <th></th>
+                  <th></th>
+                </tr>
+                <tr>
                   <td className="px-2"></td>
                   <td className="px-2">Байрны нийт үнэ</td>
-                  <td className="px-2">84,868$</td>
+                  <td className="px-2"> 265,000,000</td>
                 </tr>
                 <tr>
                   <td className="px-2"></td>
                   <td className="px-2">Зээлээр санхүүжүүлэх дүн-70%</td>
-                  <td className="px-2">59,408$</td>
+                  <td className="px-2"> 185,500,000</td>
                 </tr>
                 <tr>
                   <td className="px-2"></td>
                   <td className="px-2">Урьдчилгаа</td>
-                  <td className="px-2">16,947$</td>
+                  <td className="px-2"> 53,000,000</td>
                 </tr>
                 <tr>
                   <td className="px-2"></td>
                   <td className="px-2">
                     Хуваан төлөх урьдчилгаа төлбөрийн хэмжээ
                   </td>
-                  <td className="px-2">8,487$</td>
+                  <td className="px-2"> 26,500,000</td>
                 </tr>
                 <tr>
                   <td className="px-2"></td>
@@ -533,28 +581,28 @@ const LoanDetails = ({ items }) => {
                 <tr>
                   <td className="px-2"></td>
                   <td className="px-2">Хүү</td>
-                  <td className="px-2 font-bold border-r-2">5.5%</td>
-                  <td className="px-2 font-bold">5%</td>
+                  <td className="px-2 font-bold border-r-2">12%</td>
+                  <td className="px-2 font-bold">10%</td>
                 </tr>
                 <tr>
                   <td className="px-2"></td>
                   <td className="px-2 pb-4">Эхний 6 сар</td>
-                  <td className="px-2 font-bold border-r-2">4,034$</td>
-                  <td className="px-2 font-bold">4,847$</td>
+                  <td className="px-2 font-bold border-r-2"> 13,100,000</td>
+                  <td className="px-2 font-bold"> 15,500,000</td>
                 </tr>
                 <tr>
                   <td className="px-2"></td>
                   <td className="px-2 pb-4">Сард төлөх зээлийн хэмжээ</td>
-                  <td className="px-2  border-r-2">2,620$</td>
-                  <td className="px-2 ">3,433$</td>
+                  <td className="px-2 font-bold border-r-2"> 8,730,000</td>
+                  <td className="px-2 font-bold"> 11,100,000</td>
                 </tr>
                 <tr className="border-t-2 py-2">
                   <td className="px-2"></td>
-                  <td className="px-2  py-4">
+                  <td className="px-2 font-bold py-4">
                     Графикийн дагуу төлөхөд харилцагчийн төлөх хүү
                   </td>
-                  <td className="px-2  ">3,463$</td>
-                  <td className="px-2 ">2,379$</td>
+                  <td className="px-2 font-bold "> 24,000,000</td>
+                  <td className="px-2 font-bold"> 15,000,000</td>
                 </tr>
               </table>
             </div>
