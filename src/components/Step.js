@@ -51,7 +51,7 @@ const Step = () => {
     <Box
       sx={{
         maxWidth: "100%",
-        margin: "0 auto 0 0",
+        margin: "20px auto 0 0",
         padding: "0px 0px 90px 0px",
         // paddingTop: {
         //   lg: "300px",
@@ -64,6 +64,7 @@ const Step = () => {
         first_text={"ХЭРХЭН ХАУСАА"}
         last_text={"ХУДАЛДАН АВАХ ВЭ?"}
       />
+
       <div className="step-container">
         <Box
           display={"flex"}

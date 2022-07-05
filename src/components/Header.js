@@ -6,15 +6,22 @@ import { Splide, SplideSlide } from "@splidejs/react-splide";
 import Image from "next/image";
 import Banner from "./Banner";
 import { height, width } from "@mui/system";
+import React from "react";
+
 const Header = () => {
   const { t } = useTranslation();
-  //   console.log({t("home: dorj")});
+
   return (
     <>
       <div className="relative header-bg-size">
+        <div className="wrapper">
+          <video autoPlay muted loop width={"100%"} height={"100%"}>
+            <source src="./video/Video2.mp4" type="video/mp4" />
+          </video>
+        </div>
         <div className="absolute z-30 top-1/2 left-1/2 header_text text-left flex">
           <div className="header-content-size header-content-title">
-            <h5 className=" tracking-widest text-black mb-12 font-extrabold text-7xl header-title-width">
+            <h5 className=" tracking-widest text-white mb-12 font-extrabold text-7xl header-title-width">
               Хаусаа{" "}
               <strong>
                 {" "}
@@ -31,7 +38,7 @@ const Header = () => {
               </Link>
             </div>
           </div>
-          <div className="header-content-size header-bg-image">
+          {/* <div className="header-content-size header-bg-image">
             <Image
               src={"/img/step-bg-cut2.png"}
               alt={"header"}
@@ -40,7 +47,7 @@ const Header = () => {
               height={2000}
               unoptimized
             />
-          </div>
+          </div> */}
         </div>
         {/* <span className="bg-black absolute inset-0 opacity-50 z-20"></span> */}
 
@@ -102,7 +109,7 @@ const Header = () => {
         </Splide> */}
 
         <div className="absolute z-30 left-1/2 sub-title-extra ">
-          <h5 className=" tracking-widest text-white mb-2 font-lightbold text-base sub-title-text text-black">
+          <h5 className=" tracking-widest text-white mb-2 font-lightbold text-base sub-title-text ">
             Хүлээлтээс давсан хялбар санхүүжилт.
           </h5>
           <div id="lineh1"></div>

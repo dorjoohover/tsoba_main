@@ -35,8 +35,8 @@ const Navbar = ({ color, check_bg }) => {
           setLogo("logo.png");
         } else {
           setBgColor("transparent");
-          setColor("black");
-          setLogo("logo.png");
+          setColor("white");
+          setLogo("homey_white.png");
         }
       }
       if (window.scrollY > 0 && window.scrollY < 600) {

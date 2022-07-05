@@ -568,16 +568,28 @@ body {
   }
 }
 .header-bg-size {
-  height: 100vh;
-  background: linear-gradient(
-      rgba(255, 255, 255, 0.9),
-      rgba(255, 255, 255, 0.9)
-    ),
-    url("../../public/img/step-bg-cut2.png");
-  background-size: 70%;
-  background-repeat: no-repeat;
-  background-position-x: right;
-  background-position-y: center;
+  // height: 100vh;
+  // background: linear-gradient(
+  //     rgba(255, 255, 255, 0.9),
+  //     rgba(255, 255, 255, 0.9)
+  //   ),
+  //   url("../../public/img/step-bg-cut2.png");
+  // background-size: 70%;
+  // background-repeat: no-repeat;
+  // background-position-x: right;
+  // background-position-y: center;
+}
+.wrapper {
+  position: relative;
+}
+.wrapper::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  content: "";
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
 }
 .header-button {
   border-radius: 50%;
@@ -596,12 +608,15 @@ body {
   width: 100%;
 }
 .sub-title-extra {
-  transform: translate(-75%);
+  transform: translate(-50%);
   width: 100%;
   text-align: center;
-  top: 85%;
+  // top: 85%;
   position: relative;
-  right: 25%;
+  // right: 25%;
+  height: 10vh;
+  margin-top: -15%;
+  pointer-events: none;
 }
 
 .sub-title-text {
