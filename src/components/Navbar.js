@@ -425,14 +425,14 @@ const Navbar = ({ color, check_bg }) => {
                       className="link_2"
                     >
                       <Link href={"/loans/external_mn"}>
-                        <a style={{ border: "none" }}>mn</a>
+                        <a style={{ border: "none" }}>ТӨГРӨГ</a>
                       </Link>
 
                       {/* <Link href={"/loans/internal"}>
                 <a>дотоод дахь харилцагч</a>
               </Link> */}
                       <Link href={"/loans/external"}>
-                        <a>en</a>
+                        <a>ДОЛЛАР</a>
                       </Link>
                     </Box>
                   </div>

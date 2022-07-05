@@ -27,7 +27,7 @@ const Request = ({ formData, setFormData, handleForm, alert }) => {
           холбогдох болно.
         </p>
 
-        <label htmlFor="address" className="mt-2 mx-3 text-sm font-bold">
+        <label htmlFor="address" className="mt-2 mx-3 text-base font-bold">
           Нэр
         </label>
         <input
@@ -45,7 +45,7 @@ const Request = ({ formData, setFormData, handleForm, alert }) => {
           required
         />
 
-        <label htmlFor="address" className="mt-2 mx-3 text-sm font-bold">
+        <label htmlFor="address" className="mt-2 mx-3 text-base font-bold">
           Утасны дугаар болон холбогдох холбоосыг бичнэ үү. (Жишээ: Viber,
           Wechat, WhatsApp, Line, Kakao talk гэх мэт...)
         </label>
@@ -63,7 +63,7 @@ const Request = ({ formData, setFormData, handleForm, alert }) => {
           className="my-2"
           required
         />
-        <label htmlFor="address" className="mt-2 mx-3 text-sm font-bold">
+        <label htmlFor="address" className="mt-2 mx-3 text-base font-bold">
           Цахим хаяг
         </label>
         <input
@@ -81,7 +81,7 @@ const Request = ({ formData, setFormData, handleForm, alert }) => {
           placeholder="example@email.com"
           required
         />
-        <label htmlFor="address" className="mt-2 mx-3 text-sm font-bold">
+        <label htmlFor="address" className="mt-2 mx-3 text-base font-bold">
           Таны сонирхож буй хотхоны нэр
         </label>
         {/* <input
@@ -115,7 +115,7 @@ const Request = ({ formData, setFormData, handleForm, alert }) => {
           {/* <option value="Хадат Вилла 2">Хадат Вилла 2</option> */}
           <option value="Хадат Вилла 4">Хадат Вилла 4</option>
         </select>
-        <label htmlFor="address" className="mt-2 mx-3 text-sm font-bold">
+        <label htmlFor="address" className="mt-2 mx-3 text-base font-bold">
           Оршин суугаа улс болон хот
         </label>
         <input
@@ -133,7 +133,7 @@ const Request = ({ formData, setFormData, handleForm, alert }) => {
           className=" my-2 flex-1"
           required
         />
-        <label htmlFor="salary" className="mt-2 mx-3 text-sm font-bold">
+        <label htmlFor="salary" className="mt-2 mx-3 text-base font-bold">
           Таны цалингийн хэмжээ
         </label>
         <input
@@ -152,7 +152,7 @@ const Request = ({ formData, setFormData, handleForm, alert }) => {
           step="100000"
           required
         />
-        <label htmlFor="address" className="mt-2 mx-3 text-sm font-bold">
+        <label htmlFor="address" className="mt-2 mx-3 text-base font-bold">
           Цалингийн орлоготой бол ажлын нэр
         </label>
         <input
@@ -170,7 +170,7 @@ const Request = ({ formData, setFormData, handleForm, alert }) => {
           className=" my-2 flex-1"
           required
         />
-        <label htmlFor="description" className="mt-2 mx-3 text-sm font-bold">
+        <label htmlFor="description" className="mt-2 mx-3 text-base font-bold">
           Бизнесийн орлоготой бол үйл ажиллагааны товч танилцуулга
         </label>
         <textarea

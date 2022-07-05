@@ -138,7 +138,7 @@ const LoanDetails = ({ items }) => {
                 <tr className="border-t-2 py-2">
                   <td className="px-2"></td>
                   <td className="px-2 font-bold py-4">
-                    Графикийн дагуу төлөхөд харилцагчийн төлөх хүү
+                    Графикийн дагуу төлөхөд харилцагчийн төлөх нийт хүү
                   </td>
                   <td className="px-2 font-bold ">19,500,000</td>
                   <td className="px-2 font-bold">12,100,000</td>
@@ -147,7 +147,7 @@ const LoanDetails = ({ items }) => {
             </div>
             <div className="flex-1 pr-24">
               <Title
-                subtitle={"Урьдчилгаа 20% /10%-ын хүүгүй хуваан төлөх/"}
+                subtitle={"Урьдчилгаа 20% /10%-ийг хүүгүй хуваан төлөх/"}
                 // title={"Урьдчилгаа 10% 6 сар хүүгүй хуваан төлөх 20%"}
                 items="left"
               />
@@ -209,7 +209,7 @@ const LoanDetails = ({ items }) => {
                 <tr className="border-t-2 py-2">
                   <td className="px-2"></td>
                   <td className="px-2 font-bold py-4">
-                    Графикийн дагуу төлөхөд харилцагчийн төлөх хүү
+                    Графикийн дагуу төлөхөд харилцагчийн төлөх нийт хүү
                   </td>
                   <td className="px-2 font-bold "> 19,500,000</td>
                   <td className="px-2 font-bold"> 12,100,000</td>
@@ -270,7 +270,7 @@ const LoanDetails = ({ items }) => {
                 <tr className="border-t-2 py-2">
                   <td className="px-2"></td>
                   <td className="px-2 font-bold py-4">
-                    Графикийн дагуу төлөхөд харилцагчийн төлөх хүү
+                    Графикийн дагуу төлөхөд харилцагчийн төлөх нийт хүү
                   </td>
                   <td className="px-2 font-bold "> 21,300,000</td>
                   <td className="px-2 font-bold"> 13,300,000</td>
@@ -279,7 +279,7 @@ const LoanDetails = ({ items }) => {
             </div>
             <div className="flex-1 pr-24">
               <Title
-                subtitle={"Урьдчилгаа 20% /10%-ын хүүгүй хуваан төлөх/"}
+                subtitle={"Урьдчилгаа 20% /10%-ийг хүүгүй хуваан төлөх/"}
                 // title={"Урьдчилгаа 10% 6 сар хүүгүй хуваан төлөх 20%"}
                 items="left"
               />
@@ -341,7 +341,7 @@ const LoanDetails = ({ items }) => {
                 <tr className="border-t-2 py-2">
                   <td className="px-2"></td>
                   <td className="px-2 font-bold py-4">
-                    Графикийн дагуу төлөхөд харилцагчийн төлөх хүү
+                    Графикийн дагуу төлөхөд харилцагчийн төлөх нийт хүү
                   </td>
                   <td className="px-2 font-bold "> 21,300,000</td>
                   <td className="px-2 font-bold"> 13,300,000</td>
@@ -402,7 +402,7 @@ const LoanDetails = ({ items }) => {
                 <tr className="border-t-2 py-2">
                   <td className="px-2"></td>
                   <td className="px-2 font-bold py-4">
-                    Графикийн дагуу төлөхөд харилцагчийн төлөх хүү
+                    Графикийн дагуу төлөхөд харилцагчийн төлөх нийт хүү
                   </td>
                   <td className="px-2 font-bold "> 22,200,000</td>
                   <td className="px-2 font-bold"> 13,800,000</td>
@@ -411,7 +411,7 @@ const LoanDetails = ({ items }) => {
             </div>
             <div className="flex-1 pr-24">
               <Title
-                subtitle={"Урьдчилгаа 20% /10%-ын хүүгүй хуваан төлөх/"}
+                subtitle={"Урьдчилгаа 20% /10%-ийг хүүгүй хуваан төлөх/"}
                 // title={"Урьдчилгаа 10% 6 сар хүүгүй хуваан төлөх 20%"}
                 items="left"
               />
@@ -473,7 +473,7 @@ const LoanDetails = ({ items }) => {
                 <tr className="border-t-2 py-2">
                   <td className="px-2"></td>
                   <td className="px-2 font-bold py-4">
-                    Графикийн дагуу төлөхөд харилцагчийн төлөх хүү
+                    Графикийн дагуу төлөхөд харилцагчийн төлөх нийт хүү
                   </td>
                   <td className="px-2 font-bold "> 22,200,000</td>
                   <td className="px-2 font-bold"> 13,800,000</td>
@@ -534,7 +534,7 @@ const LoanDetails = ({ items }) => {
                 <tr className="border-t-2 py-2">
                   <td className="px-2"></td>
                   <td className="px-2 font-bold py-4">
-                    Графикийн дагуу төлөхөд харилцагчийн төлөх хүү
+                    Графикийн дагуу төлөхөд харилцагчийн төлөх нийт хүү
                   </td>
                   <td className="px-2 font-bold "> 24,000,000</td>
                   <td className="px-2 font-bold"> 15,000,000</td>
@@ -543,7 +543,7 @@ const LoanDetails = ({ items }) => {
             </div>
             <div className="flex-1 pr-24">
               <Title
-                subtitle={"Урьдчилгаа 20% /10%-ын хүүгүй хуваан төлөх/"}
+                subtitle={"Урьдчилгаа 20% /10%-ийг хүүгүй хуваан төлөх/"}
                 // title={"Урьдчилгаа 10% 6 сар хүүгүй хуваан төлөх 20%"}
                 items="left"
               />
@@ -605,7 +605,7 @@ const LoanDetails = ({ items }) => {
                 <tr className="border-t-2 py-2">
                   <td className="px-2"></td>
                   <td className="px-2 font-bold py-4">
-                    Графикийн дагуу төлөхөд харилцагчийн төлөх хүү
+                    Графикийн дагуу төлөхөд харилцагчийн төлөх нийт хүү
                   </td>
                   <td className="px-2 font-bold "> 24,000,000</td>
                   <td className="px-2 font-bold"> 15,000,000</td>
