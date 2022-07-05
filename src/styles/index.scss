@@ -167,7 +167,16 @@ body {
     color: white;
   }
 }
-
+.fl-direction {
+  span {
+    overflow: visible !important;
+    img {
+      margin-top: 5px !important;
+      padding-left: 2px !important;
+      padding-right: 2px !important;
+    }
+  }
+}
 .request {
   width: 100%;
   height: 100%;

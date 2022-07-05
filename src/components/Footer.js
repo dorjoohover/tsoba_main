@@ -41,10 +41,10 @@ const Footer = () => {
               <Image
                 src={"/img/telegram.png"}
                 alt="logo"
-                height={18}
-                width={18}
+                height={17}
+                width={22}
               />
-              <Image src={"/img/viber.png"} alt="logo" height={22} width={22} />
+              <Image src={"/img/viber.png"} alt="logo" height={17} width={22} />
               80115262
             </li>
             <li className="text-white mb-2">

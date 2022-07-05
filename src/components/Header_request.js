@@ -30,7 +30,7 @@ const HeaderRequest = () => {
       <Box position="relative" zIndex={20} maxWidth={1200} mx="auto">
         <div className="text-center">
           <h1 className="uppercase mb-3 text-2xl text-white">
-            ХАУС ЗАХИАЛАХ <span className="font-semibold">ХҮСЭЛТ</span>
+            ЗЭЭЛ СУДЛУУЛАХ <span className="font-semibold">ХҮСЭЛТ</span>
           </h1>
           <span className="bg_primary_color w-12 h-1 inline-block"></span>
         </div>

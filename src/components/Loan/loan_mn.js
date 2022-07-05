@@ -54,7 +54,7 @@ function a11yProps(index) {
 }
 
 const LoanDetails = ({ items }) => {
-  const [value, setValue] = React.useState(0);
+  const [value, setValue] = React.useState(1);
 
   const handleChange = (event, newValue) => {
     setValue(newValue);
@@ -74,13 +74,19 @@ const LoanDetails = ({ items }) => {
               },
             }}
           >
-            <Tab className="tab" label="215 сая" {...a11yProps(0)} />
-            <Tab className="tab" label="235 сая" {...a11yProps(1)} />
-            <Tab className="tab" label="245 сая" {...a11yProps(2)} />
-            <Tab className="tab" label="265 сая" {...a11yProps(3)} />
+            <Tab
+              className="tab"
+              label="Хаусны үнийн сонголт"
+              disabled
+              {...a11yProps(0)}
+            />
+            <Tab className="tab" label="215 сая" {...a11yProps(1)} />
+            <Tab className="tab" label="235 сая" {...a11yProps(2)} />
+            <Tab className="tab" label="245 сая" {...a11yProps(3)} />
+            <Tab className="tab" label="265 сая" {...a11yProps(4)} />
           </Tabs>
         </Box>
-        <TabPanel value={value} index={0}>
+        <TabPanel value={value} index={1}>
           <div className="loan flex">
             <div className="flex-1 pr-24">
               <Title
@@ -141,7 +147,7 @@ const LoanDetails = ({ items }) => {
             </div>
             <div className="flex-1 pr-24">
               <Title
-                subtitle={"Урьдчилгаа 10% 6 сар хүүгүй хуваан төлөх 20%"}
+                subtitle={"Урьдчилгаа 20% /10%-ын хүүгүй хуваан төлөх/"}
                 // title={"Урьдчилгаа 10% 6 сар хүүгүй хуваан төлөх 20%"}
                 items="left"
               />
@@ -212,7 +218,7 @@ const LoanDetails = ({ items }) => {
             </div>
           </div>
         </TabPanel>
-        <TabPanel value={value} index={1}>
+        <TabPanel value={value} index={2}>
           <div className="loan flex">
             <div className="flex-1 pr-24">
               <Title
@@ -273,7 +279,7 @@ const LoanDetails = ({ items }) => {
             </div>
             <div className="flex-1 pr-24">
               <Title
-                subtitle={"Урьдчилгаа 10% 6 сар хүүгүй хуваан төлөх 20%"}
+                subtitle={"Урьдчилгаа 20% /10%-ын хүүгүй хуваан төлөх/"}
                 // title={"Урьдчилгаа 10% 6 сар хүүгүй хуваан төлөх 20%"}
                 items="left"
               />
@@ -344,7 +350,7 @@ const LoanDetails = ({ items }) => {
             </div>
           </div>
         </TabPanel>
-        <TabPanel value={value} index={2}>
+        <TabPanel value={value} index={3}>
           <div className="loan flex">
             <div className="flex-1 pr-24">
               <Title
@@ -405,7 +411,7 @@ const LoanDetails = ({ items }) => {
             </div>
             <div className="flex-1 pr-24">
               <Title
-                subtitle={"Урьдчилгаа 10% 6 сар хүүгүй хуваан төлөх 20%"}
+                subtitle={"Урьдчилгаа 20% /10%-ын хүүгүй хуваан төлөх/"}
                 // title={"Урьдчилгаа 10% 6 сар хүүгүй хуваан төлөх 20%"}
                 items="left"
               />
@@ -476,7 +482,7 @@ const LoanDetails = ({ items }) => {
             </div>
           </div>
         </TabPanel>
-        <TabPanel value={value} index={3}>
+        <TabPanel value={value} index={4}>
           <div className="loan flex">
             <div className="flex-1 pr-24">
               <Title
@@ -537,7 +543,7 @@ const LoanDetails = ({ items }) => {
             </div>
             <div className="flex-1 pr-24">
               <Title
-                subtitle={"Урьдчилгаа 10% 6 сар хүүгүй хуваан төлөх 20%"}
+                subtitle={"Урьдчилгаа 20% /10%-ын хүүгүй хуваан төлөх/"}
                 // title={"Урьдчилгаа 10% 6 сар хүүгүй хуваан төлөх 20%"}
                 items="left"
               />
