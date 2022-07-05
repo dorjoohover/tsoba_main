@@ -16,7 +16,7 @@ const Header = () => {
       <div className="relative header-bg-size">
         <div className="wrapper">
           <video autoPlay muted loop width={"100%"} height={"100%"}>
-            <source src="./video/Video2.mp4" type="video/mp4" />
+            <source src="./video/Video2_001.mp4" type="video/mp4" />
           </video>
         </div>
         <div className="absolute z-30 top-1/2 left-1/2 header_text text-left flex">
