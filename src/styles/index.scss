@@ -29,6 +29,7 @@ center {
 p {
   color: #767676;
 }
+
 .nav {
   left: 50%;
   transform: translateX(-50%);
@@ -578,6 +579,7 @@ body {
   // background-repeat: no-repeat;
   // background-position-x: right;
   // background-position-y: center;
+  overflow: hidden;
 }
 .wrapper {
   position: relative;

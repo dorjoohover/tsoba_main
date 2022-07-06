@@ -51,8 +51,8 @@ const Step = () => {
     <Box
       sx={{
         maxWidth: "100%",
-        margin: "20px auto 0 0",
-        padding: "0px 0px 90px 0px",
+        margin: "0px auto 0 0",
+        padding: "20px 0px 90px 0px",
         // paddingTop: {
         //   lg: "300px",
         //   md: "300px",
@@ -151,7 +151,7 @@ const Step = () => {
         </Box>
         <div className="step-container-right">
           <Image
-            src={"/img/step-bg-2.png"}
+            src={"/img/zeelSud1.png"}
             alt="about"
             layout="responsive"
             width={2300}

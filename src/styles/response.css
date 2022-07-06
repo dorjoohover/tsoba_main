@@ -220,6 +220,10 @@
     max-width: 100%;
     padding: 0;
     margin-bottom: 40px;
+    height: 0;
+  }
+  .loan .pr-24 {
+    padding: 1rem;
   }
 }
 
@@ -240,9 +244,6 @@
   .step-container-right {
     display: none;
   }
-  .header-bg-size {
-    height: 60vh;
-  }
   .header-button {
     width: 70px;
     height: 70px;
@@ -257,9 +258,6 @@
   }
   .header_text a {
     font-size: 11px !important;
-  }
-  .condition-header-size {
-    margin-top: 5%;
   }
   .sub-title-text {
     font-size: 11px;
@@ -425,10 +423,7 @@
   .sub-title-extra {
     -webkit-transform: translate(-50%);
             transform: translate(-50%);
-    top: 95%;
-  }
-  .header-bg-size {
-    height: 20vh;
+    margin-top: -15%;
   }
   .step p {
     font-size: 13px;
@@ -491,9 +486,6 @@
   .tab {
     font-size: 12px !important;
   }
-  .condition-header-size {
-    margin-top: 15%;
-  }
   .step {
     padding-left: 0%;
   }
@@ -508,8 +500,9 @@
     left: 55%;
   }
   .header-request-size {
-    background-size: 250% !important;
+    background-size: 230% !important;
     background-position-x: 80% !important;
+    background-position-y: 50% !important;
   }
   .step-container {
     border-bottom-right-radius: 0%;
@@ -601,9 +594,6 @@
   .p-size-ext {
     margin: 0 20px !important;
   }
-  .header-bg-size {
-    height: 40vh;
-  }
   .screen {
     height: 100vh;
   }
@@ -633,9 +623,6 @@
   .css-85cajt {
     height: 60vh;
   }
-  .condition-header-size {
-    margin-top: 10%;
-  }
 }
 
 @media only screen and (max-width: 480px) {
@@ -647,16 +634,22 @@
     background-attachment: scroll;
     height: 100vh;
   }
-  .condition-header-size {
-    margin-top: 20%;
-  }
   .header_text a {
     font-size: 11px !important;
   }
   .header-button {
-    width: 70px;
-    height: 70px;
-    margin-top: 50px;
+    width: 120px;
+    height: 50px;
+    margin-top: 0px;
+    border-radius: 0;
+  }
+  .sub-title-extra {
+    margin-top: 0%;
+    padding-top: 20px;
+    background-color: #f7f7f7;
+  }
+  .sub-title-extra h5 {
+    color: black !important;
   }
   .header .relative {
     margin-top: 65%;
