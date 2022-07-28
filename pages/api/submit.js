@@ -93,7 +93,7 @@ export default async function handler(req, res) {
                               body.name,
                               body.phone,
                               body.phonePlatform,
-                              body.platform.lowercase(),
+                              body.platform.toLowerCase(),
                               body.email,
                               body.interest,
                               body.business,
