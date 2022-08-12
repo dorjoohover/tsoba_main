@@ -10,6 +10,10 @@ import {
   LocalPhoneRounded,
 } from "@mui/icons-material";
 import { Box, Alert } from "@mui/material";
+import IconButton from "@mui/material/IconButton";
+import Collapse from "@mui/material/Collapse";
+import Button from "@mui/material/Button";
+import CloseIcon from "@mui/icons-material/Close";
 import Head from "next/head";
 const Contact = () => {
   const [contact, setContact] = useState({ name: "", email: "", message: "" });
