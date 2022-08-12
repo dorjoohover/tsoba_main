@@ -2,13 +2,14 @@ import Navbar from "../../src/components/Navbar";
 import { useState } from "react";
 import Footer from "../../src/components/Footer";
 import Copyright from "../../src/components/Copyright";
+
 import {
   Circle,
   HomeRounded,
   EmailRounded,
   LocalPhoneRounded,
 } from "@mui/icons-material";
-import { Box } from "@mui/material";
+import { Box, Alert } from "@mui/material";
 import Head from "next/head";
 const Contact = () => {
   const [contact, setContact] = useState({ name: "", email: "", message: "" });
@@ -164,6 +165,29 @@ const Contact = () => {
                   required
                 ></textarea>
               </div>
+              {alert && (
+                <Box sx={{ width: "100%" }}>
+                  <Collapse in={open}>
+                    <Alert
+                      action={
+                        <IconButton
+                          aria-label="close"
+                          color="inherit"
+                          size="small"
+                          onClick={() => {
+                            setOpen(false);
+                          }}
+                        >
+                          <CloseIcon fontSize="inherit" />
+                        </IconButton>
+                      }
+                      sx={{ mb: 2 }}
+                    >
+                      Амжилттай илгээгдлээ.
+                    </Alert>
+                  </Collapse>
+                </Box>
+              )}
               <input
                 type="submit"
                 value="Илгээх"
