@@ -124,6 +124,7 @@ const Contact = () => {
                     }))
                   }
                   placeholder="Овог, нэр"
+                  required
                 />
               </div>
               <div className="flex flex-col mb-10">
@@ -141,6 +142,7 @@ const Contact = () => {
                     }))
                   }
                   placeholder="Цахим хаяг@example.com"
+                  required
                 />
               </div>
               <div className="flex flex-col mb-10">
@@ -159,6 +161,7 @@ const Contact = () => {
                     }))
                   }
                   placeholder="Хүсэлтээ бичнэ үү"
+                  required
                 ></textarea>
               </div>
               <input
