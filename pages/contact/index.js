@@ -2,7 +2,7 @@ import Navbar from "../../src/components/Navbar";
 import { useState } from "react";
 import Footer from "../../src/components/Footer";
 import Copyright from "../../src/components/Copyright";
-
+import * as React from "react";
 import {
   Circle,
   HomeRounded,
@@ -16,6 +16,7 @@ import Button from "@mui/material/Button";
 import CloseIcon from "@mui/icons-material/Close";
 import Head from "next/head";
 const Contact = () => {
+  const [open, setOpen] = React.useState(true);
   const [contact, setContact] = useState({ name: "", email: "", message: "" });
   const handleForm = async (e) => {
     e.preventDefault();
@@ -169,30 +170,11 @@ const Contact = () => {
                   required
                 ></textarea>
               </div>
-              {alert && (
-                <Box sx={{ width: "100%" }}>
-                  <Collapse in={open}>
-                    <Alert
-                      action={
-                        <IconButton
-                          aria-label="close"
-                          color="inherit"
-                          size="small"
-                          onClick={() => {
-                            setOpen(false);
-                          }}
-                        >
-                          <CloseIcon fontSize="inherit" />
-                        </IconButton>
-                      }
-                      sx={{ mb: 2 }}
-                    >
-                      Амжилттай илгээгдлээ.
-                    </Alert>
-                  </Collapse>
-                </Box>
-              )}
+
               <input
+                onClick={() => {
+                  setOpen(true);
+                }}
                 type="submit"
                 value="Илгээх"
                 className="uppercase text-white px-10 py-3 tracking-widest bg_primary_color font-semibold cursor-pointer"
