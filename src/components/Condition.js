@@ -74,8 +74,8 @@ const Condition = () => {
             xs: "30px",
           },
           minWidth: {
-            lg: "875px",
-            md: "875px",
+            lg: "1045px",
+            md: "1045px",
             sm: "auto",
             xs: "auto",
           },
@@ -194,9 +194,9 @@ const Condition = () => {
           >
             Урьдчилгаа
             <br />
-            хуваан
+            төлбөрийн
             <br />
-            төлөхгүй
+            хэмжээ
           </Box>
         </Box>
         <Box
@@ -247,7 +247,9 @@ const Condition = () => {
             }}
             fontSize="14px"
           >
-            Урьдчилгаа 10%
+            Урьдчилгаа 5-5,5
+            <br />
+            зээлийн хүү
             <br />
             6 сар хүүгүй
             <br />
