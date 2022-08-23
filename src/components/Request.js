@@ -12,7 +12,7 @@ import { Select, MenuItem, InputLabel, FormControl, Grid } from "@mui/material";
 import { FaViber, FaTelegramPlane } from "react-icons/fa";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import emailjs from "emailjs-com";
+
 const Request = ({ formData, setFormData, handleForm, alert }) => {
   //   const [open, setOpen] = React.useState(false);
   //   const [active, setActive] = React.useState(true);
@@ -23,32 +23,13 @@ const Request = ({ formData, setFormData, handleForm, alert }) => {
 
   const notify = () => toast("Амжилттай илгээлээ.");
 
-  const sendEmail = (e) => {
-    e.preventDefault();
 
-    emailjs
-      .sendForm(
-        "service_skc7ad7",
-        "template_ghnna5b",
-        e.target,
-        "KhnK7ZkZxcfRia1FZ"
-      )
-      .then(
-        (result) => {
-          console.log(result.text);
-        },
-        (error) => {
-          console.log(error.text);
-        }
-      );
-    e.target.reset();
-  };
 
   return (
     <div id="request" className="request relative">
       <span className="absolute bg-white bottom-0 z-10 h-2/5 w-full"></span>
       <form
-        onSubmit={(handleForm, sendEmail)}
+        onSubmit={(e) => handleForm(e)}
         className="flex flex-col mx-auto relative z-30  "
       >
         <h1 className="font-semibold text-4xl text-center mb-8">

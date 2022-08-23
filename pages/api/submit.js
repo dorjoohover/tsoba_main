@@ -1,17 +1,11 @@
 import { google } from "googleapis";
-import nodemailer from "nodemailer";
 export default async function handler(req, res) {
   require("dotenv").config();
   if (req.method !== "POST") {
     return res.status(405).send({ message: "post" });
   }
   const body = req.body;
-  console.log(
-    process.env.GOOGLE_CLIENT_EMAIL,
-    process.env.GOOGLE_PRIVATE_KEY?.replace(/\\n/g, "\n"),
-    process.env.GOOGLE_SHEET_ID
-    // req.body
-  );
+
   //   const transporter = nodemailer.createTransport({
   //     service: "gmail",
   //     host: "smtp.gmail.com",
@@ -80,11 +74,11 @@ export default async function handler(req, res) {
         "https://www.googleapis.com/auth/spreadsheets",
       ],
     });
+
     const sheets = google.sheets({
       auth,
       version: "v4",
     });
-
     const response = await sheets.spreadsheets.values.append({
       spreadsheetId: process.env.GOOGLE_SHEET_ID,
       range: "A1:J1",
@@ -105,7 +99,7 @@ export default async function handler(req, res) {
           ],
         ],
       },
-    });
+    })
 
     return res.status(200).json({
       data: response.data,

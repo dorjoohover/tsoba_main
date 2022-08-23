@@ -20,6 +20,7 @@ import MiniRequest from "../src/components/MIniRequest";
 import { Box } from "@mui/material";
 import Condition from "../src/components/Condition";
 import HeaderRequest from "../src/components/Header_request";
+import emailjs from "emailjs-com";
 export async function getStaticProps({ locale }) {
   return {
     props: {
@@ -29,29 +30,48 @@ export async function getStaticProps({ locale }) {
 }
 
 function Home(props) {
-  const { t } = useTranslation();
+  // const { t } = useTranslation();
   const [formData, setFormData] = useState({
     name: "",
-    email: "",
     phone: "",
-    loan: "",
+    phonePlatform: "",
+    platform: "telegram",
+    email: "",
+    interest: "Хадат Вилла 4",
     address: "",
-    register: "",
     salary: "",
     description: "",
+    business: "",
   });
   const handleForm = async (e) => {
     e.preventDefault();
     const form = {
       name: formData.name,
       email: formData.email,
-      loan: formData.loan,
+      business: formData.business,
       address: formData.address,
       phone: formData.phone,
-      register: formData.register,
+      phonePlatform: formData.phonePlatform,
+      platform: formData.platform,
       salary: formData.salary,
       description: formData.description,
     };
+    await emailjs
+    .sendForm(
+      "service_skc7ad7",
+      "template_ghnna5b",
+      e.target,
+      "KhnK7ZkZxcfRia1FZ"
+    )
+    .then(
+      (result) => {
+        console.log(result.text);
+      },
+      (error) => {
+        console.log(error.text);
+      }
+    );
+    
     const res = fetch("/api/submit", {
       method: "POST",
       headers: {
@@ -59,17 +79,19 @@ function Home(props) {
         "Content-Type": "application/json",
       },
       body: JSON.stringify(form),
-    });
+    })
     setFormData((formData) => ({
       ...formData,
       name: "",
-      email: "",
-      phone: "",
-      loan: "",
-      address: "",
-      register: "",
-      salary: "",
-      description: "",
+    email: "",
+    phone: "",
+    phonePlatform: "",
+    platform: "telegram",
+    address: "",
+    salary: "",
+    description: "",
+    interest: "Хадат Вилла 4",
+    business: "",
     }));
   };
 
@@ -90,13 +112,13 @@ function Home(props) {
 
       <HeaderRequest />
       <Projects />
-      {/* <Loans />
+       <Loans />
       <InternalLoan />
-      <MiniRequest
+      <Request
         handleForm={handleForm}
         formData={formData}
         setFormData={setFormData}
-      /> */}
+      /> 
       <Footer />
       <Copyright />
       {/* <div className="mt-screen">{t("home:dorj")}</div> */}

@@ -5,34 +5,49 @@ import Navbar from "../../src/components/Navbar";
 import Footer from "../../src/components/Footer";
 import CopyRight from "../../src/components/Copyright";
 import Head from "next/head";
+import emailjs from 'emailjs-com'
 const LoanRequest = () => {
      const [formData, setFormData] = useState({
           name: "",
-          email: "",
-          phone: "",
-          phonePlatform: "",
-          platform: "",
-          address: "",
-          salary: "",
-          description: "",
-          interest: "Хадат Вилла 4",
-          business: "",
+    phone: "",
+    phonePlatform: "",
+    platform: "telegram",
+    email: "",
+    interest: "Хадат Вилла 4",
+    address: "",
+    salary: "",
+    description: "",
+    business: "",
      });
      const [alert, setAlert] = useState(false);
      const handleForm = async (e) => {
           e.preventDefault();
+          await emailjs
+      .sendForm(
+        "service_skc7ad7",
+        "template_ghnna5b",
+        e.target,
+        "KhnK7ZkZxcfRia1FZ"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+    e.target.reset();
           const form = {
                name: formData.name,
-               email: formData.email,
-               address: formData.address,
-               phone: formData.phone,
-               phonePlatform: formData.phonePlatform,
-               platform: formData.platform,
-               phone: formData.phone,
-               salary: formData.salary,
-               description: formData.description,
-               interest: formData.interest,
-               business: formData.business,
+      email: formData.email,
+      business: formData.business,
+      address: formData.address,
+      phone: formData.phone,
+      phonePlatform: formData.phonePlatform,
+      platform: formData.platform,
+      salary: formData.salary,
+      description: formData.description,
           };
           const res = await fetch("/api/submit", {
                method: "POST",
@@ -45,15 +60,15 @@ const LoanRequest = () => {
                setFormData((formData) => ({
                     ...formData,
                     name: "",
-                    email: "",
-                    phone: "",
-                    phonePlatform: "",
-                    platform: "",
-                    address: "",
-                    salary: "",
-                    description: "",
-                    interest: "Хадат Вилла 4",
-                    business: "",
+    phone: "",
+    phonePlatform: "",
+    platform: "telegram",
+    email: "",
+    interest: "Хадат Вилла 4",
+    address: "",
+    salary: "",
+    description: "",
+    business: "",
                }));
           });
 
