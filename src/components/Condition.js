@@ -228,7 +228,7 @@ const Condition = () => {
           }}
         >
           <h1 className="text-center text-3xl font-semibold condition_text">
-            20%
+            5-5.5%
           </h1>
           <Box
             position={"absolute"}
@@ -247,13 +247,7 @@ const Condition = () => {
             }}
             fontSize="14px"
           >
-            Урьдчилгаа 5-5,5
-            <br />
-            зээлийн хүү
-            <br />
-            6 сар хүүгүй
-            <br />
-            хуваан төлөх
+            зээлийн <br /> хүү
           </Box>
         </Box>
         <Box
