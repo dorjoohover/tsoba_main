@@ -1,12 +1,21 @@
 import Title from "./Title";
 import Image from "next/image";
 import Link from "next/link";
-import { ArrowRightAlt, AccountBalance, DateRange, House, PriceCheck } from "@mui/icons-material";
+import {
+  ArrowRightAlt,
+  AccountBalance,
+  DateRange,
+  House,
+  PriceCheck,
+} from "@mui/icons-material";
 import { Box, Grid, Typography } from "@mui/material";
 
 const Loans = () => {
   return (
-    <Box sx={{ maxWidth: "1300px", margin: "90px auto", padding: '10px' }}>
+    <Box
+      backgroundColor={"#fff"}
+      sx={{ maxWidth: "1300px", margin: "90px auto", padding: "10px" }}
+    >
       <Box
         sx={{
           display: "flex",
@@ -16,7 +25,7 @@ const Loans = () => {
         mb={8}
       >
         <Title
-          subtitle={"Зээлийн мэдээлэл"}
+          // subtitle={"Зээлийн мэдээлэл"}
           title={"Гадаадад оршин суугаа харилцагчдад"}
         />
         <Box sx={{ width: "50%", display: "block", textAlign: "end" }}>
@@ -116,7 +125,7 @@ const Loans = () => {
               30%
             </Typography>
             <Typography variant="p" textAlign={"center"}>
-              Урьдчилгаа хуваан төлөхгүй
+              Урьдчилгаа зээлийн төлбөр
             </Typography>
           </Box>
         </Grid>

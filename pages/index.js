@@ -57,21 +57,21 @@ function Home(props) {
       description: formData.description,
     };
     await emailjs
-    .sendForm(
-      "service_skc7ad7",
-      "template_ghnna5b",
-      e.target,
-      "KhnK7ZkZxcfRia1FZ"
-    )
-    .then(
-      (result) => {
-        console.log(result.text);
-      },
-      (error) => {
-        console.log(error.text);
-      }
-    );
-    
+      .sendForm(
+        "service_skc7ad7",
+        "template_ghnna5b",
+        e.target,
+        "KhnK7ZkZxcfRia1FZ"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+
     const res = fetch("/api/submit", {
       method: "POST",
       headers: {
@@ -79,19 +79,19 @@ function Home(props) {
         "Content-Type": "application/json",
       },
       body: JSON.stringify(form),
-    })
+    });
     setFormData((formData) => ({
       ...formData,
       name: "",
-    email: "",
-    phone: "",
-    phonePlatform: "",
-    platform: "telegram",
-    address: "",
-    salary: "",
-    description: "",
-    interest: "Хадат Вилла 4",
-    business: "",
+      email: "",
+      phone: "",
+      phonePlatform: "",
+      platform: "telegram",
+      address: "",
+      salary: "",
+      description: "",
+      interest: "Хадат Вилла 4",
+      business: "",
     }));
   };
 
@@ -106,19 +106,20 @@ function Home(props) {
       <Navbar check_bg={"home"} />
       <Header />
       <Condition />
-      <Box backgroundColor={"#D3D3D330"}>
+      <Loans />
+      <InternalLoan />
+      <Box>
         <Step />
       </Box>
 
       <HeaderRequest />
       <Projects />
-       <Loans />
-      <InternalLoan />
+
       <Request
         handleForm={handleForm}
         formData={formData}
         setFormData={setFormData}
-      /> 
+      />
       <Footer />
       <Copyright />
       {/* <div className="mt-screen">{t("home:dorj")}</div> */}

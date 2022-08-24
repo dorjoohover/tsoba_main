@@ -15,42 +15,6 @@ export default async function handler(req, res) {
     "contact"
   );
 
-  const transporter = nodemailer.createTransport({
-    service: "gmail",
-    host: "smtp.gmail.com",
-    port: 587,
-    secure: false,
-    auth: {
-      user: process.env.SMTP_USER,
-      pass: process.env.SMTP_PASSWORD,
-    },
-    requireTLS: true,
-    tls: {
-      ciphers: "SSLv3",
-    },
-  });
-  var maillist = ["altantsetseg.b@homey.mn", "bolormaa.ts@homey.mn"];
-  console.log(body);
-  const data = {
-    from: body.mail,
-    to: maillist,
-    subject: `Холбогдох хүсэлт ${body.name}`,
-    text: `${body.name} Холбогдож байна \n
-
-        Хаяг:  ${body.email} \n
-        Хүсэлт:  ${body.message} \n
-      `,
-    html: `<h1>${body.name} Холбогдож байна</h1> <br>
-      
-        <p><strong>Хаяг: </strong> ${body.email}</p><br>
-        <p><strong>Хүсэлт: </strong> ${body.message}</p><br>
-      `,
-  };
-  transporter.sendMail(data, function (err, info) {
-    if (err) console.log(err);
-    else console.log(info);
-  });
-
   try {
     const auth = new google.auth.GoogleAuth({
       credentials: {
@@ -69,10 +33,10 @@ export default async function handler(req, res) {
     });
     const response = await sheets.spreadsheets.values.append({
       spreadsheetId: process.env.GOOGLE_CONTACT_SHEET_ID,
-      range: "A1:C1",
+      range: "A1:D1",
       valueInputOption: "USER_ENTERED",
       requestBody: {
-        values: [[body.name, body.email, body.message]],
+        values: [[body.name, body.email, body.phoneNumber, body.message]],
       },
     });
 

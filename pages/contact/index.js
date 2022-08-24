@@ -3,6 +3,9 @@ import { useState } from "react";
 import Footer from "../../src/components/Footer";
 import Copyright from "../../src/components/Copyright";
 import * as React from "react";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+import emailjs from "emailjs-com";
 import {
   Circle,
   HomeRounded,
@@ -15,14 +18,37 @@ import Collapse from "@mui/material/Collapse";
 import Button from "@mui/material/Button";
 import CloseIcon from "@mui/icons-material/Close";
 import Head from "next/head";
+
 const Contact = () => {
   const [open, setOpen] = React.useState(true);
-  const [contact, setContact] = useState({ name: "", email: "", message: "" });
+  const [contact, setContact] = useState({
+    name: "",
+    email: "",
+    phoneNumber: "",
+    message: "",
+  });
   const handleForm = async (e) => {
     e.preventDefault();
+    await emailjs
+      .sendForm(
+        "service_skc7ad7",
+        "template_gex3qct",
+        e.target,
+        "KhnK7ZkZxcfRia1FZ"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+
     const form = {
       name: contact.name,
       email: contact.email,
+      phoneNumber: contact.phoneNumber,
       message: contact.message,
     };
     const res = fetch("/api/contact", {
@@ -37,9 +63,12 @@ const Contact = () => {
       ...contact,
       name: "",
       email: "",
+      phoneNumber: "",
       message: "",
     }));
+    e.target.reset();
   };
+  const notify = () => toast("Амжилттай илгээлээ.");
   return (
     <>
       <Head>
@@ -121,6 +150,7 @@ const Contact = () => {
                 </label>
                 <input
                   type="text"
+                  name="name"
                   className="p-4 border-zinc-300"
                   value={contact.name}
                   onChange={(e) =>
@@ -139,6 +169,7 @@ const Contact = () => {
                 </label>
                 <input
                   type="email"
+                  name="email"
                   className="p-4 border-zinc-300"
                   value={contact.email}
                   onChange={(e) =>
@@ -150,6 +181,25 @@ const Contact = () => {
                   placeholder="Цахим хаяг@example.com"
                   required
                 />
+              </div>
+              <div className="flex flex-col mb-10">
+                <label htmlFor="phoneNumber" className="uppercase text-sm mb-2">
+                  Утасны дугаар
+                </label>
+                <textarea
+                  name="phoneNumber"
+                  id="phoneNumber"
+                  className="p-4 border-zinc-300"
+                  value={contact.phoneNumber}
+                  onChange={(e) =>
+                    setContact((contact) => ({
+                      ...contact,
+                      phoneNumber: e.target.value,
+                    }))
+                  }
+                  placeholder="Дугаараа бичнэ үү."
+                  required
+                ></textarea>
               </div>
               <div className="flex flex-col mb-10">
                 <label htmlFor="email" className="uppercase text-sm mb-2">
@@ -170,11 +220,18 @@ const Contact = () => {
                   required
                 ></textarea>
               </div>
-
+              <ToastContainer
+                position="bottom-center"
+                autoClose={5000}
+                hideProgressBar={false}
+                newestOnTop={false}
+                closeOnClick
+                rtl={false}
+                pauseOnFocusLoss
+                draggable
+              />
               <input
-                onClick={() => {
-                  setOpen(true);
-                }}
+                onClick={notify}
                 type="submit"
                 value="Илгээх"
                 className="uppercase text-white px-10 py-3 tracking-widest bg_primary_color font-semibold cursor-pointer"
