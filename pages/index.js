@@ -107,7 +107,7 @@ function Home(props) {
       <Header />
       <Condition />
       <Loans />
-      <InternalLoan />
+
       <Box>
         <Step />
       </Box>
