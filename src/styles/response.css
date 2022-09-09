@@ -617,6 +617,18 @@
     min-width: 360% !important;
     max-width: 360% !important;
   }
+  .form_mobile {
+    display: block !important;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .form_desktop {
+    display: none !important;
+  }
 }
 
 @media only screen and (max-height: 500px) {
@@ -659,11 +671,15 @@
     margin-bottom: 70px;
   }
   .request_btn {
-    font-size: 0.8rem;
+    font-size: 0.5rem;
     padding: 1rem 2rem;
   }
+  .wrapper {
+    background-position: 50%;
+    height: 30vh;
+  }
   .text-4xl {
-    font-size: 1.75rem;
+    font-size: 1.3rem;
   }
   .contact_grid .w-2\/5 h1 {
     font-size: 2.5rem;
@@ -685,7 +701,7 @@
     font-size: 1rem;
   }
   .title h1 {
-    font-size: 2rem;
+    font-size: 1rem;
   }
   .title h5 {
     font-size: 0.8rem;
@@ -724,6 +740,9 @@
   .loans .z-30 .loan_grid {
     margin: 0;
     margin-bottom: 30px;
+  }
+  .header-bg-size {
+    height: 30vh;
   }
   .request {
     background-image: url("../../public/img/smile01.jpg");

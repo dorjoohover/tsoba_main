@@ -216,7 +216,7 @@ body {
   top: 0;
   left: 0%;
   position: absolute;
-  background-image: url("../../public/img/smile01.jpg");
+  background-image: url("../../public/img/houseNew.jpg");
   width: 100%;
   height: 100%;
   background-attachment: fixed;
@@ -663,21 +663,17 @@ body {
 
 .header-bg-size {
   overflow: hidden;
+  height: 100vh;
 }
 
 .wrapper {
   position: relative;
-}
-
-.wrapper::after {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  content: "";
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.2)), to(rgba(0, 0, 0, 0.2)));
-  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url("/img/poster.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("/img/poster.jpg");
+  background-size: cover;
+  height: 100vh;
+  -webkit-transform: scaleX(-1);
+          transform: scaleX(-1);
 }
 
 .header-button {
@@ -712,7 +708,7 @@ body {
   text-align: center;
   position: relative;
   height: 10vh;
-  margin-top: -15%;
+  margin-top: -10%;
   pointer-events: none;
 }
 
@@ -817,5 +813,9 @@ strong {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.form_mobile {
+  display: none !important;
 }
 /*# sourceMappingURL=index.css.map */
