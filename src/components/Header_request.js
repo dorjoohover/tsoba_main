@@ -17,9 +17,9 @@ const HeaderRequest = () => {
   return (
     <Box
       sx={{
-        backgroundImage: 'url("/img/zeelSud1.jpg")',
+        backgroundImage: 'url("/img/home16.jpg")',
         backgroundSize: "100%",
-        backgroundPosition: "bottom",
+        backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
       }}
       py={"40px"}

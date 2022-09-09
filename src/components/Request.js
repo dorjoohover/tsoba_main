@@ -23,11 +23,9 @@ const Request = ({ formData, setFormData, handleForm, alert }) => {
 
   const notify = () => toast("Амжилттай илгээлээ.");
 
-
-
   return (
     <div id="request" className="request relative">
-      <span className="absolute bg-white bottom-0 z-10 h-2/5 w-full"></span>
+      <span className="absolute  bottom-0 z-10 h-2/5 w-full"></span>
       <form
         onSubmit={(e) => handleForm(e)}
         className="flex flex-col mx-auto relative z-30  "

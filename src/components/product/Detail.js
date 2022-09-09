@@ -66,7 +66,7 @@ export default function ProductDetail() {
         <div className="flex-1 pl-3">
           <div className="img">
             <Image
-              src={"/img/house.jpg"}
+              src={"/img/detail.jpg"}
               alt="product"
               width={630}
               height={833}
