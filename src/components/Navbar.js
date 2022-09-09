@@ -98,7 +98,7 @@ const Navbar = ({ color, check_bg }) => {
         }}
       >
         <div className="flex items-center h-24  w-auto relative nav-bg-color">
-          <Image src={`/img/${logo}`} alt="logo" width={166.6} height={90} />
+          <Image src={`/img/${logo}`} alt="logo" width={140} height={60} />
         </div>
         <ul className="flex items-center">
           <li
