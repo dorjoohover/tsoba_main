@@ -468,7 +468,7 @@ const Navbar = ({ color, check_bg }) => {
           />
         </div>
 
-        {router.locale == "mn" && (
+        {/* {router.locale == "mn" && (
           <div
             onClick={() => {
               router.replace(router.pathname, router.pathname, {
@@ -491,7 +491,7 @@ const Navbar = ({ color, check_bg }) => {
           >
             <p>мн</p>
           </div>
-        )}
+        )} */}
       </Box>
     </Box>
   );
