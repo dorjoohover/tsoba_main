@@ -696,9 +696,10 @@
   }
   .wrapper {
     background-position: 50%;
+    height: 30vh;
   }
   .text-4xl {
-    font-size: 1.75rem;
+    font-size: 1.3rem;
   }
 
   .contact_grid {
@@ -769,6 +770,9 @@
         margin-bottom: 30px;
       }
     }
+  }
+  .header-bg-size {
+    height: 30vh;
   }
   .request {
     background-image: url("../../public/img/smile01.jpg");

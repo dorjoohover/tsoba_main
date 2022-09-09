@@ -25,7 +25,9 @@ const Condition = () => {
   return (
     <Box
       backgroundColor={"#D3D3D330"}
-      py={"90px"}
+      sx={{
+        py: "20px",
+      }}
       className="condition-header-size"
     >
       <HeaderTitle

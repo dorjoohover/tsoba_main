@@ -14,7 +14,7 @@ const Loans = () => {
   return (
     <Box
       backgroundColor={"#fff"}
-      sx={{ maxWidth: "1300px", margin: "90px auto", padding: "10px" }}
+      sx={{ maxWidth: "1300px", margin: "20px auto", padding: "10px" }}
     >
       <Box
         sx={{
