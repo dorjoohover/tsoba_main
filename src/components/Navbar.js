@@ -458,7 +458,7 @@ const Navbar = ({ color, check_bg }) => {
             <p></p>
           </>
         )}
-        <div className="flex items-center py-3 mobile_nav_logo w-28">
+        <div className="flex items-center  mobile_nav_logo w-28">
           <Image
             src={`/img/${logo}`}
             alt="logo"

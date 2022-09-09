@@ -115,11 +115,11 @@ function Home(props) {
       <HeaderRequest />
       <Projects />
 
-      <Request
+      {/* <Request
         handleForm={handleForm}
         formData={formData}
         setFormData={setFormData}
-      />
+      /> */}
       <Footer />
       <Copyright />
       {/* <div className="mt-screen">{t("home:dorj")}</div> */}
