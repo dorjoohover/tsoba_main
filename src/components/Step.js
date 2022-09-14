@@ -150,13 +150,13 @@ const Step = () => {
           </div>
         </Box>
         <div className="step-container-right">
-          <Image
+          {/* <Image
             src={"/img/zeelSud1.png"}
             alt="about"
             layout="responsive"
             width={2300}
             height={2300}
-          />
+          /> */}
         </div>
       </div>
     </Box>
