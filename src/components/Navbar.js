@@ -217,9 +217,9 @@ const Navbar = ({ color, check_bg }) => {
                   {/* <Link href={"/loans/internal"}>
                 <a>дотоод дахь харилцагч</a>
               </Link> */}
-                  <Link href={"/loans/external"}>
+                  {/* <Link href={"/loans/external"}>
                     <a>Доллар</a>
-                  </Link>
+                  </Link> */}
                 </Box>
               </div>
               {/* <Link href={"/loans/internal"}>
@@ -431,9 +431,9 @@ const Navbar = ({ color, check_bg }) => {
                       {/* <Link href={"/loans/internal"}>
                 <a>дотоод дахь харилцагч</a>
               </Link> */}
-                      <Link href={"/loans/external"}>
+                      {/* <Link href={"/loans/external"}>
                         <a>ДОЛЛАР</a>
-                      </Link>
+                      </Link> */}
                     </Box>
                   </div>
                   {/* <Link href={"/loans/internal"}>
