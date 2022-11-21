@@ -106,7 +106,7 @@ function Home(props) {
       <Navbar check_bg={"home"} />
       <Header />
       <Condition />
-      <Loans />
+      <InternalLoan />
 
       <Box>
         <Step />

@@ -2,7 +2,7 @@ import { useRouter } from "next/router";
 import { Circle } from "@mui/icons-material";
 import { Box } from "@mui/material";
 import Navbar from "../../src/components/Navbar";
-import LoanDetails from "../../src/components/Loan/loan";
+import LoanDetails from "../../src/components/Loan/loan_mn";
 import Header_request from "../../src/components/Header_request";
 import Footer from "../../src/components/Footer";
 import Copyright from "../../src/components/Copyright";
